@@ -15,7 +15,7 @@
 get_header(); ?>
 
 
-<table border="1">
+<table border="1" width="100%">
 	<tr>
 		<td colspan="3"><?php twentyeleven_content_nav( 'nav-above' ); ?></td>
 	</tr>
