@@ -15,21 +15,22 @@
 get_header(); ?>
 
 
-<table border="1" width="100%">
+<table border="5" width="100%">
 	<tr>
-		<td colspan="3"><?php twentyeleven_content_nav( 'nav-above' ); ?></td>
+		<td colspan="3"><div><?php twentyeleven_content_nav( 'nav-above' ); ?></div></td>
 	</tr>
 	<tr>
-		<td><?php get_sidebar(); ?></td>
+		<td><div><?php get_sidebar(); ?></div></td>
 		<td>
-			
+			<div>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'content', get_post_format() ); ?>
 			<?php endwhile; ?>
 			<?php twentyeleven_content_nav( 'nav-below' ); ?>
+			</div>
 		</td>
-		<td><?php get_sidebar(); ?></td>
+		<td><div><?php get_sidebar(); ?></div></td>
 	</tr>
 </table>
 
