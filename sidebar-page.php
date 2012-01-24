@@ -10,6 +10,8 @@
 
 get_header(); ?>
 
+<?php get_sidebar2(); ?>
+
 		<div id="primary">
 			<div id="content" role="main">
 
