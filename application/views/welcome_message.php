@@ -124,7 +124,7 @@
 					15 and is now up 93% to $14.51 in about two months.	http://finance.yahoo.com/q?s=INVN up93% in about two months It
 					traded in the immediate aftermarket at$8.25, and is up 76% in the
 					aftermarket. INVN pre-IPOreport</p>
-					http://gaskinsco.com/linkto-invn.shtml 
+					<small>http://gaskinsco.com/linkto-invn.shtml</small> 
 				</div>
 					
 				<div class="title">TWO HIGH YIELD PLAYS</div>
@@ -133,13 +133,15 @@
 					(CHKR) which IPO.d November 10, 2011 at $19 traded down a little
 					and today is $23.22, up 22%. And at $19 CHKR was projected pay a
 					yield in 2012 of 13% CHKR pre-IPOreport</p>
-					http://gaskinsco.com/linkto-chkr.shtml 
+					<small>http://gaskinsco.com/linkto-chkr.shtml</small> 
 					<p>(3) We always liked CVR
 					Partners (UAN), because of it yield and its business. UAN IPO.d
 					April 7, 2011 at $16, and now trades up 75% at $27.98.
 					http://finance.yahoo.com/q?s=uan&ql=1 UAN pre-IPOreport
-					http://gaskinsco.com/linkto-uan.shtml At the pre-IPO price range
-					mid-point of $13, UAN was expected to yield 14.8%.</p></div>
+					At the pre-IPO price range
+					mid-point of $13, UAN was expected to yield 14.8%.</p>
+					<small>http://gaskinsco.com/linkto-uan.shtml</small>
+					</div>
 				<h1>In The News</h1>
 				<div class="post">Lorem ipsum dolor sit amet, consectetur adipiscing
 					elit. Donec lobortis aliquet tortor, eu posuere tellus eleifend at.
