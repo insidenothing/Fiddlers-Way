@@ -36,7 +36,7 @@
 					src="/assets/images/fw2.jpg"> </a></td>
 		</tr>
 		<tr>
-			<td width='200px' valign="top" bgcolor="#e8e9ea">
+			<td width='200px' valign="top" bgcolor="#e8e9ea" align="center">
 				<li>Newsletter</li>
 				<li>Sign In</li>
 				<div>
