@@ -44,7 +44,7 @@
 				</div>
 				
 				<div>
-					<div class="title">Members</div>
+					<div class="title">Free Membership</div>
 					E-Mail: <input name="email" type="email"><br>
 					Password:<input name="password" type="password"><br>
 					<input type="submit" value="Log In"><input type="submit" value="Sign Up">
