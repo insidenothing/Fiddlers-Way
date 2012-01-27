@@ -5,10 +5,33 @@
 <title>Welcome to Fiddlers Way</title>
 <link rel="stylesheet" type="text/css" href="/assets/css/common.css" />
 <script SRC="/assets/js/common.js" TYPE="text/javascript"></script>
+
+<link rel="stylesheet" href="/assets/css/demo.css" type="text/css" media="all">
+<link rel="stylesheet" href="/assets/css/jquery.twitter.css" type="text/css"
+	media="all">
+
+<script type="text/javascript" src="/assets/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.twitter.js"></script>
+
+<script type="text/javascript">
+			$(document).ready(function() {
+				$("#twitter").getTwitter({
+					userName: "jquery",
+					numTweets: 5,
+					loaderText: "Loading tweets...",
+					slideIn: true,
+					slideDuration: 750,
+					showHeading: true,
+					headingText: "Latest Tweets",
+					showProfileLink: true,
+					showTimestamp: true
+				});
+			});
+		</script>
+
 </head>
 <body>
-	<table width="100%" cellpadding="0" cellspacing="0"
-		align='center'>
+	<table width="100%" cellpadding="0" cellspacing="0" align='center'>
 		<tr>
 			<td colspan="4" align="center"><a href="/"><img
 					src="/assets/images/fw2.jpg"> </a></td>
@@ -18,10 +41,13 @@
 				<li>Newsletter</li>
 				<li>Sign In</li>
 				<div>
-					<img src="/assets/images/facebook_logo.gif">
+					<a
+						href="http://www.facebook.com/pages/Fiddlers-Way/327959043905298"></a><img
+						src="/assets/images/facebook_logo.gif"></a>
 				</div>
 				<div>
-					<img src="/assets/images/twitter_logo.gif">
+					<a href="https://twitter.com/FiddlersWay"></a><img
+						src="/assets/images/twitter_logo.gif"></a>
 				</div>
 				<div>
 					<img src="/assets/images/linkedin_logo.gif">
@@ -29,51 +55,64 @@
 				<div>
 					<img src="/assets/images/youtube_logo.gif">
 				</div>
-				<li>Twitter Feed</li>
+				
+
+				<div id="twitter">
+					<p><a href="http://twitter.com/jquery">http://twitter.com/jquery</a></p>
+				</div>
+
+
+
 				<li>Tag Cloud</li>
 			</td>
 			<td width='400px' valign="top" bgcolor="#e8e9ea">
-			
-			<center><iframe width="560"
-					height="315" src="http://www.youtube.com/embed/KsgGB9v5CTs"
-					frameborder="0" allowfullscreen></iframe></center>
+
+				<center>
+					<iframe width="560" height="315"
+						src="http://www.youtube.com/embed/KsgGB9v5CTs" frameborder="0"
+						allowfullscreen></iframe>
+				</center>
 
 				<div class="vid-desc">"Definitely watch it... but in the near term,
 					I don't know how the stock is going to act... it may not hold up
 					that well in this market.."</div>
 				<h1>Most Recent Blog Posts</h1>
-				<h1>Most Recent Video Posts</h1> 
-				
-				<center><iframe width="560" height="315"
-					src="http://www.youtube.com/embed/B3an6Cnxs4A" frameborder="0"
-					allowfullscreen></iframe></center>
-					
-				<center><iframe width="560" height="315"
-					src="http://www.youtube.com/embed/J1A4PUZfVg8" frameborder="0"
-					allowfullscreen></iframe></center>
-					
-					
+				<h1>Most Recent Video Posts</h1>
+
+				<center>
+					<iframe width="560" height="315"
+						src="http://www.youtube.com/embed/B3an6Cnxs4A" frameborder="0"
+						allowfullscreen></iframe>
+				</center>
+
+				<center>
+					<iframe width="560" height="315"
+						src="http://www.youtube.com/embed/J1A4PUZfVg8" frameborder="0"
+						allowfullscreen></iframe>
+				</center>
+
+
 				<h1>IPO Preview</h1>
 
 				<div class="title">Is the Renewable Industry Renewable?</div>
-				<div class="post">Based in Ames, Iowa, Renewable Energy Group, (REGI), scheduled,
-					as the first initial public offering of 2012, a $100 million IPO
-					with a market capitalization of $401 million at a price range
-					mid-point of $14 for today, Thursday, January 19, 2011. REGI priced
-					last night (January 18) at $10, 28% below mid-range & now trades
-					flat. http://finance.yahoo.com/q?s=regi&ql=1 The stock opened on
-					the Nasdaq at $10.10, 1% above its target offering of $10.00. A
-					total of 7.2 million shares were sold, at prices well below the
-					expected mid-point range of $13-$15 per share. REGI's outlook
-					depends on politics, because - in our opinion - biodiesel without
-					mandates and subsidies is not a viable market. So we are neutral on
-					REGI at $10 today.</div>
+				<div class="post">Based in Ames, Iowa, Renewable Energy Group,
+					(REGI), scheduled, as the first initial public offering of 2012, a
+					$100 million IPO with a market capitalization of $401 million at a
+					price range mid-point of $14 for today, Thursday, January 19, 2011.
+					REGI priced last night (January 18) at $10, 28% below mid-range &
+					now trades flat. http://finance.yahoo.com/q?s=regi&ql=1 The stock
+					opened on the Nasdaq at $10.10, 1% above its target offering of
+					$10.00. A total of 7.2 million shares were sold, at prices well
+					below the expected mid-point range of $13-$15 per share. REGI's
+					outlook depends on politics, because - in our opinion - biodiesel
+					without mandates and subsidies is not a viable market. So we are
+					neutral on REGI at $10 today.</div>
 			</td>
 			<td width='200px' valign="top" bgcolor="#e8e9ea">
 				<h1>Track Record</h1>
-				<div class="post">TECHNOLOGY PLAY (1) One of our highest scored stocks of 2011
-					was InvenSense (INVN) INVN priced at $7.50 November 15 and is now
-					up 93% to $14.51 in about two months.
+				<div class="post">TECHNOLOGY PLAY (1) One of our highest scored
+					stocks of 2011 was InvenSense (INVN) INVN priced at $7.50 November
+					15 and is now up 93% to $14.51 in about two months.
 					http://finance.yahoo.com/q?s=INVN up93% in about two months It
 					traded in the immediate aftermarket at$8.25, and is up 76% in the
 					aftermarket. INVN pre-IPOreport
@@ -89,13 +128,13 @@
 					http://gaskinsco.com/linkto-uan.shtml At the pre-IPO price range
 					mid-point of $13, UAN was expected to yield 14.8%.</div>
 				<h1>In The News</h1>
-				<div class="post">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-					lobortis aliquet tortor, eu posuere tellus eleifend at. Quisque sed
-					justo velit, a congue justo. Sed commodo turpis id metus ultricies
-					ut egestas nisl ultrices. Ut urna turpis, pretium tincidunt
-					condimentum ac, facilisis vel enim. In placerat dolor ac felis
-					molestie hendrerit. Curabitur non urna eros. Cras tortor velit,
-					feugiat hendrerit euismod ornare, iaculis id mauris. Vivamus
+				<div class="post">Lorem ipsum dolor sit amet, consectetur adipiscing
+					elit. Donec lobortis aliquet tortor, eu posuere tellus eleifend at.
+					Quisque sed justo velit, a congue justo. Sed commodo turpis id
+					metus ultricies ut egestas nisl ultrices. Ut urna turpis, pretium
+					tincidunt condimentum ac, facilisis vel enim. In placerat dolor ac
+					felis molestie hendrerit. Curabitur non urna eros. Cras tortor
+					velit, feugiat hendrerit euismod ornare, iaculis id mauris. Vivamus
 					placerat, lacus vel condimentum auctor, arcu nulla porttitor
 					turpis, sed suscipit nisi est quis arcu. Donec commodo sollicitudin
 					massa, ac mattis sapien dictum quis. Fusce felis metus, pretium eu
