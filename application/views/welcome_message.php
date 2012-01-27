@@ -37,8 +37,17 @@
 		</tr>
 		<tr>
 			<td width='200px' valign="top" bgcolor="#e8e9ea" align="center">
-				<li>Newsletter</li>
-				<li>Sign In</li>
+				
+				<div>
+					<div class="title">Newsletter</div>
+					<input name="email" type="email"><input type="submit" value="Subscribe">
+				</div>
+				
+				<div>
+					<div class="title">Members</div>
+					<input name="email" type="email"><input type="submit" value="Log In">
+				</div>
+				
 				<div>
 					<a href="http://www.facebook.com/pages/Fiddlers-Way/327959043905298"><img
 						src="/assets/images/facebook_logo.gif"></a>
