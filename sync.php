@@ -4,14 +4,15 @@ if ($user != 'root'){
  die('Cron Job Only');
 }
 
-function checkGithub($user,$repo){
+
+$cookie = '';
 $myFile = "/gitbox/fiddlersway.pos";
 $command = "/gitbox/fiddlersway.sh";
 $fh = fopen($myFile, 'r');
 $preTest = fgets($fh);
 fclose($fh);
 $show=0;
-$loginURL = "http://github.com/api/v2/json/commits/list/$user/$repo/master";
+$loginURL = "https://github.com/api/v2/json/commits/list/insidenothing/Fiddlers-Way/master";
 $curl = curl_init();
 curl_setopt ($curl, CURLOPT_URL, $loginURL);
 curl_setopt ($curl, CURLOPT_TIMEOUT, '5');
@@ -33,14 +34,11 @@ exec($command, $retval);
 $fh = fopen($myFile, 'w') or die("can't open file");
 fwrite($fh, $test);
 fclose($fh);
-error_log("[".date('h:iA n/j/y')."] [".$repo."] [".$preTest."] [".$test."] \n", 3, '/logs/update.log');
+error_log("[".date('h:iA n/j/y')."] [insidenothing/Fiddlers-Way] [".$preTest."] [".$test."] \n", 3, '/logs/update.log');
 }
 
-}
 
 
-
-checkGithub('insidenothing','Fiddlers-Web');
 
 
 
