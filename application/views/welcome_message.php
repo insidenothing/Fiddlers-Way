@@ -57,7 +57,7 @@
 					the Nasdaq at $10.10, 1% above its target offering of $10.00. A
 					total of 7.2 million shares were sold, at prices well below the
 					expected mid-point range of $13-$15 per share. REGI's outlook
-					depends on politics, because – in our opinion – biodiesel without
+					depends on politics, because - in our opinion - biodiesel without
 					mandates and subsidies is not a viable market. So we are neutral on
 					REGI at $10 today.</div>
 			</td>
