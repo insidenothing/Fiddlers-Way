@@ -40,12 +40,12 @@
 				
 				<div>
 					<div class="title">Newsletter</div>
-					<input name="email" type="email"><input type="submit" value="Subscribe">
+					<input name="email" type="email" value="E-Mail Address" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'E-Mail Address':this.value;"><input type="submit" value="Subscribe">
 				</div>
 				
 				<div>
 					<div class="title">Members</div>
-					<input name="email" type="email"><input type="submit" value="Log In"><input type="submit" value="Sign Up">
+					<input name="email" type="email" value="E-Mail Address" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'E-Mail Address':this.value;"><input type="submit" value="Log In"><input type="submit" value="Sign Up">
 				</div>
 				
 				<div>
