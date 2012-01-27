@@ -6,7 +6,6 @@
 <link rel="stylesheet" type="text/css" href="/assets/css/common.css" />
 <script SRC="/assets/js/common.js" TYPE="text/javascript"></script>
 
-<link rel="stylesheet" href="/assets/css/demo.css" type="text/css" media="all">
 <link rel="stylesheet" href="/assets/css/jquery.twitter.css" type="text/css"
 	media="all">
 
