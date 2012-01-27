@@ -34,7 +34,10 @@ exec($command, $retval);
 $fh = fopen($myFile, 'w') or die("can't open file");
 fwrite($fh, $test);
 fclose($fh);
-mail('patrick@fiddlersway.com','Site Updated','The site has be auto updated from github.');
+mail('patrick@fiddlersway.com','Fiddlers Way Site Updated','The site has been updated from github. http://fiddlersway.com https://github.com/insidenothing/Fiddlers-Way/commits/master');
+mail('ned@barnettmarcom.com','Fiddlers Way Site Updated','The site has been updated from github. http://fiddlersway.com https://github.com/insidenothing/Fiddlers-Way/commits/master');
+mail('jube@netmediaconsultants.com','Fiddlers Way Site Updated','The site has been updated from github. http://fiddlersway.com https://github.com/insidenothing/Fiddlers-Way/commits/master');
+mail('sirdougmclean@hotmail.com','Fiddlers Way Site Updated','The site has been updated from github. http://fiddlersway.com https://github.com/insidenothing/Fiddlers-Way/commits/master');
 }
 
 
