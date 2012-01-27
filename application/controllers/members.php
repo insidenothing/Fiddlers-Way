@@ -12,7 +12,7 @@ class Members extends CI_Controller {
 	
 	
 	
-	public function index()
+	public function process()
 	{
 		$data['debug'] = 'starting login process';
 		$this->load->view('common_header');

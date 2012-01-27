@@ -37,18 +37,17 @@
 		</tr>
 		<tr>
 			<td width='200px' valign="top" bgcolor="#e8e9ea" align="center">
-				<form action="/newsletter/signup">
+				<form action="/newsletter/signup" method="POST">
 				<div>
 					<div class="title">Newsletter</div>
 					<input name="email" type="email" value="E-Mail Address" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'E-Mail Address':this.value;"><input type="submit" value="Subscribe">
 				</div>
 				</form>
 				
-				<form action="/membership/process">				
+				<form action="/membership/process" method="POST">				
 				<div>
 					<div class="title">Free Membership</div>
-					<input name="email" type="email" value="E-Mail Address" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'E-Mail Address':this.value;"><br>
-					<input name="action" type="submit" value="Log In"><input name="action" type="submit" value="Sign Up">
+					<input name="email" type="email" value="E-Mail Address" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'E-Mail Address':this.value;"><input name="action" type="submit" value="Log In"><input name="action" type="submit" value="Sign Up">
 					<!-- if we do not have a user to log in, start new user process -->
 				</div>
 				</form>
