@@ -7,7 +7,7 @@
 <script SRC="/assets/js/common.js" TYPE="text/javascript"></script>
 </head>
 <body>
-	<table width="95%" cellpadding="0" cellspacing="0" border="1"
+	<table width="95%" cellpadding="0" cellspacing="0"
 		align='center'>
 		<tr>
 			<td colspan="4" align="center"><a href="/"><img
@@ -34,19 +34,25 @@
 			</td>
 			<td width='400px' valign="top" bgcolor="#e8e9ea">
 			
-			<iframe width="560"
+			<center><iframe width="560"
 					height="315" src="http://www.youtube.com/embed/KsgGB9v5CTs"
-					frameborder="0" allowfullscreen></iframe>
+					frameborder="0" allowfullscreen></iframe></center>
 
 				<div class="vid-desc">"Definitely watch it... but in the near term,
 					I don't know how the stock is going to act... it may not hold up
 					that well in this market.."</div>
 				<h1>Most Recent Blog Posts</h1>
-				<h1>Most Recent Video Posts</h1> <iframe width="560" height="315"
+				<h1>Most Recent Video Posts</h1> 
+				
+				<center><iframe width="560" height="315"
 					src="http://www.youtube.com/embed/B3an6Cnxs4A" frameborder="0"
-					allowfullscreen></iframe> <iframe width="560" height="315"
+					allowfullscreen></iframe></center>
+					
+				<center><iframe width="560" height="315"
 					src="http://www.youtube.com/embed/J1A4PUZfVg8" frameborder="0"
-					allowfullscreen></iframe>
+					allowfullscreen></iframe></center>
+					
+					
 				<h1>IPO Preview</h1>
 
 				<div class="title">Is the Renewable Industry Renewable?</div>
