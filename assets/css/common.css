@@ -38,3 +38,15 @@ p {
 	font-family: Times New Roman;
 	text-shadow: -1px -1px 1px #FFFFFF;
 }
+
+.post{
+	color: #000000;
+	font-family: Times New Roman;
+	text-shadow: -1px -1px 1px #FFFFFF;	
+}
+.title{
+	color: #002B54;
+	font-family: Georgia;
+	font-style: italic;
+	text-shadow: -1px -1px 1px #FFFFFF;
+}
