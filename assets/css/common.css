@@ -1,0 +1,40 @@
+table {
+	border-collapse: collapse;
+}
+
+body {
+	background-image: url('/assets/images/wood7.bmp');
+	background-attachment: fixed;
+}
+
+.violin {
+	background-image: url('/assets/images/wood8.bmp');
+	background-attachment: fixed;
+	background-repeat: repeat-y;
+	background-position: top right;
+}
+
+.vid-desc {
+	padding: 5px;
+	border: solid 1px #999;
+}
+
+h1,a {
+	color: #002B54;
+	font-family: Georgia;
+	font-style: italic;
+	text-shadow: -1px -1px 1px #FFFFFF;
+}
+
+h3 {
+	color: #000000;
+	font-family: Georgia;
+	font-style: italic;
+	text-shadow: -1px -1px 1px #FFFFFF;
+}
+
+p {
+	color: #000000;
+	font-family: Times New Roman;
+	text-shadow: -1px -1px 1px #FFFFFF;
+}
