@@ -45,7 +45,7 @@
 				
 				<div>
 					<div class="title">Members</div>
-					<input name="email" type="email"><input type="submit" value="Log In">
+					<input name="email" type="email"><input type="submit" value="Log In"><input type="submit" value="Sign Up">
 				</div>
 				
 				<div>
