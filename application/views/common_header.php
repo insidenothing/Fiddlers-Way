@@ -37,18 +37,22 @@
 		</tr>
 		<tr>
 			<td width='200px' valign="top" bgcolor="#e8e9ea" align="center">
-				
+				<form action="/newsletter/signup">
 				<div>
 					<div class="title">Newsletter</div>
 					<input name="email" type="email" value="E-Mail Address" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'E-Mail Address':this.value;"><input type="submit" value="Subscribe">
 				</div>
+				</form>
 				
+				<form action="/membership/process">				
 				<div>
 					<div class="title">Free Membership</div>
 					E-Mail: <input name="email" type="email"><br>
 					Password:<input name="password" type="password"><br>
-					<input type="submit" value="Log In"><input type="submit" value="Sign Up">
+					<input name="action" type="submit" value="Log In"><input name="action" type="submit" value="Sign Up">
+					<!-- if we do not have a user to log in, start new user process -->
 				</div>
+				</form>
 				
 				<div>
 					<a href="http://www.facebook.com/pages/Fiddlers-Way/327959043905298"><img
