@@ -5,6 +5,8 @@ table {
 body {
 	background-image: url('/assets/images/wood7.bmp');
 	background-attachment: fixed;
+	padding:0px;
+	margin:0px;
 }
 
 .violin {

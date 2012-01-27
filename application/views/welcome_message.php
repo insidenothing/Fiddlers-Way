@@ -7,7 +7,7 @@
 <script SRC="/assets/js/common.js" TYPE="text/javascript"></script>
 </head>
 <body>
-	<table width="95%" cellpadding="0" cellspacing="0"
+	<table width="100%" cellpadding="0" cellspacing="0"
 		align='center'>
 		<tr>
 			<td colspan="4" align="center"><a href="/"><img
