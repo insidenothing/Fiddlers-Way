@@ -40,12 +40,11 @@
 				<li>Newsletter</li>
 				<li>Sign In</li>
 				<div>
-					<a
-						href="http://www.facebook.com/pages/Fiddlers-Way/327959043905298"></a><img
+					<a href="http://www.facebook.com/pages/Fiddlers-Way/327959043905298"><img
 						src="/assets/images/facebook_logo.gif"></a>
 				</div>
 				<div>
-					<a href="https://twitter.com/FiddlersWay"></a><img
+					<a href="https://twitter.com/FiddlersWay"><img
 						src="/assets/images/twitter_logo.gif"></a>
 				</div>
 				<div>
