@@ -7,7 +7,7 @@
 <script SRC="/assets/js/common.js" TYPE="text/javascript"></script>
 </head>
 <body>
-	<table width="100%" cellpadding="0" cellspacing="0" border="1"
+	<table width="95%" cellpadding="0" cellspacing="0" border="1"
 		align='center'>
 		<tr>
 			<td colspan="4" align="center"><a href="/"><img
@@ -32,7 +32,9 @@
 				<li>Twitter Feed</li>
 				<li>Tag Cloud</li>
 			</td>
-			<td width='400px' valign="top" bgcolor="#e8e9ea"><iframe width="560"
+			<td width='400px' valign="top" bgcolor="#e8e9ea">
+			
+			<iframe width="560"
 					height="315" src="http://www.youtube.com/embed/KsgGB9v5CTs"
 					frameborder="0" allowfullscreen></iframe>
 
