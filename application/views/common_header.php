@@ -47,8 +47,7 @@
 				<form action="/membership/process">				
 				<div>
 					<div class="title">Free Membership</div>
-					E-Mail: <input name="email" type="email"><br>
-					Password:<input name="password" type="password"><br>
+					<input name="email" type="email" value="E-Mail Address" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'E-Mail Address':this.value;"><br>
 					<input name="action" type="submit" value="Log In"><input name="action" type="submit" value="Sign Up">
 					<!-- if we do not have a user to log in, start new user process -->
 				</div>
