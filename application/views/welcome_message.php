@@ -72,7 +72,6 @@
 
 
 
-				<li>Tag Cloud</li>
 			</td>
 			<td width='400px' valign="top" bgcolor="#e8e9ea">
 
@@ -119,23 +118,28 @@
 			</td>
 			<td width='200px' valign="top" bgcolor="#e8e9ea">
 				<h1>Track Record</h1>
-				<div class="post">TECHNOLOGY PLAY (1) One of our highest scored
-					stocks of 2011 was InvenSense (INVN) INVN priced at $7.50 November
-					15 and is now up 93% to $14.51 in about two months.
-					http://finance.yahoo.com/q?s=INVN up93% in about two months It
+				<div class="title">TECHNOLOGY PLAY</div>
+				<div class="post">
+				 <p>(1) One of our highest scored stocks of 2011 was InvenSense (INVN) INVN priced at $7.50 November
+					15 and is now up 93% to $14.51 in about two months.	http://finance.yahoo.com/q?s=INVN up93% in about two months It
 					traded in the immediate aftermarket at$8.25, and is up 76% in the
-					aftermarket. INVN pre-IPOreport
-					http://gaskinsco.com/linkto-invn.shtml TWO HIGH YIELD PLAYS (2)
-					Another favorite IPO from 2011 is Chesapeake Granite Wash Trust
+					aftermarket. INVN pre-IPOreport</p>
+					http://gaskinsco.com/linkto-invn.shtml 
+				</div>
+					
+				<div class="title">TWO HIGH YIELD PLAYS</div>
+				<div class="post">
+					<p>(2) Another favorite IPO from 2011 is Chesapeake Granite Wash Trust
 					(CHKR) which IPO.d November 10, 2011 at $19 traded down a little
 					and today is $23.22, up 22%. And at $19 CHKR was projected pay a
-					yield in 2012 of 13% CHKR pre-IPOreport
-					http://gaskinsco.com/linkto-chkr.shtml (3) We always liked CVR
+					yield in 2012 of 13% CHKR pre-IPOreport</p>
+					http://gaskinsco.com/linkto-chkr.shtml 
+					<p>(3) We always liked CVR
 					Partners (UAN), because of it yield and its business. UAN IPO.d
 					April 7, 2011 at $16, and now trades up 75% at $27.98.
 					http://finance.yahoo.com/q?s=uan&ql=1 UAN pre-IPOreport
 					http://gaskinsco.com/linkto-uan.shtml At the pre-IPO price range
-					mid-point of $13, UAN was expected to yield 14.8%.</div>
+					mid-point of $13, UAN was expected to yield 14.8%.</p></div>
 				<h1>In The News</h1>
 				<div class="post">Lorem ipsum dolor sit amet, consectetur adipiscing
 					elit. Donec lobortis aliquet tortor, eu posuere tellus eleifend at.
