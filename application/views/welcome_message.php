@@ -45,7 +45,9 @@
 				
 				<div>
 					<div class="title">Members</div>
-					<input name="email" type="email" value="E-Mail Address" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'E-Mail Address':this.value;"><input type="submit" value="Log In"><input type="submit" value="Sign Up">
+					E-Mail: <input name="email" type="email"><br>
+					Password:<input name="password" type="password"><br>
+					<input type="submit" value="Log In"><input type="submit" value="Sign Up">
 				</div>
 				
 				<div>
