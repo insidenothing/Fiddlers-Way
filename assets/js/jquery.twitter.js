@@ -52,7 +52,7 @@
 
 			// add Twitter profile link to container element
 			if (o.showProfileLink) {
-				var profileLinkHTML = "<p class=\"profileLink\"><a href=\"http://twitter.com/"+o.userName+"\">http://twitter.com/"+o.userName+"</a></p>";
+				var profileLinkHTML = "<p class=\"profileLink\"><a href=\"http://twitter.com/"+o.userName+"\">@"+o.userName+"</a></p>";
 				c.append(profileLinkHTML);
 			}
 
