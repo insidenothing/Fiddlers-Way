@@ -34,7 +34,7 @@ exec($command, $retval);
 $fh = fopen($myFile, 'w') or die("can't open file");
 fwrite($fh, $test);
 fclose($fh);
-error_log("[".date('h:iA n/j/y')."] [insidenothing/Fiddlers-Way] [".$preTest."] [".$test."] \n", 3, '/logs/update.log');
+mail('patrick@fiddlersway.com','Site Updated','The site has be auto updated from github.');
 }
 
 
