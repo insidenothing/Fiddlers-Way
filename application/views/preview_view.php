@@ -1,3 +1,4 @@
+<h1>IPO Preview</h1>
 <div class="title">Is the Renewable Industry Renewable?</div>
 <div class="post">Based in Ames, Iowa, Renewable Energy Group, (REGI),
 	scheduled, as the first initial public offering of 2012, a $100 million
