@@ -1,4 +1,4 @@
-newsletter view
+<h1>Newsletter Settings</h1>
 
 
 <?php if (isset($debug)){?>
