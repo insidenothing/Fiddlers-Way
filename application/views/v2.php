@@ -701,19 +701,12 @@ body.custom-background {
 					<div class="block">
 						<div class="block-border">
 							<div class="block-content">
-								<div id="search-2" class="widget widget_search">
-									<h4 class="widgettitle"></h4>
-									<div class="widgetcontent">
-										<form method="get" id="searchform"
-											action="http://www.fiddlersway.com/">
-
+								
 											<div>
-												<input type="text" value="" name="s" id="s" /> <input
-													type="submit" id="searchsubmit" value="Search" />
+												<input type="text" value="" name="s" id="s" />
+												<input type="submit" id="searchsubmit" value="Search" />
 											</div>
-										</form>
-									</div>
-								</div>
+										
 								<!-- end .widget -->
 							</div>
 							<!-- end .block-content -->
@@ -985,7 +978,6 @@ body.custom-background {
 											value="http://www.fiddlersway.com/" /> <input type="hidden"
 											name="sub-type" value="widget" /> <input type="hidden"
 											name="redirect_fragment" value="blog_subscription-2" /> <input
-											type="hidden" id="_wpnonce" name="_wpnonce"
 											value="da9acef15e" /> <input type="submit" value="Join Now!"
 											name="jetpack_subscriptions_widget" />
 									</p>
