@@ -1,3 +1,26 @@
+/*------------------------------------------------*/
+/*-------------------[MY CODE]------------------*/
+/*------------------------------------------------*/
+
+body.custom-background {
+	background-image:
+		url('http://insidenothing.com/wp-content/uploads/2012/02/start_wood_rpt.jpg');
+	background-repeat: repeat;
+	background-position: center;
+	background-attachment: fixed;
+	color: #232323;
+    font-family: 'Droid Sans',Arial,Verdana,sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+/*------------------------------------------------*/
+/*-------------------[OLD CODE]------------------*/
+/*------------------------------------------------*/
+
+
+
 #et_pt_portfolio_gallery {
 	margin-left: -11px;
 }
@@ -20,13 +43,6 @@
 
 .et_portfolio_large .et_pt_portfolio_item {
 	margin-left: 14px !important;
-}
-body.custom-background {
-	background-image:
-		url('http://insidenothing.com/wp-content/uploads/2012/02/start_wood_rpt.jpg');
-	background-repeat: repeat;
-	background-position: center;
-	background-attachment: fixed;
 }
 #container,#container2 {
 	background: #;
@@ -530,13 +546,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-body {
-   
-    color: #232323;
-    font-family: 'Droid Sans',Arial,Verdana,sans-serif;
-    font-size: 12px;
-    line-height: 18px;
-}
+
 a {
     color: #00B7F3;
     text-decoration: none;
