@@ -698,10 +698,10 @@ body.custom-background {
 					</div>
 					<!-- end .block -->
 
-					<div class="block" style="height:100px;">
-						<div class="block-border" style="height:95px;">
+					<div class="block">
+						<div class="block-border">
 						
-							<div class="block-content" style="height:90px;">
+							<div class="block-content">
 								
 											<div>
 												<input type="text" value="Search Fiddlers Way" size="15" name="s" id="s" /><input type="submit" id="searchsubmit" value="Search" />
