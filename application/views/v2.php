@@ -229,6 +229,20 @@ http://finance.yahoo.com/q?s=uan&ql=1.  At the pre-IPO price range mid-point of 
 	<div id="featured-overlay"></div>
 	<div id="slides">
 	
+		heloo
+		
+		
+		<center>
+	<iframe width="560" height="315"
+		src="http://www.youtube.com/embed/KsgGB9v5CTs" frameborder="0"
+		allowfullscreen></iframe>
+</center>
+
+<div class="vid-desc">"Definitely watch it... but in the near term, I
+	don't know how the stock is going to act... it may not hold up that
+	well in this market.."</div>
+		
+		
 			
 	</div> <!-- end #slides -->
 			
