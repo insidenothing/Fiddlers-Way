@@ -240,16 +240,16 @@ img#about-image {
     margin-right: 0;
 }
 .border {
-    background: url("images/border-bg.png") no-repeat scroll left top transparent;
+    background: url("/assets/images/border-bg.png") no-repeat scroll left top transparent;
     border: 1px solid #FFFFFF;
     padding-top: 4px;
 }
 .bottom {
-    background: url("images/bottom-bg.png") no-repeat scroll left bottom transparent;
+    background: url("/assets/images/bottom-bg.png") no-repeat scroll left bottom transparent;
     padding-bottom: 7px;
 }
 .entry-content {
-    background: url("images/entry-content-bg.png") repeat-y scroll 0 0 transparent;
+    background: url("/assets/images/entry-content-bg.png") repeat-y scroll 0 0 transparent;
     padding: 23px 12px 7px 19px;
 }
 .entry-content h3.title {
@@ -1291,9 +1291,9 @@ img#about-image { float: left; margin: 3px 8px 8px 0px; }
 		#main-content {float: left; width: 476px;}
 			.entry { border-top: 1px solid #e1e1e1; border-left: 1px solid #e1e1e1; border-bottom: 1px solid #cdcdcd; border-right: 1px solid #cdcdcd; width: 229px; margin: 12px 13px 2px 0px; float: left; }
 			.last {margin-right: 0px;}
-				.border {border: 1px solid #fff; padding-top: 4px; background: url(images/border-bg.png) no-repeat top left;}
-				.bottom {padding-bottom: 7px; background: url(images/bottom-bg.png) no-repeat bottom left;}
-				.entry-content {background: url(images/entry-content-bg.png) repeat-y; padding: 23px 12px 7px 19px;}
+				.border {border: 1px solid #fff; padding-top: 4px; background: url(/assets/images/border-bg.png) no-repeat top left;}
+				.bottom {padding-bottom: 7px; background: url(/assets/images/bottom-bg.png) no-repeat bottom left;}
+				.entry-content {background: url(/assets/images/entry-content-bg.png) repeat-y; padding: 23px 12px 7px 19px;}
 					.entry-content h3.title {font-size: 24px; font-family: 'OFL Sorts Mill Goudy TT', Georgia, serif; padding-bottom: 10px; text-align: center;}
 						.entry-content h3.title a {color: #3d3d3d; text-decoration: none;}
 						.entry-content h3.title a:hover, .entry-content a.readmore:hover { color:#000000; }
