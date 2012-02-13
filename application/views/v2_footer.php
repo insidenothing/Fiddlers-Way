@@ -313,40 +313,19 @@
 <div id="follow" class="right">
 	<ul class="tab down">
 		<li class="follow"><img
-			src="http://www.fiddlersway.com/wp-content/plugins/share-and-follow/images/blank.gif"
+			src="/assets/images/blank.gif"
 			alt="follow:" /><span>follow:</span></li>
 		<li class="iconOnly"><a rel="nofollow me" target="_blank"
 			href="http://www.fiddlersway.com/feed/rss" title="RSS"><img
-				src="http://www.fiddlersway.com/wp-content/plugins/share-and-follow/images/blank.gif"
+				src="/assets/images/blank.gif"
 				height="24" width="24"
-				style="background: transparent url(http://www.fiddlersway.com/wp-content/plugins/share-and-follow/default/24/sprite-24.png) no-repeat; padding: 0; margin: 0; height: 24px; width: 24px; background-position: -1100px 0px"
+				style="background: transparent url(/assets/images/sprite-24.png) no-repeat; padding: 0; margin: 0; height: 24px; width: 24px; background-position: -1100px 0px"
 				alt="RSS" /> <span class="head">RSS</span> </a></li>
 	</ul>
 </div>
-<script
-	type='text/javascript'
-	src='http://s.gravatar.com/js/gprofiles.js?aa&#038;ver=3.3.1'></script>
-/*
-<![CDATA[ */
-<script type='text/javascript'>
-var WPGroHo = {"my_hash":""};
-/* ]]>
-*/
-</script>
-<script
-	type='text/javascript'
-	src='http://www.fiddlersway.com/wp-content/plugins/jetpack/modules/wpgroho.js?ver=3.3.1'></script>
-<div style="display: none"></div>
 
-<script
-	type='text/javascript'
-	src='http://www.fiddlersway.com/wp-content/themes/Magnificent/epanel/page_templates/js/fancybox/jquery.easing-1.3.pack.js?ver=1.3.4'></script>
-<script
-	type='text/javascript'
-	src='http://www.fiddlersway.com/wp-content/themes/Magnificent/epanel/page_templates/js/fancybox/jquery.fancybox-1.3.4.pack.js?ver=1.3.4'></script>
-<script
-	type='text/javascript'
-	src='http://www.fiddlersway.com/wp-content/themes/Magnificent/epanel/page_templates/js/et-ptemplates-frontend.js?ver=1.1'></script>
+
+<div style="display: none"></div>
 
 </body>
 </html>
