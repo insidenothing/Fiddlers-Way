@@ -431,7 +431,7 @@ The pending Facebook Initial Public Offering – IPO – will put, at least for the 
 				<div class="container">
 					 
 										
-					<p id="copyright">Designed by  <a href="http://www.elegantthemes.com" title="Elegant Themes">Elegant Themes</a> | Powered by  <a href="http://www.wordpress.org">WordPress</a></p>
+					<p id="copyright">&copy 2012 Fiddlers Way; <b>Francis Gaskins</b> and <b>Doug McLean</b></p>
 
 				</div> <!-- end .container -->
 			</div> <!-- end #footer-content -->
@@ -525,12 +525,5 @@ var WPGroHo = {"my_hash":""};
 <script type='text/javascript' src='http://www.fiddlersway.com/wp-content/themes/Magnificent/epanel/page_templates/js/fancybox/jquery.fancybox-1.3.4.pack.js?ver=1.3.4'></script>
 <script type='text/javascript' src='http://www.fiddlersway.com/wp-content/themes/Magnificent/epanel/page_templates/js/et-ptemplates-frontend.js?ver=1.1'></script>
 
-	<script src="http://stats.wordpress.com/e-201207.js" type="text/javascript"></script>
-	<script type="text/javascript">
-	st_go({v:'ext',j:'1:1.2.2',blog:'32596429',post:'0'});
-	var load_cmc = function(){linktracker_init(32596429,0,2);};
-	if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
-	else load_cmc();
-	</script>	
 </body>
 </html>			
