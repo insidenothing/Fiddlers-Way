@@ -192,7 +192,7 @@
 				<div class="entry-content clearfix">
 					<h3 class="title">
 						<a href="http://www.fiddlersway.com/archives/20">The Facebook IPO
-							Basics … The...</a>
+							Basics</a>
 					</h3>
 					<p class="meta-info">
 						Feb 1, 2012 <span>by</span> <a
@@ -201,8 +201,8 @@
 					</p>
 
 
-					<p>Summary/Overview The pending Facebook Initial Public Offering –
-						IPO – will put, at least for the moment, put IPOs on the map,...</p>
+					<p>Summary/Overview The pending Facebook Initial Public Offering -
+						IPO - will put, at least for the moment, put IPOs on the map,...</p>
 					<a href="http://www.fiddlersway.com/archives/20" class="readmore"><span>read
 							more</span> </a>
 				</div>

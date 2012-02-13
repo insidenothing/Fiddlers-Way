@@ -16,11 +16,11 @@
 
 <link rel="stylesheet" href="/assets/css/v2.css" type="text/css"
 	media="screen" />
-	
+
 <link rel="alternate" type="application/rss+xml"
 	title="Fiddler&#039;s Way RSS Feed"
 	href="http://www.fiddlersway.com/feed" />
-	
+
 <link rel="alternate" type="application/atom+xml"
 	title="Fiddler&#039;s Way Atom Feed"
 	href="http://www.fiddlersway.com/feed/atom" />
@@ -52,21 +52,19 @@
 	title="Fiddler&#039;s Way &raquo; Comments Feed"
 	href="http://www.fiddlersway.com/comments/feed" />
 
-<link rel="stylesheet"
-	href="/assets/css/style-Wooden.css"
+<link rel="stylesheet" href="/assets/css/style-Wooden.css"
 	type="text/css" media="screen" />
 
 <link rel='stylesheet' id='et-shortcodes-css-css'
-	href='/assets/css/shortcodes.css?ver=2.0'
-	type='text/css' media='all' />
+	href='/assets/css/shortcodes.css?ver=2.0' type='text/css' media='all' />
 
 <link rel='stylesheet' id='fancybox-css'
-	href='/assets/css/jquery.fancybox-1.3.4.css?ver=1.3.4'
-	type='text/css' media='screen' />
+	href='/assets/css/jquery.fancybox-1.3.4.css?ver=1.3.4' type='text/css'
+	media='screen' />
 
 <link rel='stylesheet' id='et_page_templates-css'
-	href='/assets/css/page_templates.css?ver=1.8'
-	type='text/css' media='screen' />
+	href='/assets/css/page_templates.css?ver=1.8' type='text/css'
+	media='screen' />
 
 <script type='text/javascript'
 	src='/assets/js/jquery/jquery.js?ver=1.7.1'></script>
@@ -95,8 +93,7 @@
 		<div id="header">
 			<div class="container">
 				<a href="http://www.fiddlersway.com"> <img
-					src="/assets/images/fw2.jpg"
-					alt="Magnificent Logo" id="logo" /> </a>
+					src="/assets/images/fw2.jpg" alt="Magnificent Logo" id="logo" /> </a>
 				<p id="slogan">
 					Timely, On-Target IPO Info <span>by</span> Francis Gaskins and Doug
 					McLean
@@ -227,8 +224,15 @@
 							<div class="block-content">
 								<h4 class="widgettitle">Search Resources</h4>
 								<div>
-									<input type="text" value="Enter Search Here..." size="15" /><input
-										type="submit" value="Search" />
+									<table>
+										<tr>
+											<td><input type="text" value="Enter Search Here..." size="15" />
+											</td>
+											<td><input type="submit" value="Search" /></td>
+											</td>
+										</tr>
+									</table>
+
 								</div>
 
 								<!-- end .widget -->
