@@ -226,14 +226,11 @@ http://finance.yahoo.com/q?s=uan&ql=1.  At the pre-IPO price range mid-point of 
 	<div id="main-content">
 	
 		<div id="featured">
-	<div id="featured-overlay"></div>
-	<div id="slides">
 	
-		heloo
-		
-		
+	<div id="latest-video">
+	
 		<center>
-	<iframe width="560" height="315"
+	<iframe width="480" height="315"
 		src="http://www.youtube.com/embed/KsgGB9v5CTs" frameborder="0"
 		allowfullscreen></iframe>
 </center>
