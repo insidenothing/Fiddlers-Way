@@ -698,9 +698,9 @@ body.custom-background {
 					</div>
 					<!-- end .block -->
 
-					<div class="block" style="height:200px;">
+					<div class="block" style="height:100px;">
 						<div class="block-border">
-							<div class="block-content">
+							<div class="block-content" style="height:95px;">
 								
 											<div>
 												<input type="text" value="" name="s" id="s" />
