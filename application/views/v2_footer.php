@@ -26,12 +26,7 @@
 							</p>
 
 							<p>
-								<input type="hidden" name="action" value="subscribe" /> <input
-									type="hidden" name="source" value="http://www.fiddlersway.com/" />
-								<input type="hidden" name="sub-type" value="widget" /> <input
-									type="hidden" name="redirect_fragment"
-									value="blog_subscription-2" /> <input value="da9acef15e" /> <input
-									type="submit" value="Join Now!"
+								<input type="submit" value="Join Now!"
 									name="jetpack_subscriptions_widget" />
 							</p>
 						</form>
@@ -312,13 +307,11 @@
 	</script>
 <div id="follow" class="right">
 	<ul class="tab down">
-		<li class="follow"><img
-			src="/assets/images/blank.gif"
-			alt="follow:" /><span>follow:</span></li>
+		<li class="follow"><img src="/assets/images/blank.gif" alt="follow:" /><span>follow:</span>
+		</li>
 		<li class="iconOnly"><a rel="nofollow me" target="_blank"
 			href="http://www.fiddlersway.com/feed/rss" title="RSS"><img
-				src="/assets/images/blank.gif"
-				height="24" width="24"
+				src="/assets/images/blank.gif" height="24" width="24"
 				style="background: transparent url(/assets/images/sprite-24.png) no-repeat; padding: 0; margin: 0; height: 24px; width: 24px; background-position: -1100px 0px"
 				alt="RSS" /> <span class="head">RSS</span> </a></li>
 	</ul>
