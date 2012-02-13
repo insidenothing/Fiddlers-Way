@@ -230,7 +230,7 @@ http://finance.yahoo.com/q?s=uan&ql=1.  At the pre-IPO price range mid-point of 
 	<div id="latest-video">
 	
 		<center>
-	<iframe width="480" height="315"
+	<iframe width="450" height="300"
 		src="http://www.youtube.com/embed/KsgGB9v5CTs" frameborder="0"
 		allowfullscreen></iframe>
 </center>
@@ -243,9 +243,7 @@ http://finance.yahoo.com/q?s=uan&ql=1.  At the pre-IPO price range mid-point of 
 			
 	</div> <!-- end #slides -->
 			
-	<a href="#" id="left-arrow">Previous</a>
 
-	<a href="#" id="right-arrow">Next</a>
 	
 </div>	<!-- end #featured -->	
 	

@@ -563,7 +563,7 @@ ul.nav > li.current-menu-item > a, ul.nav > li.current_page_item > a, ul.nav > l
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
 }
 #featured {
-    height: 279px;
+    height: 350px;
     padding: 7px 0 0 7px;
     position: relative;
     width: 469px;
