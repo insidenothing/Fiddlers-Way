@@ -92,7 +92,7 @@
 		<div id="header">
 			<div class="container">
 				<a href="http://www.fiddlersway.com"> <img
-					src="http://www.fiddlersway.com/wp-content/uploads/2012/02/fw2.jpg"
+					src="/assets/images/fw2.jpg"
 					alt="Magnificent Logo" id="logo" /> </a>
 				<p id="slogan">
 					Timely, On-Target IPO Info <span>by</span> Francis Gaskins and Doug
