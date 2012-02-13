@@ -12,10 +12,10 @@
 
 <link href='http://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT:regular,italic&subset=latin' rel='stylesheet' type='text/css'/>
 
-<link rel="stylesheet" href="http://www.fiddlersway.com/wp-content/themes/Magnificent/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/assets/css/v2.css" type="text/css" media="screen" />
 <link rel="alternate" type="application/rss+xml" title="Fiddler&#039;s Way RSS Feed" href="http://www.fiddlersway.com/feed" />
 <link rel="alternate" type="application/atom+xml" title="Fiddler&#039;s Way Atom Feed" href="http://www.fiddlersway.com/feed/atom" />
-<link rel="pingback" href="http://www.fiddlersway.com/xmlrpc.php" />
+
 
 <!--[if lt IE 7]>
 	<link rel="stylesheet" type="text/css" href="http://www.fiddlersway.com/wp-content/themes/Magnificent/css/ie6style.css" />
@@ -37,7 +37,7 @@
 <style type='text/css' media='screen' >.socialwrap li.icon_text a img, .socialwrap li.iconOnly a img, .followwrap li.icon_text a img, .followwrap li.iconOnly a img{border-width:0 !important;background-color:none;}#follow.right {width:32px;position:fixed; right:0; top:100px;background-color:#878787;padding:10px 0;font-family:impact,charcoal,arial, helvetica,sans-serif;-moz-border-radius-topleft: 5px;-webkit-border-top-left-radius:5px;-moz-border-radius-bottomleft:5px;-webkit-border-bottom-left-radius:5px;border:2px solid #fff;border-right-width:0}#follow.right ul {padding:0; margin:0; list-style-type:none !important;font-size:24px;color:black;}
 #follow.right ul li {padding-bottom:10px;list-style-type:none !important;padding-left:4px;padding-right:4px}
 #follow img{border:none;}#follow.right ul li.follow {margin:0 4px;}
-#follow.right ul li.follow img {border-width:0;display:block;overflow:hidden; background:transparent url(http://www.fiddlersway.com/wp-content/plugins/share-and-follow/images/impact/follow-right.png) no-repeat -0px 0px;height:79px;width:20px;}
+#follow.right ul li.follow img {border-width:0;display:block;overflow:hidden; background:transparent url(/assets/images/follow-right.png) no-repeat -0px 0px;height:79px;width:20px;}
 #follow.right ul li a {display:block;}
 #follow.right ul li.follow span, #follow ul li a span {display:none}.share {margin:0 3px 3px 0;}
 .phat span {display:inline;}
@@ -64,7 +64,7 @@ div.display_none {display:none;}
 .button_holder_left{margin-right:5px;display:inline}.button_holder_right{margin-left:5px;display:inline}.button_holder_show_interactive{display:inline}</style><style type='text/css' media='print' >.socialwrap li.icon_text a img, .socialwrap li.iconOnly a img, .followwrap li.icon_text a img, .followwrap li.iconOnly a img{border-width:0 !important;background-color:none;}#follow.right {width:32px;position:fixed; right:0; top:100px;background-color:#878787;padding:10px 0;font-family:impact,charcoal,arial, helvetica,sans-serif;-moz-border-radius-topleft: 5px;-webkit-border-top-left-radius:5px;-moz-border-radius-bottomleft:5px;-webkit-border-bottom-left-radius:5px;border:2px solid #fff;border-right-width:0}#follow.right ul {padding:0; margin:0; list-style-type:none !important;font-size:24px;color:black;}
 #follow.right ul li {padding-bottom:10px;list-style-type:none !important;padding-left:4px;padding-right:4px}
 #follow img{border:none;}#follow.right ul li.follow {margin:0 4px;}
-#follow.right ul li.follow img {border-width:0;display:block;overflow:hidden; background:transparent url(http://www.fiddlersway.com/wp-content/plugins/share-and-follow/images/impact/follow-right.png) no-repeat -0px 0px;height:79px;width:20px;}
+#follow.right ul li.follow img {border-width:0;display:block;overflow:hidden; background:transparent url(/assets/images/follow-right.png) no-repeat -0px 0px;height:79px;width:20px;}
 #follow.right ul li a {display:block;}
 #follow.right ul li.follow span, #follow ul li a span {display:none}.share {margin:0 3px 3px 0;}
 .phat span {display:inline;}
@@ -103,17 +103,24 @@ div.display_none {display:none;}
 	</style>
 
 <link rel='stylesheet' id='et-shortcodes-css-css'  href='http://www.fiddlersway.com/wp-content/themes/Magnificent/epanel/shortcodes/shortcodes.css?ver=2.0' type='text/css' media='all' />
-<link rel='stylesheet' id='sharedaddy-css'  href='http://www.fiddlersway.com/wp-content/plugins/jetpack/modules/sharedaddy/sharing.css?ver=3.3.1' type='text/css' media='all' />
+
 <link rel='stylesheet' id='fancybox-css'  href='http://www.fiddlersway.com/wp-content/themes/Magnificent/epanel/page_templates/js/fancybox/jquery.fancybox-1.3.4.css?ver=1.3.4' type='text/css' media='screen' />
+
 <link rel='stylesheet' id='et_page_templates-css'  href='http://www.fiddlersway.com/wp-content/themes/Magnificent/epanel/page_templates/page_templates.css?ver=1.8' type='text/css' media='screen' />
+
 <script type='text/javascript' src='http://www.fiddlersway.com/wp-includes/js/jquery/jquery.js?ver=1.7.1'></script>
+
 <script type='text/javascript' src='http://www.fiddlersway.com/wp-content/themes/Magnificent/epanel/shortcodes/js/et_shortcodes_frontend.js?ver=2.0'></script>
+
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.fiddlersway.com/xmlrpc.php?rsd" />
+
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.fiddlersway.com/wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 3.3.1" />
+
 <link rel='shortlink' href='http://wp.me/2cLOR' />
+
 <style type="text/css">
-body.custom-background { background-image: url('http://www.fiddlersway.com/wp-content/uploads/2012/02/wood956334081.jpg'); background-repeat: repeat; background-position: top left; background-attachment: scroll; }
+body.custom-background { background-image: url('http://insidenothing.com/wp-content/uploads/2012/02/start_wood_rpt.jpg'); background-repeat: repeat; background-position: center; background-attachment: scroll; }
 </style>
 	<style type="text/css">
 		#et_pt_portfolio_gallery { margin-left: -11px; }
