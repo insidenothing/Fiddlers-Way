@@ -26,7 +26,7 @@ body.custom-background {
 		url('http://insidenothing.com/wp-content/uploads/2012/02/start_wood_rpt.jpg');
 	background-repeat: repeat;
 	background-position: center;
-	background-attachment: scroll;
+	background-attachment: fixed;
 }
 #container,#container2 {
 	background: #;
