@@ -73,7 +73,7 @@
 				<div class="entry-content clearfix">
 					<h3 class="title">
 						<a href="http://www.fiddlersway.com/archives/40">Francis Gaskins
-							in the News – ...</a>
+							in the News - ...</a>
 					</h3>
 					<p class="meta-info">
 						Feb 3, 2012 <span>by</span> <a
@@ -111,7 +111,7 @@
 							title="Posts by Francis and Doug" rel="author">Francis and Doug</a>
 					</p>
 
-					<p>Francis Gaskins “bookends” this interview, appearing at the
+					<p>Francis Gaskins "bookends" this interview, appearing at the
 						beginning and at the end and providing insights into the
 						forthcoming...</p>
 
@@ -133,7 +133,7 @@
 				<div class="entry-content clearfix">
 					<h3 class="title">
 						<a href="http://www.fiddlersway.com/archives/32">Renewable Energy
-							Group, Inc. –...</a>
+							Group, Inc. -...</a>
 					</h3>
 					<p class="meta-info">
 						Feb 3, 2012 <span>by</span> <a
@@ -142,7 +142,7 @@
 					</p>
 
 					<p>When it first went public last month, we noted that it was
-						opening well below its target, and indicated that this company’s
+						opening well below its target, and indicated that this company's
 						market...</p>
 					<a href="http://www.fiddlersway.com/archives/32" class="readmore"><span>read
 							more</span> </a>
