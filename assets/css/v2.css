@@ -533,7 +533,7 @@ ul.nav li:hover ul ul, ul.nav li.sfHover ul ul {
     top: -16px !important;
 }
 ul.nav > li.current-menu-item, ul.nav > li.current_page_item, ul.nav > li.current-cat {
-    background: url("images/active-link-bg.png") no-repeat scroll center top transparent;
+    background: url("/assets/images/active-link-bg.png") no-repeat scroll center top transparent;
 }
 ul.nav > li.current-menu-item > a, ul.nav > li.current_page_item > a, ul.nav > li.current-cat > a {
     background: url("/assets/images/left-inner-shadow.png") no-repeat scroll 0 0 transparent;
