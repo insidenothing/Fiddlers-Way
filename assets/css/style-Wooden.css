@@ -1,0 +1,26 @@
+body { background: url(images/wooden/body-bg.jpg); }
+	#top-overlay { background: none; }
+		#slogan { color: #f0f3f5; text-shadow: 1px 0px 1px #27353d; background: url(images/wooden/slogan-bg.png) no-repeat bottom center; }
+			#slogan span {color: #f0f3f5;}
+		#menu { background: url(images/wooden/menu-bg.png) repeat-x; }	
+		#content { background: url(images/wooden/content-bg.png) repeat-x bottom left; }
+			.block-border {background:url(images/wooden/block-top-bg.png) repeat-x;}
+							.entry-content p.meta-info span {color:#2525db;}
+					#controllers span#left-arrow { background: url(images/wooden/left-arrow.png) no-repeat; }
+					#controllers span#right-arrow { background: url(images/wooden/right-arrow.png) no-repeat;}				
+					.footer-widget h4.widgettitle { color: #a0acb4; text-shadow: 1px 1px 1px #0d1419; }	
+	#footer { background: url(images/wooden/footer-bg.png); }	
+		#footer-content { background: none; }					
+					#footer a { color: #ffffff; text-shadow: 1px 1px 1px #0d1419; }
+						#footer a:hover { color: #cdcdcd; }	
+		p#copyright {color:#ffffff;text-shadow: 1px 1px 1px #0d1419;}	
+			p#copyright a {font-weight: bold; color:#ffffff;}	
+.wp-pagenavi a, .wp-pagenavi span, .wp-pagenavi span.current, .wp-pagenavi span.extend, .wp-pagenavi a:active, .wp-pagenavi a:hover, .wp-pagenavi a:link { color: #fefefe !important; text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3) !important; }
+.wp-pagenavi span.current, .wp-pagenavi span.extend, .wp-pagenavi a:active, .wp-pagenavi a:hover { color: #afafaf !important; }		
+
+#breadcrumbs { color: #cdcdcd; text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4); }
+	#breadcrumbs a, span.raquo { color: #ffffff; }
+	#breadcrumbs a:hover { color: #cdcdcd; }		
+h3#comments {text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3); color: #fefefe; }	
+#commentform p {color: #ffffff; text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3); }
+	#commentform a { color: #ffffff; }		

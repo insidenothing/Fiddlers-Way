@@ -24,16 +24,16 @@
 
 
 <!--[if lt IE 7]>
-	<link rel="stylesheet" type="text/css" href="http://www.fiddlersway.com/wp-content/themes/Magnificent/css/ie6style.css" />
-	<script type="text/javascript" src="http://www.fiddlersway.com/wp-content/themes/Magnificent/js/DD_belatedPNG_0.0.8a-min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/assets/css/ie6style.css" />
+	<script type="text/javascript" src="/assest/js/DD_belatedPNG_0.0.8a-min.js"></script>
 	<script type="text/javascript">DD_belatedPNG.fix('img#logo, p#slogan, #menu, #top-overlay, #featured-overlay, span.overlay, .entry-content p.meta-info, #controllers span#right-arrow, #controllers span#left-arrow, #footer-content, #footer');</script>
 <![endif]-->
 
 <!--[if IE 7]>
-	<link rel="stylesheet" type="text/css" href="http://www.fiddlersway.com/wp-content/themes/Magnificent/css/ie7style.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/ie7style.css" />
 <![endif]-->
 <!--[if IE 8]>
-	<link rel="stylesheet" type="text/css" href="http://www.fiddlersway.com/wp-content/themes/Magnificent/css/ie8style.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/ie8style.css" />
 <![endif]-->
 
 <script type="text/javascript">
@@ -463,13 +463,15 @@ div.display_none {
 <link rel="alternate" type="application/rss+xml"
 	title="Fiddler&#039;s Way &raquo; Feed"
 	href="http://www.fiddlersway.com/feed" />
+
 <link rel="alternate" type="application/rss+xml"
 	title="Fiddler&#039;s Way &raquo; Comments Feed"
 	href="http://www.fiddlersway.com/comments/feed" />
+
 <link rel="stylesheet"
-	href="http://www.fiddlersway.com/wp-content/themes/Magnificent/style-Wooden.css"
+	href="/assets/css/style-Wooden.css"
 	type="text/css" media="screen" />
-<meta content="Magnificent v.2.3" name="generator" />
+
 <style type="text/css">
 body {
 	color: #;
@@ -501,29 +503,23 @@ ul.nav li a {
 </style>
 
 <link rel='stylesheet' id='et-shortcodes-css-css'
-	href='http://www.fiddlersway.com/wp-content/themes/Magnificent/epanel/shortcodes/shortcodes.css?ver=2.0'
+	href='/assets/css/shortcodes.css?ver=2.0'
 	type='text/css' media='all' />
 
 <link rel='stylesheet' id='fancybox-css'
-	href='http://www.fiddlersway.com/wp-content/themes/Magnificent/epanel/page_templates/js/fancybox/jquery.fancybox-1.3.4.css?ver=1.3.4'
+	href='/assets/css/jquery.fancybox-1.3.4.css?ver=1.3.4'
 	type='text/css' media='screen' />
 
 <link rel='stylesheet' id='et_page_templates-css'
-	href='http://www.fiddlersway.com/wp-content/themes/Magnificent/epanel/page_templates/page_templates.css?ver=1.8'
+	href='/assets/css/page_templates.css?ver=1.8'
 	type='text/css' media='screen' />
 
 <script type='text/javascript'
-	src='http://www.fiddlersway.com/wp-includes/js/jquery/jquery.js?ver=1.7.1'></script>
+	src='/assets/js/jquery/jquery.js?ver=1.7.1'></script>
 
 <script type='text/javascript'
-	src='http://www.fiddlersway.com/wp-content/themes/Magnificent/epanel/shortcodes/js/et_shortcodes_frontend.js?ver=2.0'></script>
+	src='/assest/js/et_shortcodes_frontend.js?ver=2.0'></script>
 
-<link rel="EditURI" type="application/rsd+xml" title="RSD"
-	href="http://www.fiddlersway.com/xmlrpc.php?rsd" />
-
-<link rel="wlwmanifest" type="application/wlwmanifest+xml"
-	href="http://www.fiddlersway.com/wp-includes/wlwmanifest.xml" />
-<meta name="generator" content="WordPress 3.3.1" />
 
 <link rel='shortlink' href='http://wp.me/2cLOR' />
 
