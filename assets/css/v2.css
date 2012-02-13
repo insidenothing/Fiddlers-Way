@@ -1353,7 +1353,7 @@ ul.nav { padding-top: 5px; font-family: 'OFL Sorts Mill Goudy TT', Georgia, seri
 			
 			ul.nav li:hover ul ul, ul.nav li.sfHover ul ul { top: -16px !important; left: 191px !important; border-top-right-radius: 8px; -moz-border-radius-topright: 8px; -webkit-border-top-right-radius: 8px; }
 			
-	ul.nav > li.current-menu-item, ul.nav > li.current_page_item, ul.nav > li.current-cat { background: url(images/active-link-bg.png) no-repeat top center; }
+	ul.nav > li.current-menu-item, ul.nav > li.current_page_item, ul.nav > li.current-cat { background: url(/assets/images/active-link-bg.png) no-repeat top center; }
 		ul.nav > li.current-menu-item > a, ul.nav > li.current_page_item > a, ul.nav > li.current-cat > a { color: #ffffff; font-style: italic; text-shadow: 1px 1px 1px rgba(0,0,0,0.7); background: url(/assets/images/left-inner-shadow.png) no-repeat; padding: 15px 12px 18px; } 
 			
 /*------------------------------------------------*/
