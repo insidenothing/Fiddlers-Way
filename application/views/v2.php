@@ -704,7 +704,7 @@ body.custom-background {
 							<div class="block-content">
 								
 											<div>
-												<input type="text" value="Search Fiddlers Way" size="15" name="s" id="s" /><input type="submit" id="searchsubmit" value="Search" />
+												<input type="text" value="Enter Search Here..." size="15" /><input type="submit" value="Search" />
 											</div>
 										
 								<!-- end .widget -->
