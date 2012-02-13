@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
 <title>Fiddler&#039;s Way | Timely, On-Target IPO Info by Francis
 	Gaskins and Doug McLeanHere</title>
 
@@ -15,9 +16,11 @@
 
 <link rel="stylesheet" href="/assets/css/v2.css" type="text/css"
 	media="screen" />
+	
 <link rel="alternate" type="application/rss+xml"
 	title="Fiddler&#039;s Way RSS Feed"
 	href="http://www.fiddlersway.com/feed" />
+	
 <link rel="alternate" type="application/atom+xml"
 	title="Fiddler&#039;s Way Atom Feed"
 	href="http://www.fiddlersway.com/feed/atom" />
