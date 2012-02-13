@@ -1,15 +1,15 @@
-body { background: url(images/wooden/body-bg.jpg); }
+body { background: url(/assets/images/wooden/body-bg.jpg); }
 	#top-overlay { background: none; }
-		#slogan { color: #f0f3f5; text-shadow: 1px 0px 1px #27353d; background: url(images/wooden/slogan-bg.png) no-repeat bottom center; }
+		#slogan { color: #f0f3f5; text-shadow: 1px 0px 1px #27353d; background: url(/assets/images/wooden/slogan-bg.png) no-repeat bottom center; }
 			#slogan span {color: #f0f3f5;}
-		#menu { background: url(images/wooden/menu-bg.png) repeat-x; }	
-		#content { background: url(images/wooden/content-bg.png) repeat-x bottom left; }
-			.block-border {background:url(images/wooden/block-top-bg.png) repeat-x;}
+		#menu { background: url(/assets/images/wooden/menu-bg.png) repeat-x; }	
+		#content { background: url(/assets/images/wooden/content-bg.png) repeat-x bottom left; }
+			.block-border {background:url(/assets/images/wooden/block-top-bg.png) repeat-x;}
 							.entry-content p.meta-info span {color:#2525db;}
-					#controllers span#left-arrow { background: url(images/wooden/left-arrow.png) no-repeat; }
-					#controllers span#right-arrow { background: url(images/wooden/right-arrow.png) no-repeat;}				
+					#controllers span#left-arrow { background: url(/assets/images/wooden/left-arrow.png) no-repeat; }
+					#controllers span#right-arrow { background: url(/assets/images/wooden/right-arrow.png) no-repeat;}				
 					.footer-widget h4.widgettitle { color: #a0acb4; text-shadow: 1px 1px 1px #0d1419; }	
-	#footer { background: url(images/wooden/footer-bg.png); }	
+	#footer { background: url(/assets/images/wooden/footer-bg.png); }	
 		#footer-content { background: none; }					
 					#footer a { color: #ffffff; text-shadow: 1px 1px 1px #0d1419; }
 						#footer a:hover { color: #cdcdcd; }	
