@@ -698,7 +698,7 @@ body.custom-background {
 					</div>
 					<!-- end .block -->
 
-					<div class="block">
+					<div class="block" style="height:200px;">
 						<div class="block-border">
 							<div class="block-content">
 								
