@@ -197,14 +197,14 @@
 											</p>
 											<p>
 												High-Yield Play:<br /> Another favorite IPO from 2011 is
-												Chesapeake Granite Wash Trust (CHKR) which IPO’d on November
+												Chesapeake Granite Wash Trust (CHKR) which IPO'd on November
 												10, 2011 at $19. It initially traded down a little and today
 												is $25.78, up 35%. At $19, CHKR was projected to pay a yield
 												in 2012 of 13%.
 											</p>
 											<p>
 												Another High-Yield Play:<br /> We always liked CVR Partners
-												(UAN), because of it yield and its business. UAN IPO’d April
+												(UAN), because of it yield and its business. UAN IPO'd April
 												7, 2011 at $16, and now trades up 89% at $30.36.<br />
 												http://finance.yahoo.com/q?s=uan&ql=1. At the pre-IPO price
 												range mid-point of $13, UAN was expected to yield 14.8%.
