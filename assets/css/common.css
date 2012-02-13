@@ -1,22 +1,28 @@
+#follow.right ul li.follow img {
+    background: url("/assets/images/follow-right.png") no-repeat scroll 0 0 transparent;
+    border-width: 0;
+    display: block;
+    height: 79px;
+    overflow: hidden;
+    width: 20px;
+}
+
+
+
+
+
+
 table {
 	border-collapse: collapse;
 }
 
 body {
-	background-image: url('/assets/images/wood7.bmp');
-	background-attachment: fixed;
+	background: url(http://insidenothing.com/wp-content/uploads/2012/02/start_wood_rpt.jpg) repeat fixed center 0 #000000;
 	padding:0px;
 	margin:0px;
 }
 
-.violin {
-	background-color:#e8e9ea;
-	background-image: url('/assets/images/wood8.bmp');
-	background-attachment: fixed;
-	background-repeat: repeat-y;
-	background-position: top right;
-	width: 200px !important;
-}
+
 
 .vid-desc {
 	padding: 5px;
