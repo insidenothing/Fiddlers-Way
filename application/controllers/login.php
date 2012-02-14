@@ -4,7 +4,6 @@ class Login extends CI_Controller {
 
 	public function index($from='',$reason='')
 	{
-		
 		$this->output->enable_profiler(FALSE);
 		$this->security->set_access_level($this->input->cookie('level'));
 		$data['from'] = $from;
