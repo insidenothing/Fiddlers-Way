@@ -6,6 +6,29 @@
 <title>Fiddler&#039;s Way | Timely, On-Target IPO Info by Francis
 	Gaskins and Doug McLeanHere</title>
 
+
+<link rel="stylesheet" type="text/css" href="/assets/css/anylinkmenu.css" />
+
+<script type="text/javascript" src="/assets/js/menucontents.js"></script>
+
+<script type="text/javascript" src="/assets/js/anylinkmenu.js">
+
+/***********************************************
+* AnyLink JS Drop Down Menu v2.0- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Project Page at http://www.dynamicdrive.com/dynamicindex1/dropmenuindex.htm for full source code
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+//anylinkmenu.init("menu_anchors_class") //Pass in the CSS class of anchor links (that contain a sub menu)
+anylinkmenu.init("menuanchorclass")
+
+</script>
+
+
 <link
 	href='http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold'
 	rel='stylesheet' type='text/css' />
@@ -131,10 +154,20 @@
 		</div>
 		<!-- end #header -->
 
+
+
+
+
+
+
+
+
+
+
 		<div id="menu">
 			<div class="container clearfix">
 				<ul id="primary" class="nav">
-					<li class="current_page_item"><a href="http://fiddlersway.com">Home</a>
+					<li class="current_page_item"><a href="http://www.fiddlersway.com" class="menuanchorclass" rel="anylinkmenu1">Home</a>
 					</li>
 
 					<li class="page_item page-item-13"><a
