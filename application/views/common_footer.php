@@ -98,8 +98,7 @@
 						<a href='http://twitter.com/FiddlersWay'>Join us on Twitter</a>
 					</h4>
 					
-					
-					<div id="twitter">Loading...</div>
+
 					
 					<div class="widgetcontent">
 						<ul class="tweets">
