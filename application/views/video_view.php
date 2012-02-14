@@ -33,7 +33,7 @@
 							type="application/x-shockwave-flash" />
 					</object>
 
-					<img src="/assets/images/slogan-bg.png" width="400" height="25"  />
+					<img src="/assets/images/slogan-bg.png" width="400" height="25" />
 					<br> Francis Gaskins on CNBC analyzing facebook
 				</center>
 			</div>
@@ -51,9 +51,9 @@
 				<iframe width="400" height="300"
 					src="http://www.youtube.com/embed/KsgGB9v5CTs" frameborder="0"
 					allowfullscreen></iframe>
-
-				<br> "Definitely watch it... but in the near term, I don't know how
-				the stock is going to act... it may not hold up that well in this
+				<img src="/assets/images/slogan-bg.png" width="400" height="25" /> <br>
+				"Definitely watch it... but in the near term, I don't know how the
+				stock is going to act... it may not hold up that well in this
 				market.."
 			</div>
 		</div>

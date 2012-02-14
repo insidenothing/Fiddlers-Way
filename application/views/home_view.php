@@ -26,7 +26,7 @@
 							src="http://plus.cnbc.com/rssvideosearch/action/player/id/3000070318/code/cnbcplayershare"
 							type="application/x-shockwave-flash" />
 					</object>
-
+					<img src="/assets/images/slogan-bg.png" width="400" height="25" />
 					<br> Francis Gaskins on CNBC analyzing facebook
 				</center>
 			</div>
@@ -217,6 +217,7 @@
 	</a>
 </div>
 <!-- end #controllers -->
+
 
 
 
