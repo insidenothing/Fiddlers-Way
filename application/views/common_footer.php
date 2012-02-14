@@ -93,13 +93,13 @@
 	<div class="block">
 		<div class="block-border">
 			<div class="block-content">
-				<div id="twitter-2" class="widget widget_twitter">
+				<div class="widget widget_twitter">
 					<h4 class="widgettitle">
 						<a href='http://twitter.com/FiddlersWay'>Join us on Twitter</a>
 					</h4>
 					
 					
-					<div id="twitter"> </div>
+					<div id="twitter">Loading...</div>
 					
 					<div class="widgetcontent">
 						<ul class="tweets">
