@@ -93,7 +93,7 @@
 		<div id="header">
 			<div class="container">
 				<a href="http://www.fiddlersway.com"> <img
-					src="/assets/images/fw3.gif" alt="Francis Gaskins and Doug McLean"
+					src="/assets/images/fw4.gif" alt="Francis Gaskins and Doug McLean"
 					id="logo" />
 				</a>
 				<p id="slogan">
