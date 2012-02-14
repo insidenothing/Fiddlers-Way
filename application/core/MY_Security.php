@@ -64,7 +64,6 @@ class My_Security extends CI_Security {
 				$pass='1';
 			}
 
-		}
 
 		}
 		if($this->access_level == '')
