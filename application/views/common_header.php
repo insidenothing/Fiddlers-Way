@@ -175,15 +175,15 @@ anylinkmenu.init("menuanchorclass")
 
 
 					<li class="page_item page-item-69"><a
-						href="http://fiddlersway.com/page/index/contact-us" class="menuanchorclass" rel="anylinkmenu3">Videos</a>
+						href="http://fiddlersway.com/page/index/contact-us" class="menuanchorclass" rel="anylinkmenu3">Archived Videos</a>
 					</li>
 
 					<li class="page_item page-item-18"><a
-						href="http://fiddlersway.com/page/index/in-the-news" class="menuanchorclass" rel="anylinkmenu4">Blogs</a>
+						href="http://fiddlersway.com/page/index/in-the-news" class="menuanchorclass" rel="anylinkmenu4">Archived Blogs</a>
 					</li>
 
 					<li class="page_item page-item-15"><a
-						href="http://fiddlersway.com/page/index/our-story" class="menuanchorclass" rel="anylinkmenu5">Track Record</a>
+						href="http://fiddlersway.com/page/index/our-story" class="menuanchorclass" rel="anylinkmenu5">Track Record Archives</a>
 					</li>
 
 				
