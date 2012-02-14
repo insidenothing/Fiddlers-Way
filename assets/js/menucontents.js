@@ -8,7 +8,7 @@ anylinkmenu1.items=[
 
 
 var anylinkmenu2={divclass:'anylinkmenu', inlinestyle:'', linktarget:''} //First menu variable. Make sure "anylinkmenu1" is a unique name!
-anylinkmenu1.items=[
+anylinkmenu2.items=[
 	["New Featuring Us", "http://www.fiddlersway.com/page/index/new-featuring-us"],
 	["Video News Featuring Us", "http://www.fiddlersway.com/page/index/video-news-featuring-us"],
 	["IPO News: Other Sources", "http://www.fiddlersway.com/page/index/ipo-news-other-sources"]
