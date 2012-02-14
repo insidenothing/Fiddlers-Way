@@ -145,11 +145,6 @@
 						href="http://fiddlersway.com/page/index/contact-us">Contact Us</a>
 					</li>
 
-
-					<li class="page_item page-item-11"><a
-						href="http://fiddlersway.com/page/index/press-room">Press Room</a>
-					</li>
-
 					<li class="page_item page-item-18"><a
 						href="http://fiddlersway.com/page/index/in-the-news">In the News</a>
 					</li>
@@ -158,10 +153,7 @@
 						href="http://fiddlersway.com/page/index/our-story">Our Story</a>
 					</li>
 
-					<li class="page_item page-item-25"><a
-						href="http://fiddlersway.com/page/index/photos">Photos</a>
-					</li>
-					
+				
 					<li class="cat-item cat-item-3"><a
 						href="http://www.fiddlersway.com/blog/index/blog-posts"
 						title="View all posts filed under Blog Posts">Blog Posts</a>
