@@ -1,5 +1,5 @@
 .selectedanchor{ /*CSS class that gets added to the currently selected anchor link (assuming it's a text link)*/
-background: #F4F4F5;
+background: #F2F3F2;
 }
 
 /* ######### Default class for drop down menus ######### */
@@ -11,10 +11,18 @@ top: 0;
 visibility: hidden;
 border: 1px solid black;
 border-bottom-width: 0;
-font: normal 12px Verdana;
+
+	font-size: 17px;
+	padding: 15px 6px 18px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #FFFFFF;
+	color: #2525DB;
+	font-family: 'OFL Sorts Mill Goudy TT',Georgia,serif;
+
+
 line-height: 18px;
 z-index: 100; /* zIndex should be greater than that of shadow's below */
-background: lightyellow;
+background: #F2F3F2;
 width: 200px; /* default width for menu */
 }
 
