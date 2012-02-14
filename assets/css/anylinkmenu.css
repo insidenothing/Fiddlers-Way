@@ -9,8 +9,8 @@ position: absolute;
 left: 0;
 top: 0;
 visibility: hidden;
-border: 1px solid black;
-border-bottom-width: 0;
+border: 1px solid #6897AB;
+border-top-width: 0;
 
 	font-size: 17px;
 	
@@ -57,7 +57,7 @@ width: 350px;
 left: 0;
 top: 0;
 visibility: hidden;
-border: 1px solid black;
+border: 1px solid #6897AB;
 padding: 10px;
 font: normal 12px Verdana;
 z-index: 100; /*zIndex should be greater than that of shadow's below*/
