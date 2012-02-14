@@ -1769,7 +1769,7 @@ img#about-image { float: left; margin: 3px 8px 8px 0px; }
 
 #top-overlay { background: url(images/top-bg.png) repeat-x; position: relative; }
 	#header .container { text-align: center;}
-		.container { text-align: left; margin: 0 auto; width: 960px; position: relative; }
+		.container { text-align: left; margin: 0 auto; width: 1200px; position: relative; }
 			#logo { margin-bottom: 15px; margin-top: 57px; }
 			#slogan { font-family: Georgia, serif; font-size: 18px; color: #b4b4b4; font-style: italic; background: url(images/slogan-bg.png) no-repeat bottom center; padding-bottom: 47px;}
 				#slogan span {color: #a5a5a5;}
