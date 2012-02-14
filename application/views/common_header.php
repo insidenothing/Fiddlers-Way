@@ -167,46 +167,39 @@ anylinkmenu.init("menuanchorclass")
 		<div id="menu">
 			<div class="container clearfix">
 				<ul id="primary" class="nav">
-					<li class="current_page_item"><a href="http://www.fiddlersway.com" class="menuanchorclass" rel="anylinkmenu1">Our Story</a>
+					<li class="current_page_item"><a href="http://www.fiddlersway.com" class="menuanchorclass" rel="anylinkmenu1">ARCHIVED NEWS</a>
 					</li>
 
 					<li class="page_item page-item-13"><a
-						href="http://fiddlersway.com" class="menuanchorclass" rel="anylinkmenu2">Archived News</a></li>
+						href="http://fiddlersway.com" class="menuanchorclass" rel="anylinkmenu2">ARCHIVED NEWS</a></li>
 
 
 					<li class="page_item page-item-69"><a
-						href="http://fiddlersway.com/page/index/contact-us">Contact Us</a>
+						href="http://fiddlersway.com/page/index/contact-us" class="menuanchorclass" rel="anylinkmenu3">ARCHIVED VIDEOS</a>
 					</li>
 
 					<li class="page_item page-item-18"><a
-						href="http://fiddlersway.com/page/index/in-the-news">In the News</a>
+						href="http://fiddlersway.com/page/index/in-the-news" class="menuanchorclass" rel="anylinkmenu4">ARCHIVED BLOGS</a>
 					</li>
 
 					<li class="page_item page-item-15"><a
-						href="http://fiddlersway.com/page/index/our-story">Our Story</a>
+						href="http://fiddlersway.com/page/index/our-story" class="menuanchorclass" rel="anylinkmenu5">TRACK RECORD ARCHIVES</a>
 					</li>
 
 				
 					<li class="cat-item cat-item-3"><a
 						href="http://www.fiddlersway.com/blog/index/blog-posts"
-						title="View all posts filed under Blog Posts">Blog Posts</a>
+						title="Press Room" class="menuanchorclass" rel="anylinkmenu6">PRESS ROOM</a>
 					</li>
 					
 				
 					<li class="cat-item cat-item-6"><a
-						href="http://www.fiddlersway.com/blog/index/ipo-news"
-						title="View all posts filed under IPO News">IPO News</a>
+						href="http://www.fiddlersway.com/contact"
+						title="Contact Us">CONTACT US</a>
 					</li>
 					
 										
-					<li class="cat-item cat-item-4"><a
-						href="http://www.fiddlersway.com/video"
-						title="View all posts filed under Videos">Videos</a>
-					</li>
-					<li class="cat-item cat-item-5"><a
-						href="http://www.fiddlersway.com/page/index/white-papers"
-						title="View all posts filed under White Papers">White Papers</a>
-					</li>
+					
 				</ul>
 				<!-- end ul#nav -->
 			</div>
