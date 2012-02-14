@@ -20,10 +20,10 @@ border-bottom-width: 0;
 	font-family: 'OFL Sorts Mill Goudy TT',Georgia,serif;
 
 
-line-height: 18px;
+line-height: 25px;
 z-index: 100; /* zIndex should be greater than that of shadow's below */
 background: #F2F3F2;
-width: 200px; /* default width for menu */
+width: 250px; /* default width for menu */
 }
 
 .anylinkmenu ul{
