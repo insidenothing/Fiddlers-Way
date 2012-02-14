@@ -33,7 +33,7 @@
 							type="application/x-shockwave-flash" />
 					</object>
 
-					<img src="/assets/images/slogan-bg.png" width="350" height="25"  />
+					<img src="/assets/images/slogan-bg.png" width="400" height="25"  />
 					<br> Francis Gaskins on CNBC analyzing facebook
 				</center>
 			</div>
