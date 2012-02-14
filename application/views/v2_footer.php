@@ -7,14 +7,14 @@
 				<div id="blog_subscription-2"
 					class="widget jetpack_subscription_widget">
 					<h4 class="widgettitle">
-						<label for="subscribe-field">Subscribe to Fiddler&#039;s Way Newsletter</label>
+						<label for="subscribe-field">Fiddler&#039;s Way Newsletter</label>
 					</h4>
 					<div class="widgetcontent">
 
 						<a name="subscribe-blog"></a>
 						<form action="" method="post" accept-charset="utf-8"
 							id="subscribe-blog">
-							<p>Enter your email address to sign-up.</p>
+							<p>Enter your email address.</p>
 							<p>
 								<input type="text" name="email"
 									style="width: 95%; padding: 1px 2px" value="Email Address"
