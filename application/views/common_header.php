@@ -167,35 +167,35 @@ anylinkmenu.init("menuanchorclass")
 		<div id="menu">
 			<div class="container clearfix">
 				<ul id="primary" class="nav">
-					<li class="current_page_item"><a href="http://www.fiddlersway.com" class="menuanchorclass" rel="anylinkmenu1">ARCHIVED NEWS</a>
+					<li class="current_page_item"><a href="http://www.fiddlersway.com" class="menuanchorclass" rel="anylinkmenu1">Our Story</a>
 					</li>
 
 					<li class="page_item page-item-13"><a
-						href="http://fiddlersway.com" class="menuanchorclass" rel="anylinkmenu2">ARCHIVED NEWS</a></li>
+						href="http://fiddlersway.com" class="menuanchorclass" rel="anylinkmenu2">News</a></li>
 
 
 					<li class="page_item page-item-69"><a
-						href="http://fiddlersway.com/page/index/contact-us" class="menuanchorclass" rel="anylinkmenu3">ARCHIVED VIDEOS</a>
+						href="http://fiddlersway.com/page/index/contact-us" class="menuanchorclass" rel="anylinkmenu3">Videos</a>
 					</li>
 
 					<li class="page_item page-item-18"><a
-						href="http://fiddlersway.com/page/index/in-the-news" class="menuanchorclass" rel="anylinkmenu4">ARCHIVED BLOGS</a>
+						href="http://fiddlersway.com/page/index/in-the-news" class="menuanchorclass" rel="anylinkmenu4">Blogs</a>
 					</li>
 
 					<li class="page_item page-item-15"><a
-						href="http://fiddlersway.com/page/index/our-story" class="menuanchorclass" rel="anylinkmenu5">TRACK RECORD ARCHIVES</a>
+						href="http://fiddlersway.com/page/index/our-story" class="menuanchorclass" rel="anylinkmenu5">Track Record</a>
 					</li>
 
 				
 					<li class="cat-item cat-item-3"><a
 						href="http://www.fiddlersway.com/blog/index/blog-posts"
-						title="Press Room" class="menuanchorclass" rel="anylinkmenu6">PRESS ROOM</a>
+						title="Press Room" class="menuanchorclass" rel="anylinkmenu6">Press Room</a>
 					</li>
 					
 				
 					<li class="cat-item cat-item-6"><a
 						href="http://www.fiddlersway.com/contact"
-						title="Contact Us">CONTACT US</a>
+						title="Contact Us">Contact Us</a>
 					</li>
 					
 										
