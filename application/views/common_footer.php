@@ -1,4 +1,8 @@
 
+</div>
+<!-- end #main-content -->
+
+
 <div id="sidebar-right"
 	class="sidebar">
 	<div class="block">

@@ -272,3 +272,5 @@
 
 				</div>
 				<!-- end #sidebar-left -->
+				<div
+	id="main-content">

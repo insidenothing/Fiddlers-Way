@@ -1,5 +1,4 @@
-<div
-	id="main-content">
+
 
 	<div id="featured">
 
@@ -221,9 +220,6 @@
 		</a>
 	</div>
 	<!-- end #controllers -->
-
-</div>
-<!-- end #main-content -->
 
 
 
