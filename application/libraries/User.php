@@ -5,11 +5,9 @@ class User {
 	var $CI;
 	var $id;
 	var $name;
-	var $tos_date;
 	var $email;
 	var $level;
-	var $attid;
-	var $phone;
+	var $newsletter;
 	
 	
 
@@ -23,11 +21,6 @@ class User {
 		$this->name = $name;
 	}
 	 
-	public function set_tos_date($tos_date)
-	{
-		$this->tos_date = $tos_date;
-	}
-	 
 	public function set_email($email)
 	{
 		$this->email = $email;
@@ -37,13 +30,9 @@ class User {
 	{
 		$this->level = $level;
 	}
-	public function set_attid($attid)
+	public function set_newsletter($newsletter)
 	{
-		$this->attid = $attid;
-	}
-	public function set_phone($phone)
-	{
-		$this->phone = $phone;
+		$this->newsletter = $newsletter;
 	}
 	
 	public function set_cookies()
@@ -54,7 +43,7 @@ class User {
     	$CI->input->set_cookie('name', $this->name, '86500', '', '/', '', FALSE);
     	$CI->input->set_cookie('email', $this->email, '86500', '', '/', '', FALSE);
     	$CI->input->set_cookie('level', $this->level, '86500', '', '/', '', FALSE); 
-       	$CI->input->set_cookie('newsletter', $this->newsletter_status, '86500', '', '/', '', FALSE); 
+       	$CI->input->set_cookie('newsletter', $this->newsletter, '86500', '', '/', '', FALSE); 
     }
     
 

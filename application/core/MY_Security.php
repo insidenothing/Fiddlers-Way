@@ -43,7 +43,7 @@ class My_Security extends CI_Security {
 			}
 
 		}
-		if($this->access_level=='Operations' || $this->access_level=='Gold Member')
+		if($this->access_level=='Operator')
 		{
 			/*
 			 * These pages are allowed by contractors
@@ -65,73 +65,7 @@ class My_Security extends CI_Security {
 			}
 
 		}
-		if($this->access_level=='Operations' || $this->access_level=='Client')
-		{
-			/*
-			 * These pages are allowed by clients
-			*/
-			if ($class == 'start' && $method == 'index'){
-				$pass='1';
-			}
-			if ($class == 'start' && $method == 'do_upload'){
-				$pass='1';
-			}
-			if ($class == 'search' && $method == 'index'){
-				$pass='1';
-			}
 
-			
-			
-		}
-		if($this->access_level=='Operations')
-		{
-			/*
-			 * These pages are allowed by operators only
-			*/
-			if ($class == 'action' && $method == 'index'){
-				$pass='1';
-			}
-			if ($class == 'terminal' && $method == 'index'){
-				$pass='1';
-			}
-			if ($class == 'terminal' && $method == 'submit'){
-				$pass='1';
-			}
-			if ($class == 'envelope' && $method == 'large'){
-				$pass='1';
-			}
-			if ($class == 'edit' && $method == 'index'){
-				$pass='1';
-			}
-			if ($class == 'edit' && $method == 'ajax'){
-				$pass='1';
-			}
-			if ($class == 'activity' && $method == 'index'){
-				$pass='1';
-			}
-			if ($class == 'timeline' && $method == 'display'){
-				$pass='1';
-			}
-			if ($class == 'user' && $method == 'new_user'){
-				$pass='1';
-			}
-			if ($class == 'admin' && $method == 'config'){
-				$pass='1';
-			}
-			if ($class == 'swap' && $method == 'attorney'){
-				$pass='1';
-			}
-			if ($class == 'mailbox' && $method == 'pull'){
-				$pass='1';
-			}
-			if ($class == 'report' && $method == 'popup'){
-				$pass='1';
-			}
-			if ($class == 'quality' && $method == 'close'){
-				$pass='1';
-			}
-
-			
 		}
 		if($this->access_level == '')
 		{
@@ -149,40 +83,6 @@ class My_Security extends CI_Security {
 	}
 
 
-	/*
-	 * this is moving to library/menu
-	*/
-	function load_available_menus()
-	{
-		$CI =& get_instance();
-		$CI->load->helper('cookie');
-		$tab=array();
-		if($CI->input->cookie('name')){
-			$tab['name']=$CI->input->cookie('name');
-		}
-		
-		if($CI->input->cookie('user_id')){
-			$CI->load->model('user_model','user');
-			$CI->user->set_online_now($CI->input->cookie('user_id'));
-		}
-		
-		
-		$CI->load->view('user_menu',$tab);
-		if($this->access_level=='Operations')
-		{
-			$CI->load->view('client/menu_view');
-			$CI->load->view('contractor/menu_view');
-			$CI->load->view('op/menu_view');
-		}
-		if($this->access_level=='Gold Member')
-		{
-			$CI->load->view('contractor/menu_view');
-		}
-		if($this->access_level=='Client')
-		{
-			$CI->load->view('client/menu_view');
-		}
-		$CI->load->view('common_menu');
-	}
+	
 
 }

@@ -15,30 +15,12 @@ class Menu   {
 		$this->product = $product;
 	}
 	
-	function load_common($view,$tab,$data)
+	function load_common($view,$data)
 	{
 		$CI =& get_instance();
-		
-		$tab['logo_spot'] = '<center><div id="logo"><a href="/"><img id="company_logo" src="/assets/images/logo.png"></a></div></center>';
-		$CI->load->view('common_header',$tab);
-		$this->load_right_menus();
+		$CI->load->view('common_header');
 		$CI->load->view($view, $data);
-		$this->load_left_menus();
 		$CI->load->view('common_footer');
-	}
-	
-	public function load_left_menus()
-	{
-		$menu = array();
-		$CI =& get_instance();
-		$CI->load->view('left_menu',$menu);
-	}
-	
-	function load_right_menus()
-	{
-		$data = array();
-		$CI =& get_instance();
-		$CI->load->view('right_menu',$data);
 	}
 	
 	

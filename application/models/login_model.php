@@ -27,11 +27,9 @@ class Login_model extends CI_Model {
 				$this->load->library('User','user');
 				$this->user->set_user_id($row->id);
 				$this->user->set_name($row->name);
-				$this->user->set_phone($row->phone);
-				$this->user->set_tos_date($row->tos_date);
 				$this->user->set_email($row->email);
 				$this->user->set_level($row->level);
-				$this->user->set_attid($row->attorneys_id);
+				$this->user->set_newsletter($row->newsletter_status);
 				$this->user->set_cookies();
 				$query->free_result();
 				$this->output->set_header("Location: /".str_replace('-','/',$this->input->post('from')));
