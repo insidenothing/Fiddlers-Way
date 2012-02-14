@@ -177,12 +177,7 @@
 						title="View all posts filed under IPO News">IPO News</a>
 					</li>
 					
-					<li class="cat-item cat-item-7"><a
-						href="http://www.fiddlersway.com/blog/index/ipo-track-record"
-						title="View all posts filed under IPO Track Record">IPO Track
-							Record</a>
-					</li>
-					
+										
 					<li class="cat-item cat-item-4"><a
 						href="http://www.fiddlersway.com/video"
 						title="View all posts filed under Videos">Videos</a>
