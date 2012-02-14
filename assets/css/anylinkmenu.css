@@ -1,5 +1,5 @@
 .selectedanchor{ /*CSS class that gets added to the currently selected anchor link (assuming it's a text link)*/
-background: white;
+background: #F4F4F5;
 }
 
 /* ######### Default class for drop down menus ######### */
