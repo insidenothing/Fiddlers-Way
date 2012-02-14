@@ -4,14 +4,13 @@ class Login extends CI_Controller {
 
 	public function index($from='',$reason='')
 	{
-		$tab['level']=$this->input->cookie('level');
+		
 		$this->output->enable_profiler(FALSE);
-		$tab['title']='Please complete the form below to log in.';
 		$this->security->set_access_level($this->input->cookie('level'));
 		$data['from'] = $from;
 		$data['response'] = $reason;
 		$this->load->library('Menu','menu');
-		$this->menu->load_common('login_view',$tab,$data);
+		$this->menu->load_common('login_view',$data);
 	}
 	public function dologin($from='',$reason='')
 	{
@@ -29,11 +28,10 @@ class Login extends CI_Controller {
 		*/
 		if ($this->form_validation->run('login') == FALSE)
 		{
-			$tab['title']='Please try again.';
 			$this->security->set_access_level($this->input->cookie('level'));
 			$data['response'] = $reason;
 			$this->load->library('Menu','menu');
-			$this->menu->load_common('login_view',$tab,$data);
+			$this->menu->load_common('login_view',$data);
 		}
 		else
 		{
@@ -41,11 +39,9 @@ class Login extends CI_Controller {
 			 * Validation Passed, Ready to Test Data
 			*/
 			$data['response'] = $this->login->check_user($from);
-			$tab['title']='Attempting Login';
 			$this->security->set_access_level($this->input->cookie('level'));
 			$this->load->library('Menu','menu');
-			$this->menu->load_common('login_view',$tab,$data);
-				
+			$this->menu->load_common('login_view',$data);
 		}
 	}
 
@@ -65,10 +61,9 @@ class Login extends CI_Controller {
 	public function reset()
 	{
 		$data['response'] = '';
-		$tab['title']='Reset Account Password';
 		$this->security->set_access_level($this->input->cookie('level'));
 		$this->load->library('Menu','menu');
-		$this->menu->load_common('login_reset_view',$tab,$data);
+		$this->menu->load_common('login_reset_view',$data);
 	}
 
 	public function do_reset()
@@ -84,19 +79,17 @@ class Login extends CI_Controller {
 			/*
 			 * Failed Validation
 			*/
-			$tab['title']='Reset Account Password';
 			$data['response'] = '';
 			$this->security->set_access_level($this->input->cookie('level'));
-			$this->menu->load_common('login_reset_view',$tab,$data);
+			$this->menu->load_common('login_reset_view',$data);
 		}else{
 			/*
 			 * Passed Validation
 			*/
 			$this->load->model('Login_model','login');
 			$data['response'] = $this->login->reset_password();
-			$tab['title']='Reset Password';
 			$this->security->set_access_level($this->input->cookie('level'));
-			$this->menu->load_common('login_reset_view',$tab,$data);
+			$this->menu->load_common('login_reset_view',$data);
 
 		}
 	}
