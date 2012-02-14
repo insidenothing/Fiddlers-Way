@@ -16,17 +16,8 @@
 							id="subscribe-blog">
 							<p>Enter your email address.</p>
 							<p>
-								<input type="text" name="email"
-									style="width: 95%; padding: 1px 2px" value="Email Address"
-									id="subscribe-field"
-									onclick="if ( this.value == 'Email Address' ) { this.value = ''; }"
-									onblur="if ( this.value == '' ) { this.value = 'Email Address'; }" />
-							</p>
-
-							<p>
-								<input type="submit" value="Join Now!"
-									name="jetpack_subscriptions_widget" />
-							</p>
+								<input name="email" type="email" value="E-Mail Address" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'E-Mail Address':this.value;"><input type="submit" value="Subscribe">
+								
 						</form>
 
 

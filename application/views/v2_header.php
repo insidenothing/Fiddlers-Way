@@ -72,6 +72,31 @@
 <script type='text/javascript'
 	src='/assest/js/et_shortcodes_frontend.js?ver=2.0'></script>
 
+<script SRC="/assets/js/common.js" TYPE="text/javascript"></script>
+
+<link rel="stylesheet" href="/assets/css/jquery.twitter.css"
+	type="text/css" media="all">
+
+	<script type="text/javascript" src="/assets/js/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="/assets/js/jquery.twitter.js"></script>
+
+	<script type="text/javascript">
+			$(document).ready(function() {
+				$("#twitter").getTwitter({
+					userName: "FiddlersWay",
+					numTweets: 5,
+					loaderText: "Loading tweets...",
+					slideIn: true,
+					slideDuration: 750,
+					showHeading: true,
+					headingText: "Latest Tweets",
+					showProfileLink: true,
+					showTimestamp: true
+				});
+			});
+		</script>
+
+
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
