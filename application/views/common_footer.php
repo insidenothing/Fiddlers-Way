@@ -97,6 +97,10 @@
 					<h4 class="widgettitle">
 						<a href='http://twitter.com/FiddlersWay'>Join us on Twitter</a>
 					</h4>
+					
+					
+					<div id="twitter"> </div>
+					
 					<div class="widgetcontent">
 						<ul class="tweets">
 							<li>Facebook&#039;s $100 Million Evaluation Too High according to

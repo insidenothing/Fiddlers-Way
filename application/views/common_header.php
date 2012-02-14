@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 <title>Fiddler&#039;s Way | Timely, On-Target IPO Info by Francis
-	Gaskins and Doug McLeanHere</title>
+	Gaskins and Doug McLean</title>
 
 
 <link rel="stylesheet" type="text/css" href="/assets/css/anylinkmenu.css" />
