@@ -159,11 +159,7 @@
 						title="View all posts filed under Blog Posts">Blog Posts</a>
 					</li>
 					
-					<li class="cat-item cat-item-14"><a
-						href="http://www.fiddlersway.com/blog/index/in-the-news"
-						title="View all posts filed under In the News">In the News</a>
-					</li>
-					
+				
 					<li class="cat-item cat-item-6"><a
 						href="http://www.fiddlersway.com/blog/index/ipo-news"
 						title="View all posts filed under IPO News">IPO News</a>
