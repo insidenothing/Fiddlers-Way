@@ -134,56 +134,56 @@
 		<div id="menu">
 			<div class="container clearfix">
 				<ul id="primary" class="nav">
-					<li class="current_page_item"><a href="http://www.fiddlersway.com">Home</a>
+					<li class="current_page_item"><a href="http://fiddlersway.com">Home</a>
 					</li>
 
 					<li class="page_item page-item-13"><a
-						href="http://www.fiddlersway.com/about-us">About Us</a>
+						href="http://fiddlersway.com/page/index/about-us">About Us</a>
 
 						<ul class='children'>
 							<li class="page_item page-item-69"><a
-								href="http://www.fiddlersway.com/about-us/contact-us">Contact Us</a>
+								href="http://fiddlersway.com/page/index/contact-us">Contact Us</a>
 							</li>
 						</ul>
 					</li>
 					<li class="page_item page-item-11"><a
-						href="http://www.fiddlersway.com/press-room">Press Room</a>
+						href="http://fiddlersway.com/page/index/press-room">Press Room</a>
 						<ul class='children'>
 							<li class="page_item page-item-18"><a
-								href="http://www.fiddlersway.com/press-room/in-the-news">In the
+								href="http://fiddlersway.com/page/index/in-the-news">In the
 									News</a></li>
 							<li class="page_item page-item-15"><a
-								href="http://www.fiddlersway.com/press-room/our-story">Our Story</a>
+								href="http://fiddlersway.com/page/index/our-story">Our Story</a>
 							</li>
 							<li class="page_item page-item-25"><a
-								href="http://www.fiddlersway.com/press-room/photos">Photos</a></li>
+								href="http://fiddlersway.com/page/index/photos">Photos</a></li>
 
 						</ul>
 					</li>
 
 					<li class="cat-item cat-item-3"><a
-						href="http://www.fiddlersway.com/archives/category/blog-posts"
+						href="http://www.fiddlersway.com/blog/index/blog-posts"
 						title="View all posts filed under Blog Posts">Blog Posts</a>
 					</li>
 					<li class="cat-item cat-item-14"><a
-						href="http://www.fiddlersway.com/archives/category/in-the-news"
+						href="http://www.fiddlersway.com/blog/index/in-the-news"
 						title="View all posts filed under In the News">In the News</a>
 					</li>
 					<li class="cat-item cat-item-6"><a
-						href="http://www.fiddlersway.com/archives/category/ipo-news"
+						href="http://www.fiddlersway.com/blog/index/ipo-news"
 						title="View all posts filed under IPO News">IPO News</a>
 					</li>
 					<li class="cat-item cat-item-7"><a
-						href="http://www.fiddlersway.com/archives/category/ipo-track-record"
+						href="http://www.fiddlersway.com/blog/index/ipo-track-record"
 						title="View all posts filed under IPO Track Record">IPO Track
 							Record</a>
 					</li>
 					<li class="cat-item cat-item-4"><a
-						href="http://www.fiddlersway.com/archives/category/videos"
+						href="http://www.fiddlersway.com/video"
 						title="View all posts filed under Videos">Videos</a>
 					</li>
 					<li class="cat-item cat-item-5"><a
-						href="http://www.fiddlersway.com/archives/category/white-papers"
+						href="http://www.fiddlersway.com/page/index/white-papers"
 						title="View all posts filed under White Papers">White Papers</a>
 					</li>
 				</ul>

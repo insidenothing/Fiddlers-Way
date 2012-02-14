@@ -2,10 +2,10 @@
 
 class Page extends CI_Controller {
 
-	public function index()
+	public function index($link)
 	{
 		
-		$data['title'] 		= "Page Title";
+		$data['title'] 		= "Page Title: $link";
 		$data['content'] 	= "Page Content";
 		
 		$this->load->view('common_header');
