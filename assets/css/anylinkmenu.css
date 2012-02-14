@@ -1,5 +1,5 @@
 .selectedanchor{ /*CSS class that gets added to the currently selected anchor link (assuming it's a text link)*/
-background: yellow;
+background: white;
 }
 
 /* ######### Default class for drop down menus ######### */
@@ -14,7 +14,7 @@ border-bottom-width: 0;
 font: normal 12px Verdana;
 line-height: 18px;
 z-index: 100; /* zIndex should be greater than that of shadow's below */
-background: white;
+background: lightyellow;
 width: 200px; /* default width for menu */
 }
 
