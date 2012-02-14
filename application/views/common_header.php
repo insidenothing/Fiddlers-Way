@@ -77,10 +77,10 @@
 <link rel="stylesheet" href="/assets/css/jquery.twitter.css"
 	type="text/css" media="all">
 
-	<script type="text/javascript" src="/assets/js/jquery-1.3.2.min.js"></script>
-	<script type="text/javascript" src="/assets/js/jquery.twitter.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.twitter.js"></script>
 
-	<script type="text/javascript">
+<script type="text/javascript">
 			$(document).ready(function() {
 				$("#twitter").getTwitter({
 					userName: "FiddlersWay",
@@ -138,46 +138,51 @@
 					</li>
 
 					<li class="page_item page-item-13"><a
-						href="http://fiddlersway.com/page/index/about-us">About Us</a>
+						href="http://fiddlersway.com/page/index/about-us">About Us</a></li>
 
-						<ul class='children'>
-							<li class="page_item page-item-69"><a
-								href="http://fiddlersway.com/page/index/contact-us">Contact Us</a>
-							</li>
-						</ul>
+
+					<li class="page_item page-item-69"><a
+						href="http://fiddlersway.com/page/index/contact-us">Contact Us</a>
 					</li>
+
+
 					<li class="page_item page-item-11"><a
 						href="http://fiddlersway.com/page/index/press-room">Press Room</a>
-						<ul class='children'>
-							<li class="page_item page-item-18"><a
-								href="http://fiddlersway.com/page/index/in-the-news">In the
-									News</a></li>
-							<li class="page_item page-item-15"><a
-								href="http://fiddlersway.com/page/index/our-story">Our Story</a>
-							</li>
-							<li class="page_item page-item-25"><a
-								href="http://fiddlersway.com/page/index/photos">Photos</a></li>
-
-						</ul>
 					</li>
 
+					<li class="page_item page-item-18"><a
+						href="http://fiddlersway.com/page/index/in-the-news">In the News</a>
+					</li>
+
+					<li class="page_item page-item-15"><a
+						href="http://fiddlersway.com/page/index/our-story">Our Story</a>
+					</li>
+
+					<li class="page_item page-item-25"><a
+						href="http://fiddlersway.com/page/index/photos">Photos</a>
+					</li>
+					
 					<li class="cat-item cat-item-3"><a
 						href="http://www.fiddlersway.com/blog/index/blog-posts"
 						title="View all posts filed under Blog Posts">Blog Posts</a>
 					</li>
+					
 					<li class="cat-item cat-item-14"><a
 						href="http://www.fiddlersway.com/blog/index/in-the-news"
 						title="View all posts filed under In the News">In the News</a>
 					</li>
+					
 					<li class="cat-item cat-item-6"><a
 						href="http://www.fiddlersway.com/blog/index/ipo-news"
 						title="View all posts filed under IPO News">IPO News</a>
 					</li>
+					
 					<li class="cat-item cat-item-7"><a
 						href="http://www.fiddlersway.com/blog/index/ipo-track-record"
 						title="View all posts filed under IPO Track Record">IPO Track
 							Record</a>
 					</li>
+					
 					<li class="cat-item cat-item-4"><a
 						href="http://www.fiddlersway.com/video"
 						title="View all posts filed under Videos">Videos</a>
@@ -272,5 +277,4 @@
 
 				</div>
 				<!-- end #sidebar-left -->
-				<div
-	id="main-content">
+				<div id="main-content">
