@@ -3061,14 +3061,7 @@ input#searchsubmit {
 	margin-top: 9px;
 }
 
-.block h4.widgettitle {
-	padding-bottom: 10px;
-	font-size: 11px;
-	color: #b1b1b1;
-	text-shadow: 1px 1px 0px #fff;
-	text-transform: uppercase;
-	letter-spacing: 0;
-}
+
 
 .block .widget {
 	font-size: 13px;
