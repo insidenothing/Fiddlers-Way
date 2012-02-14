@@ -170,30 +170,30 @@ anylinkmenu.init("menuanchorclass")
 					<li class="current_page_item"><a href="http://www.fiddlersway.com" class="menuanchorclass" rel="anylinkmenu1">Our Story</a>
 					</li>
 
-					<li class="page_item page-item-13"><a
+					<li class="page_item"><a
 						href="http://fiddlersway.com" class="menuanchorclass" rel="anylinkmenu2">Archived News</a></li>
 
 
-					<li class="page_item page-item-69"><a
+					<li class="page_item"><a
 						href="http://fiddlersway.com/page/index/contact-us" class="menuanchorclass" rel="anylinkmenu3">Archived Videos</a>
 					</li>
 
-					<li class="page_item page-item-18"><a
+					<li class="page_item"><a
 						href="http://fiddlersway.com/page/index/in-the-news" class="menuanchorclass" rel="anylinkmenu4">Archived Blogs</a>
 					</li>
 
-					<li class="page_item page-item-15"><a
+					<li class="page_item"><a
 						href="http://fiddlersway.com/page/index/our-story" class="menuanchorclass" rel="anylinkmenu5">Track Record Archives</a>
 					</li>
 
 				
-					<li class="cat-item cat-item-3"><a
+					<li class="page_item"><a
 						href="http://www.fiddlersway.com/blog/index/blog-posts"
 						title="Press Room" class="menuanchorclass" rel="anylinkmenu6">Press Room</a>
 					</li>
 					
 				
-					<li class="cat-item cat-item-6"><a
+					<li class="page_item"><a
 						href="http://www.fiddlersway.com/contact"
 						title="Contact Us">Contact Us</a>
 					</li>
