@@ -7,12 +7,10 @@ class Contact extends CI_Controller {
 		
 		$this->load->model('Contact_model','contact');
 		
-		/** Newsletter Status */
+		
 		if ($this->input->cookie('email')){
 			/* Logged In User */
 			$data['email'] = $this->input->cookie('email');		
-		}else{
-			$data['email'] = '<input name="email" value="Enter E-Mail Address" />';
 		}
 		
 		
