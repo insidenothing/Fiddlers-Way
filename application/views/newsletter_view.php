@@ -9,6 +9,7 @@
 						<td><input name="email" value=""></td>
 					</tr>
 				</table>
+				<br><br>
 				<h4>Additional Information Unlocks Member Benefits</h4>
 				<table width="100%">
 					<tr>
@@ -24,7 +25,7 @@
 						<td><input name="phone" value=""></td>
 					</tr>
 					<tr>
-						<td>Newsletter Status</td>
+						<td>NEWSLETTER STATUS</td>
 						<td>opt-out|opt-in|paid</td>
 					</tr>
 					<tr>
