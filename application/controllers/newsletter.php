@@ -4,20 +4,36 @@ class Newsletter extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('common_header');
-		$this->load->view('newsletter_view');
-		$this->load->view('common_footer');
+		
+		$this->load->model('Newsletter_model','newsletter');
+		
+		if($this->input->post('email'))
+		{
+			$data['newsletter_status'] = $this->newsletter->check_user($this->input->post('email'));
+		} else 
+		{
+			$data['newsletter_status'] = '';
+		}
+		
+		
+		
+		
+		$this->load->library('Menu','menu');
+		$this->menu->load_common('login_view',$data);
+		
+		
 	}
 	
 	
 	
-	public function signup()
+	public function confirm()
 	{
 		
-		$data['debug'] = 'starting double opt-in signup';
-		$this->load->view('common_header');
-		$this->load->view('newsletter_view',$data);
-		$this->load->view('common_footer');
+
+		$data= array();
+		
+		$this->load->library('Menu','menu');
+		$this->menu->load_common('login_view',$data);
 	}
 	
 	
