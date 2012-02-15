@@ -202,13 +202,12 @@ anylinkmenu.init("menuanchorclass")
 									<h4 class="widgettitle">Track Record</h4>
 									<div class="widgetcontent">
 										<div class="textwidget">
-											<p>Track Record</p>
-
-											<p>Francis Gaskins and Doug McLean continue to deliver useful
+											
+											<p><b>Francis Gaskins</b> and <b>Doug McLean</b> continue to deliver useful
 												information to investors, and their track record
 												demonstrates how on-target the are:</p>
 											<p>
-												Technology Play:<br /> One of our highest scored stocks of
+												<b>Technology Play:</b><br /> One of our highest scored stocks of
 												2011 was InvenSense (INVN). This firm was priced at $7.50 on
 												November 15, 2011, and is now up by more than 100% to $17.44
 												in about two months. http://finance.yahoo.com/q?s=INVN INVN
@@ -216,14 +215,14 @@ anylinkmenu.init("menuanchorclass")
 												than 100% in the aftermarket, as well.
 											</p>
 											<p>
-												High-Yield Play:<br /> Another favorite IPO from 2011 is
+												<b>High-Yield Play:</b><br /> Another favorite IPO from 2011 is
 												Chesapeake Granite Wash Trust (CHKR) which IPO'd on November
 												10, 2011 at $19. It initially traded down a little and today
 												is $25.78, up 35%. At $19, CHKR was projected to pay a yield
 												in 2012 of 13%.
 											</p>
 											<p>
-												Another High-Yield Play:<br /> We always liked CVR Partners
+												<b>Another High-Yield Play:</b><br /> We always liked CVR Partners
 												(UAN), because of it yield and its business. UAN IPO'd April
 												7, 2011 at $16, and now trades up 89% at $30.36.<br />
 												http://finance.yahoo.com/q?s=uan&ql=1. At the pre-IPO price
