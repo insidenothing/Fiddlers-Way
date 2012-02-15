@@ -2,16 +2,15 @@
 
 class Blog extends CI_Controller {
 
-	public function index($link)
+	public function index($id='1')
 	{
-		
-		
-		$data['title'] 		= "Page Title: $link";
-		$data['content'] 	= "Page Content";
-		
-		$this->load->view('common_header');
-		$this->load->view('blog_view',$data);
-		$this->load->view('common_footer');
+		$this->load->model('blog_model','blog');
+		$data['title'] = $this->blog->get_title($id);
+		$data['author'] = $this->blog->get_author($id);
+		$data['published'] = $this->blog->get_published($id);
+		$data['contents'] = $this->blog->get_contents($id);
+		$this->load->library('Menu','menu');
+		$this->menu->load_common('page_view',$data);
 	}
 }
 

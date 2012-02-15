@@ -1,5 +1,5 @@
 <?php
-class Page_model extends CI_Model {
+class Blog_model extends CI_Model {
 
 
 	function __construct()
@@ -12,11 +12,11 @@ class Page_model extends CI_Model {
 	{
 		if ($id > 0)
 		{
-			$query = $this->db->query("SELECT title from pages where id = '$id'");
+			$query = $this->db->query("SELECT title from blogs where id = '$id'");
 		}else
 		{
 			$limit = ($id*-1)-1;
-			$query = $this->db->query("SELECT title from pages order by id DESC limit $limit,1");
+			$query = $this->db->query("SELECT title from blogs order by id DESC limit $limit,1");
 		}
 		$row = $query->row();
 		$query->free_result();
@@ -27,11 +27,11 @@ class Page_model extends CI_Model {
 	{
 		if ($id > 0)
 		{
-			$query = $this->db->query("SELECT author from pages where id = '$id'");
+			$query = $this->db->query("SELECT author from blogs where id = '$id'");
 		}else
 		{
 			$limit = ($id*-1)-1;
-			$query = $this->db->query("SELECT author from pages order by id DESC limit $limit,1");
+			$query = $this->db->query("SELECT author from blogs order by id DESC limit $limit,1");
 		}
 		$row = $query->row();
 		$query->free_result();
@@ -42,11 +42,11 @@ class Page_model extends CI_Model {
 	{
 		if ($id > 0)
 		{
-			$query = $this->db->query("SELECT published from pages where id = '$id'");
+			$query = $this->db->query("SELECT published from blogs where id = '$id'");
 		}else
 		{
 			$limit = ($id*-1)-1; 
-			$query = $this->db->query("SELECT published from pages order by id DESC limit $limit,1");
+			$query = $this->db->query("SELECT published from blogs order by id DESC limit $limit,1");
 		}
 		$row = $query->row();
 		$query->free_result();
@@ -57,11 +57,11 @@ class Page_model extends CI_Model {
 	{
 			if ($id > 0)
 		{
-			$query = $this->db->query("SELECT content from pages where id = '$id'");
+			$query = $this->db->query("SELECT content from blogs where id = '$id'");
 		}else
 		{
 			$limit = ($id*-1)-1;
-			$query = $this->db->query("SELECT content from pages order by id DESC limit $limit,1");
+			$query = $this->db->query("SELECT content from blogs order by id DESC limit $limit,1");
 		}
 		$row = $query->row();
 		$query->free_result();
