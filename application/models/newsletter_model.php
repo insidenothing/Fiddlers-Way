@@ -18,7 +18,7 @@ class Newsletter_model extends CI_Model {
 			return '<b>'.$row->newsletter_status.'</b>';
 		}else{
 			/* new user */
-			return '(opt-out|opt-in|paid)'. ;
+			return '(opt-out|opt-in|paid)';
 		}
 	}
 }
