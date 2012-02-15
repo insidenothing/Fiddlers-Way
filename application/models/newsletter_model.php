@@ -13,11 +13,12 @@ class Newsletter_model extends CI_Model {
 		$query = $this->db->query("SELECT * FROM users WHERE email = '$email'");
 		if ($query->num_rows() > 0)
 		{
+			$row=$query->row();
 			/* we have a known email */
-			return 'email found';
+			return '<b>'.$row->newsletter_status.'</b>';
 		}else{
 			/* new user */
-			return 'email not found';
+			return '(opt-out|opt-in|paid)'. ;
 		}
 	}
 }
