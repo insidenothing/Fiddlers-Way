@@ -17,15 +17,15 @@
 			<table>
 				<tr>
 					<td>Author</td>
-					<td><input name="author"></td>
+					<td><input name="author" value="<?php echo $author;?>"></td>
 				</tr>
 				<tr>
 					<td>Published</td>
-					<td><input name="published"></td>
+					<td><input name="published" value="<?php echo $published;?>"></td>
 				</tr>
 				<tr>
 					<td>Title</td>
-					<td><input name="title"></td>
+					<td><input name="title" value="<?php echo $title;?>"></td>
 				</tr>
 				<tr>
 					<td></td>
@@ -47,7 +47,7 @@
 
 				<div class="widget widget_text" id="text-2">
 
-					<textarea id="whiteboard" rows="30" cols="100" name="whiteboard">
+					<textarea id="whiteboard" rows="30" cols="100" name="content">
 
 
 
