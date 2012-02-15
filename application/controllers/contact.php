@@ -11,6 +11,8 @@ class Contact extends CI_Controller {
 		if ($this->input->cookie('email')){
 			/* Logged In User */
 			$data['email'] = $this->input->cookie('email');		
+		}else{
+			$data['email'] = '';
 		}
 		
 		

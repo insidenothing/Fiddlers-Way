@@ -27,7 +27,7 @@
 					</tr>
 					<tr>
 						<td width="50%">From:</td>
-						<?php if (isset($email)){?>
+						<?php if ($email != ''){?>
 							<td width="50%"><input name="email" type="email" value="<?php echo $email;?>"></td>
 						<?php }else{ ?>
 							<td width="50%"><input name="email" type="email" value="E-Mail Address" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'E-Mail Address':this.value;"></td>
