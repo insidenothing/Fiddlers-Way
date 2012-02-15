@@ -76,8 +76,7 @@
 						<td><input type="radio" name="risk_tolarance" value="Conservative"></td>
 					</tr>
 				</table>
-				<img src="/assets/images/slogan-bg.png" width="400" height="25" />
-				<center><input type="submit" value="Save"></center>
+				<center><img src="/assets/images/slogan-bg.png" width="400" height="25" /><br><input type="submit" value="Save"></center>
 			</div>
 		</div>
 	</div>
