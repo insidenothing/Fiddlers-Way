@@ -5,12 +5,22 @@ class Page extends CI_Controller {
 	public function index($link)
 	{
 		
-		$data['title'] 		= "Page Title: $link";
-		$data['content'] 	= "Page Content";
 		
-		$this->load->view('common_header');
-		$this->load->view('page_view',$data);
-		$this->load->view('common_footer');
+		$this->load->model('page_model','blog');
+		$data['title'] = $this->page->get_title($id);
+		$data['author'] = $this->page->get_author($id);
+		$data['published'] = $this->page->get_published($id);
+		$data['contents'] = $this->page->get_contents($id);
+		
+		
+		
+		
+		
+		
+		
+		
+		$this->load->library('Menu','menu');
+		$this->menu->load_common('page_view',$data);
 	}
 }
 
