@@ -10,7 +10,7 @@
 				<h4>Los Angeles, CA Office</h4>
 				info@fiddlersway.com<br>
 				<br>		
-				<center><img src="/assets/images/slogan-bg.png" width="400" height="25" /><br><input type="submit" value="Save"></center>
+				<center><img src="/assets/images/slogan-bg.png" width="400" height="25" /></center>
 			</div>
 		</div>
 	</div>
@@ -33,11 +33,8 @@
 					<tr>
 						<td colspan="2"><textarea name="body"></textarea></td>
 					</tr>
-					<tr>
-						<td colspan="2"><input type="submit" value="Send"></td>
-					</tr>
 				</table>
-				<center><img src="/assets/images/slogan-bg.png" width="400" height="25" /><br><input type="submit" value="Save"></center>
+				<center><img src="/assets/images/slogan-bg.png" width="400" height="25" /><br><input type="submit" value="Send Message"></center>
 			</div>
 		</div>
 	</div>
