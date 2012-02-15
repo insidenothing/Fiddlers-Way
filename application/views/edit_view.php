@@ -7,7 +7,7 @@
 <textarea id="whiteboard" rows="30" cols="100" name="whiteboard">
 
 
-<?PHP echo $content;?></textarea>
+<?PHP echo $contents;?></textarea>
 
 <script language="JavaScript">
 generate_wysiwyg('whiteboard');
