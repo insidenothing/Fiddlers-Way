@@ -53,6 +53,7 @@ text-indent: 5px;
 .anylinkmenu a:hover{ /*hover background color*/
 background: #688FA1;
 color: #F4F3F4;
+text-shadow: 1px 1px 0 #000000;
 }
 
 /* ######### Alternate multi-column class for drop down menus ######### */
