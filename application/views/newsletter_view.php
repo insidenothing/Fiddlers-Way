@@ -6,7 +6,7 @@
 				<table width="100%">
 					<tr>
 						<td width="50%">E-MAIL</td>
-						<td width="50%"><input name="email" value=""></td>
+						<td width="50%"><input name="email" value="<?php echo $email;?>"></td>
 					</tr>
 				</table>
 				<br><br>
