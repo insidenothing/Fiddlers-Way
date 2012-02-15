@@ -7,7 +7,9 @@ class Newsletter extends CI_Controller {
 		
 		$this->load->model('Newsletter_model','newsletter');
 		
-		if($this->input->post('email'))
+		if ($this->input->cookie('email')){
+			$data['newsletter_status'] = $this->newsletter->check_user($this->input->cookie('email'));
+		}elseif($this->input->post('email'))
 		{
 			$data['newsletter_status'] = $this->newsletter->check_user($this->input->post('email'));
 		} else 
