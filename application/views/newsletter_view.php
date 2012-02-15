@@ -50,7 +50,7 @@
 					</tr>
 					<tr>
 						<td>INVESTMENT EXPERIENCE</td>
-						<td>(CHECK ALL THAT APPLY)</td>
+						<td>(check all that apply)</td>
 					</tr>
 					<tr>
 						<td>STOCK / MUTUAL FUNDS</td>
