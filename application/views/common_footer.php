@@ -20,9 +20,12 @@
 							id="subscribe-blog">
 							<p>Enter your email address.</p>
 							<p><input name="email" type="email" value="E-Mail Address" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'E-Mail Address':this.value;"><input type="submit" value="Subscribe"></p>
+							<p><a href="/login">Log In</a></p>
+							<p><a href="/login/reset">Reset Password</a></p>
 						</form>
 						<?php }else{ ?>
 							<p><a href="/newsletter">Manage Settings</a></p>
+							<p><a href="/login/dologout">Log Out</a></p>
 						<?php }?>
 
 					</div>
