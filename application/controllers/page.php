@@ -2,7 +2,7 @@
 
 class Page extends CI_Controller {
 
-	public function index($link)
+	public function index($link='')
 	{
 		
 		
