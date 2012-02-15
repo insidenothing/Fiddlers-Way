@@ -8,10 +8,10 @@ class Page_model extends CI_Model {
 		parent::__construct();
 	}
 
-	function get_title($seo='')
+	function get_title($seo)
 	{
 		$query = $this->db->query("SELECT title from pages where seo = '$seo'");
-		if ($query->num_rows() > 0)
+		if ($query->num_rows() == 0)
 		{
 			$query = $this->db->query("SELECT title from pages order by id DESC limit 0,1");
 		}
@@ -20,10 +20,10 @@ class Page_model extends CI_Model {
 		return $row->title;
 	}
 
-	function get_contents($seo='')
+	function get_contents($seo)
 	{
 		$query = $this->db->query("SELECT content from pages where seo = '$seo'");
-		if ($query->num_rows() > 0)
+		if ($query->num_rows() == 0)
 		{
 			$query = $this->db->query("SELECT content from pages order by id DESC limit 0,1");
 		}
