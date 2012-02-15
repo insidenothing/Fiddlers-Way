@@ -26,7 +26,7 @@
 					</tr>
 					<tr>
 						<td>NEWSLETTER STATUS</td>
-						<td>opt-out|opt-in|paid</td>
+						<td><?php echo $newsletter_status;?> (opt-out|opt-in|paid)</td>
 					</tr>
 					<tr>
 						<td>INVESTMENT OBJECTIVE(S)</td>
