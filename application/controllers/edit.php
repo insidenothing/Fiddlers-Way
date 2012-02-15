@@ -11,6 +11,9 @@ class Edit extends CI_Controller {
 			$data['results'] = set_contents($id,$type,addslashes($this->input->post('content')));
 		}
 		
+		$data['id'] = $id;
+		$data['type'] = $type;
+		
 		
 		$data['title'] = $this->edit->get_title($id,$type);
 		$data['author'] = $this->edit->get_author($id,$type);

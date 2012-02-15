@@ -26,17 +26,17 @@
 \* ---------------------------------------------------------------------- */
 
 // Images Directory
-imagesDir = "icons/";
+imagesDir = "/assets/wysiwyg/icons/";
 
 // CSS Directory
-cssDir = "styles/";
+cssDir = "/assets/wysiwyg/styles/";
 
 // Popups Directory
-popupsDir = "popups/";
+popupsDir = "/assets/wysiwyg/popups/";
 
 // WYSIWYG Width and Height
-wysiwygWidth = 1000;
-wysiwygHeight = 1000;
+wysiwygWidth = 450;
+wysiwygHeight = 800;
 
 // Include Style Sheet
 document.write('<link rel="stylesheet" type="text/css" href="' +cssDir+ 'styles.css">\n');

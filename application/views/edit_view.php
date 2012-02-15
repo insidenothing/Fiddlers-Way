@@ -1,6 +1,6 @@
 
 <script
-	language="JavaScript" type="text/javascript" src="/assets/js/wysiwyg.js"></script>
+	language="JavaScript" type="text/javascript" src="/assets/wysiwyg/wysiwyg.js"></script>
 
 <form method="POST" action="/edit/index/<?php echo $type; ?>/<?php echo $id; ?>">
 	
