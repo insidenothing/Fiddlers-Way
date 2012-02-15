@@ -2,7 +2,7 @@
 	<div class="block-border">
 		<div class="block-content">
 			<div class="widget widget_text">
-				<table>
+				<table width="100%">
 					<tr>
 						<td>NAME</td>
 						<td><input name="name" value=""></td>
