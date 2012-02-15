@@ -5,22 +5,22 @@
 				<table>
 					<tr>
 						<td>NAME</td>
-						<td><input name="name" value="<?php echo $name;?>"></td>
+						<td><input name="name" value=""></td>
 						<td></td>
 					</tr>
 					<tr>
 						<td>ADDRESS</td>
-						<td><input name="address" value="<?php echo $address;?>"></td>
+						<td><input name="address" value=""></td>
 						<td></td>
 					</tr>
 					<tr>
 						<td>PHONE NUMBER(S)</td>
-						<td><input name="phone" value="<?php echo $PHONE;?>"></td>
+						<td><input name="phone" value=""></td>
 						<td></td>
 					</tr>
 					<tr>
 						<td>Receive Newsletter</td>
-						<td><?php echo $newsletter_status;?></td>
+						<td></td>
 						<td>opt-out-link</td>
 					</tr>
 					<tr>
