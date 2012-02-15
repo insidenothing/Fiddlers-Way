@@ -19,21 +19,21 @@ class Newsletter extends CI_Controller {
 		
 		
 		$this->load->library('Menu','menu');
-		$this->menu->load_common('login_view',$data);
+		$this->menu->load_common('newsletter_view',$data);
 		
 		
 	}
 	
 	
 	
-	public function confirm()
+	public function confirm($string)
 	{
 		
 
 		$data= array();
 		
 		$this->load->library('Menu','menu');
-		$this->menu->load_common('login_view',$data);
+		$this->menu->load_common('newsletter_view',$data);
 	}
 	
 	
