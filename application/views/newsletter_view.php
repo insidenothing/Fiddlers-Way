@@ -94,8 +94,8 @@
 						<td></td>
 					</tr>
 				</table>
-				<img src="/assets/images/slogan-bg.png" width="400" height="25" /> <br>
-				Francis Gaskins on CNBC analyzing facebook
+				<img src="/assets/images/slogan-bg.png" width="400" height="25" />
+				
 				</center>
 			</div>
 		</div>
