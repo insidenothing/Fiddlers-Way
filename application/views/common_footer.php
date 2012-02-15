@@ -14,16 +14,16 @@
 						<label for="subscribe-field">Fiddler&#039;s Way Newsletter</label>
 					</h4>
 					<div class="widgetcontent">
-
+						<?php if (!$this->input->cookie('email')){?>
 						<a name="subscribe-blog"></a>
 						<form action="/newsletter" method="post" accept-charset="utf-8"
 							id="subscribe-blog">
 							<p>Enter your email address.</p>
-							<p>
-								<input name="email" type="email" value="E-Mail Address" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'E-Mail Address':this.value;"><input type="submit" value="Subscribe">
-								
+							<p><input name="email" type="email" value="E-Mail Address" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'E-Mail Address':this.value;"><input type="submit" value="Subscribe"></p>
 						</form>
-
+						<?php }else{ ?>
+							<p><a href="/newsletter">Manage Settings</a></p>
+						<?php }?>
 
 					</div>
 				</div>
