@@ -10,7 +10,7 @@ class Blog extends CI_Controller {
 		$data['published'] = $this->blog->get_published($id);
 		$data['contents'] = $this->blog->get_contents($id);
 		$this->load->library('Menu','menu');
-		$this->menu->load_common('page_view',$data);
+		$this->menu->load_common('blog_view',$data);
 	}
 }
 
