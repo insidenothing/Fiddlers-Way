@@ -205,7 +205,7 @@ anylinkmenu.init("menuanchorclass")
 											
 											<p><b class="tr_bold">Francis Gaskins</b> and <b class="tr_bold">Doug McLean</b> continue to deliver useful
 												information to investors, and their track record
-												demonstrates how on-target the are:</p>
+												demonstrates how on-target they are:</p>
 											<p>
 												<b class="tr_bold">Technology Play:</b><br /> One of our highest scored stocks of
 												2011 was InvenSense (INVN). This firm was priced at $7.50 on
