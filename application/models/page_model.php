@@ -8,11 +8,11 @@ class Page_model extends CI_Model {
 		parent::__construct();
 	}
 
-	function get_title($id)
+	function get_title($seo='')
 	{
-		if ($id > 0)
+		if ($seo != '')
 		{
-			$query = $this->db->query("SELECT title from pages where id = '$id'");
+			$query = $this->db->query("SELECT title from pages where seo = '$seo'");
 		}else
 		{
 			$limit = ($id*-1)-1;
@@ -23,11 +23,11 @@ class Page_model extends CI_Model {
 		return $row->title;
 	}
 
-	function get_contents($id)
+	function get_contents($seo='')
 	{
-			if ($id > 0)
+			if ($seo != '')
 		{
-			$query = $this->db->query("SELECT content from pages where id = '$id'");
+			$query = $this->db->query("SELECT content from pages where seo = '$seo'");
 		}else
 		{
 			$limit = ($id*-1)-1;
