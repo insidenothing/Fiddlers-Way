@@ -13,10 +13,10 @@ class Blog_model extends CI_Model {
 		if ($id > 0)
 		{
 			$query = $this->db->query("SELECT title from blogs where id = '$id'");
-		}else
-		{
-			$limit = ($id*-1)-1;
-			$query = $this->db->query("SELECT title from blogs order by id DESC limit $limit,1");
+			if ($query->num_rows() > 0)
+			{
+				$query = $this->db->query("SELECT title from blogs order by id DESC limit 0,1");
+			}
 		}
 		$row = $query->row();
 		$query->free_result();
@@ -28,10 +28,10 @@ class Blog_model extends CI_Model {
 		if ($id > 0)
 		{
 			$query = $this->db->query("SELECT author from blogs where id = '$id'");
-		}else
-		{
-			$limit = ($id*-1)-1;
-			$query = $this->db->query("SELECT author from blogs order by id DESC limit $limit,1");
+			if ($query->num_rows() > 0)
+			{
+				$query = $this->db->query("SELECT author from blogs order by id DESC limit 0,1");
+			}
 		}
 		$row = $query->row();
 		$query->free_result();
@@ -43,10 +43,10 @@ class Blog_model extends CI_Model {
 		if ($id > 0)
 		{
 			$query = $this->db->query("SELECT published from blogs where id = '$id'");
-		}else
-		{
-			$limit = ($id*-1)-1; 
-			$query = $this->db->query("SELECT published from blogs order by id DESC limit $limit,1");
+			if ($query->num_rows() > 0)
+			{
+				$query = $this->db->query("SELECT published from blogs order by id DESC limit 0,1");
+			}
 		}
 		$row = $query->row();
 		$query->free_result();
@@ -58,10 +58,10 @@ class Blog_model extends CI_Model {
 			if ($id > 0)
 		{
 			$query = $this->db->query("SELECT content from blogs where id = '$id'");
-		}else
-		{
-			$limit = ($id*-1)-1;
-			$query = $this->db->query("SELECT content from blogs order by id DESC limit $limit,1");
+			if ($query->num_rows() > 0)
+			{
+				$query = $this->db->query("SELECT content from blogs order by id DESC limit 0,1");
+			}
 		}
 		$row = $query->row();
 		$query->free_result();
