@@ -60,7 +60,6 @@
 						<td><input type="checkbox" name="exp_private_placement"></td>
 					</tr>
 					<tr>
-						<td></td>
 						<td>RISK TOLERANCE</td>
 						<td>(select one)</td>
 					</tr>
