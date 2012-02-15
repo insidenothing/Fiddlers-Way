@@ -51,8 +51,8 @@ text-indent: 5px;
 }
 
 .anylinkmenu a:hover{ /*hover background color*/
-background: grey;
-color: White;
+background: #688FA1;
+color: #F4F3F4;
 }
 
 /* ######### Alternate multi-column class for drop down menus ######### */
