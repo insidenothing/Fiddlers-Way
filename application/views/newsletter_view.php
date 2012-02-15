@@ -5,8 +5,8 @@
 				<h4>Required Information</h4>
 				<table width="100%">
 					<tr>
-						<td>NAME</td>
-						<td><input name="name" value=""></td>
+						<td>E-MAIL</td>
+						<td><input name="email" value=""></td>
 					</tr>
 				</table>
 				<h4>Additional Information Unlocks Member Benefits</h4>
