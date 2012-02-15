@@ -2,6 +2,14 @@
 	<div class="block-border">
 		<div class="block-content">
 			<div class="widget widget_text">
+				<h4>Required Information</h4>
+				<table width="100%">
+					<tr>
+						<td>NAME</td>
+						<td><input name="name" value=""></td>
+					</tr>
+				</table>
+				<h4>Additional Information Unlocks Member Benefits</h4>
 				<table width="100%">
 					<tr>
 						<td>NAME</td>
