@@ -4,9 +4,10 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('common_header');
-		$this->load->view('home_view');
-		$this->load->view('common_footer');
+		$data=array();
+		$this->load->library('Menu','menu');
+		$this->menu->load_common('home_view',$data);
+		
 	}
 }
 
