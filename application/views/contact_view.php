@@ -22,6 +22,10 @@
 				<h4>Send Message</h4>
 				<table width="100%">
 					<tr>
+						<td width="50%">Spam Control: What is 1 + 1?</td>
+						<td width="50%"><select name="spam"><option>1</option><option>2</option></select></td>
+					</tr>
+					<tr>
 						<td width="50%">From:</td>
 						<td width="50%"><?php echo $email;?></td>
 					</tr>
