@@ -13,7 +13,7 @@ class Page_model extends CI_Model {
 		$query = $this->db->query("SELECT title from pages where seo = '$seo'");
 		if ($query->num_rows() > 0)
 		{
-			$query = $this->db->query("SELECT title from pages order by id DESC limit $limit,1");
+			$query = $this->db->query("SELECT title from pages order by id DESC limit 0,1");
 		}
 		$row = $query->row();
 		$query->free_result();
@@ -25,7 +25,7 @@ class Page_model extends CI_Model {
 		$query = $this->db->query("SELECT content from pages where seo = '$seo'");
 		if ($query->num_rows() > 0)
 		{
-			$query = $this->db->query("SELECT content from pages order by id DESC limit $limit,1");
+			$query = $this->db->query("SELECT content from pages order by id DESC limit 0,1");
 		}
 		$row = $query->row();
 		$query->free_result();
