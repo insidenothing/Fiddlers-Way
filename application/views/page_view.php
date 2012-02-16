@@ -14,7 +14,7 @@
 <div class="block-content">
 <h4 class="widgettitle">Operator: <?php echo $operator;?></h4>
 			<div class="widget widget_text" id="text-2">
-				<li><a href="/edit/index/pages/<?php $id;?>">Edit Page</a></li>
+				<li><a href="/edit/index/pages/<?php echo $id;?>">Edit Page</a></li>
 			</div>
 		</div>
 	</div>
