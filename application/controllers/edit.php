@@ -37,6 +37,7 @@ class Edit extends CI_Controller {
 		$data['author'] = $this->edit->get_author($id,$type);
 		$data['published'] = $this->edit->get_published($id,$type);
 		$data['contents'] = $this->edit->get_contents($id,$type);
+		$data['seo'] = $this->edit->get_seo($id,$type);
 		
 		
 		

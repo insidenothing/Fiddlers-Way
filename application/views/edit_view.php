@@ -32,6 +32,10 @@
 					<td><input type="submit" value="Save Updated Page"></td>
 					<td><b><?php echo $results;?></b></td>
 				</tr>
+				<tr>
+					<td></td>
+					<td><a href="/<?php echo $type;?>/index/<?php echo $seo;?>"><b>Back to <?php echo $type;?></b></a></td>
+				</tr>
 			</table>				
 	
 				

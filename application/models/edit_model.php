@@ -40,7 +40,13 @@ class Edit_model extends CI_Model {
 		return $row->content;
 	}
 
-
+	function get_seo($id,$table)
+	{
+		$query = $this->db->query("SELECT seo from $table where id = '$id'");
+		$row = $query->row();
+		$query->free_result();
+		return $row->seo;
+	}
 	function set_contents($id,$table,$content)
 	{
 		$query = $this->db->query("UPDATE $table set content = '$content' where id = '$id'");
