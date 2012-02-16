@@ -33,6 +33,16 @@ class Newsletter_model extends CI_Model {
 		}
 	}
 	
+	
+	function confirm($string)
+	{
+		$query = $this->db->query("SELECT * FROM users WHERE newsletter_status = '$string'");
+		if ($query->num_rows() > 0)
+		{
+			$query = $this->db->query("update users set newsletter_status = 'opt-in' WHERE newsletter_status = '$string'");
+		}
+	}
+	
 	function send_confirmation($email)
 	{
 		$query = $this->db->query("SELECT * FROM users WHERE email = '$email'");
@@ -52,7 +62,7 @@ class Newsletter_model extends CI_Model {
 			$this->email->cc('patrick@fiddlersway.com');
 			$confirmation_link = "http://fiddlersway.com/newsletter/confirm/$salt";
 			$this->email->subject('Fiddlers Way Newsletter Confirmation');
-			if ($row->name)
+			if ($row->name != '')
 			{
 				$line1 = 'Your password is '.$pass;
 			}else

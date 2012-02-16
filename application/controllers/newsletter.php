@@ -39,13 +39,9 @@ class Newsletter extends CI_Controller {
 	
 	public function confirm($string)
 	{
-		// check confirmation
-		
-		// update to opt-in
-		
-		// redirect to settings page
-		
-		
+		$this->load->model('Newsletter_model','newsletter');
+		$this->newsletter->confirm($string);
+		$this->output->set_header("Location: /newsletter");
 	}
 	
 	
