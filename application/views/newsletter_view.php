@@ -8,6 +8,10 @@
 						<td width="50%">E-MAIL</td>
 						<td width="50%"><input name="email" value="<?php echo $email;?>"></td>
 					</tr>
+					<tr>
+						<td width="50%"></td>
+						<td width="50%"><?php echo $confirm;?></td>
+					</tr>
 				</table>
 				<br><br>
 				<h4>Additional Information Unlocks Member Benefits</h4>

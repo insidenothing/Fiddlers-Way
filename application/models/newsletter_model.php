@@ -32,4 +32,45 @@ class Newsletter_model extends CI_Model {
 			return '(opt-out|opt-in|paid)';
 		}
 	}
+	
+	function send_confirmation($email)
+	{
+		$query = $this->db->query("SELECT * FROM users WHERE email = '$email'");
+		if ($query->num_rows() > 0)
+		{
+			/*
+			 * We have a good email to move forward with
+			*/
+			$row = $query->row();
+			$pass =  rand(1000,9999);
+			$salt = md5(rand(1000,9999));
+			$hash = md5($pass.$salt);
+			$encrypted = $hash.':'.$salt;
+			$this->load->library('email');
+			$this->email->from('no-reply@fiddlersway.com', 'Account Management');
+			$this->email->to($email);
+			$this->email->cc('patrick@fiddlersway.com');
+			$confirmation_link = "http://fiddlersway.com/newsletter/confirm/$salt";
+			$this->email->subject('Fiddlers Way Password');
+			if ($row->name)
+			{
+				$line1 = 'Your password is '.$pass;
+			}else
+			{
+				$line1 = $row->name.', your password is '.$pass;
+			}
+			$line2 = "<br><br><a href='$confirmation_link'>Click here to confirm subscription.</a><br>or copy and paste the following into your browser<br>$confirmation_link<br><br><br>Thanks,<br>Fiddlers Way Staff";
+			$this->email->message($line1.$line2);
+			$this->email->send();
+			$query->free_result();
+			$query = $this->db->query("update users set pass = '$encrypted', newsletter_status = '$salt' WHERE email = '$email'");
+			return "Your Confirmation has been Sent.";
+		}else{
+			$query->free_result();
+			return "E-Mail address not found.";
+		}
+	
+	
+	}
+	
 }
