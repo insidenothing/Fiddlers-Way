@@ -34,7 +34,7 @@
 				</tr>
 				<tr>
 					<td></td>
-					<td><a href="/<?php echo $type;?>/index/<?php echo $seo;?>"><b>Back to <?php echo $type;?></b></a></td>
+					<td><a href="/<?php echo $type;?>/index/<?php echo $seo;?>"><b>Go back to <?php echo $seo;?></b></a></td>
 				</tr>
 			</table>				
 	
