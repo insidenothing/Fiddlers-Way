@@ -15,9 +15,20 @@ class Newsletter_model extends CI_Model {
 		{
 			$row=$query->row();
 			/* we have a known email */
-			return '<b>'.$row->newsletter_status.'</b>';
+			if ($row->newsletter_status)
+			{
+				return '<b>'.$row->newsletter_status.'</b>';
+			}else{
+				return '<b>Awaiting Confirmation</b>';
+			}
+			
+			
 		}else{
 			/* new user */
+			$query = $this->db->query("insert into users (email) values ('$email') ");
+			
+			/* send email verification */
+			
 			return '(opt-out|opt-in|paid)';
 		}
 	}
