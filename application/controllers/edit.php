@@ -20,6 +20,14 @@ class Edit extends CI_Controller {
 			$results .= $this->edit->set_title($id,$type,addslashes($this->input->post('title')));
 		}
 		
+		if ($this->input->cookie('level') == 'Operator')
+		{
+			$data['operator'] = $this->input->cookie('name');
+		}else{
+			$data['operator'] = '';
+		}
+		
+		
 		$data['results'] = $results;
 		$data['id'] = $id;
 		$data['type'] = $type;

@@ -15,7 +15,6 @@
 			<div class="widget widget_text" id="text-2">
 			<h4 class="widgettitle">Operator: <?php echo $operator;?></h4>
 			<h4>Settings: <?php echo $type;?> #<?php echo $id;?></h4>
-			
 			<table>
 				<tr>
 					<td>Author</td>
