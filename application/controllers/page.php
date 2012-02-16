@@ -7,6 +7,7 @@ class Page extends CI_Controller {
 		$this->load->model('page_model','page');
 		$data['title'] = $this->page->get_title($seo);
 		$data['contents'] = $this->page->get_contents($seo);
+		$data['id'] = $this->page->get_id($seo);
 		
 		if ($this->input->cookie('level') == 'Operator')
 		{
