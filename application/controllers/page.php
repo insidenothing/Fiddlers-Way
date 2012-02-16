@@ -11,7 +11,7 @@ class Page extends CI_Controller {
 		
 		if ($this->input->cookie('level') == 'Operator')
 		{
-			$data['contents'] = $this->input->cookie('name');
+			$data['operator'] = $this->input->cookie('name');
 		}else{
 			$data['operator'] = '';
 		}
