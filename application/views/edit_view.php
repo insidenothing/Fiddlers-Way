@@ -33,8 +33,8 @@
 					<td><b><?php echo $results;?></b></td>
 				</tr>
 				<tr>
-					<td></td>
-					<td><a href="/<?php echo $type;?>/index/<?php echo $seo;?>"><b>Go back to <?php echo $seo;?></b></a></td>
+					
+					<td colspan="2"><a href="/<?php echo $type;?>/index/<?php echo $seo;?>"><b>Click this link to view <?php echo $seo;?></b></a></td>
 				</tr>
 			</table>				
 	
