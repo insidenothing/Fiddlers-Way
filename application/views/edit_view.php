@@ -34,7 +34,7 @@
 				</tr>
 				<tr>
 					
-					<td colspan="2"><a href="/<?php echo $type;?>/index/<?php echo $seo;?>"><b>Click this link to view <?php echo $seo;?></b></a></td>
+					<td colspan="2"><a href="/<?php echo $controller;?>/index/<?php echo $seo;?>"><b>Click this link to view <?php echo $seo;?></b></a></td>
 				</tr>
 			</table>				
 	

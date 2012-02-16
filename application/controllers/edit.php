@@ -40,6 +40,14 @@ class Edit extends CI_Controller {
 		$data['seo'] = $this->edit->get_seo($id,$type);
 		
 		
+		if ($type == 'pages'){
+			$data['controller'] = 'page';
+		}
+		if ($type == 'blogs'){
+			$data['controller'] = 'blog';
+		}
+		
+		
 		
 		
 		
