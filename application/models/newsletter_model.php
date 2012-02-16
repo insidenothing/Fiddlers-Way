@@ -39,7 +39,15 @@ class Newsletter_model extends CI_Model {
 		$query = $this->db->query("SELECT * FROM users WHERE newsletter_status = '$string'");
 		if ($query->num_rows() > 0)
 		{
+			$row = $query->row();
 			$query = $this->db->query("update users set newsletter_status = 'opt-in' WHERE newsletter_status = '$string'");
+			$this->load->library('User','user');
+			$this->user->set_user_id($row->id);
+			$this->user->set_name($row->name);
+			$this->user->set_email($row->email);
+			$this->user->set_level($row->level);
+			$this->user->set_newsletter($row->newsletter_status);
+			$this->user->set_cookies();
 		}
 	}
 	
