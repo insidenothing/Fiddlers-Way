@@ -15,17 +15,17 @@
 			<div class="widget widget_text" id="text-2">
 			<h4 class="widgettitle">Operator: <?php echo $operator;?></h4>
 			<h4>Settings: <?php echo $type;?> #<?php echo $id;?></h4>
-			<table>
+			<table width="100%">
 				<tr>
-					<td>Author</td>
+					<td>Author (blog only)</td>
 					<td><input name="author" value="<?php echo $author;?>"></td>
 				</tr>
 				<tr>
-					<td>Published</td>
+					<td>Published (blog only)</td>
 					<td><input name="published" value="<?php echo $published;?>"></td>
 				</tr>
 				<tr>
-					<td>Title</td>
+					<td>Page Title</td>
 					<td><input name="title" value="<?php echo $title;?>"></td>
 				</tr>
 				<tr bgcolor="#FFDE53">
