@@ -6,11 +6,21 @@ class Edit extends CI_Controller {
 	{
 		
 		$this->load->model('Edit_model','edit');
-		
+		$results = '';
 		if ($this->input->post('content')){
-			$data['results'] = set_contents($id,$type,addslashes($this->input->post('content')));
+			$results .= $this->edit->set_contents($id,$type,addslashes($this->input->post('content')));
+		}
+		if ($this->input->post('author')){
+			$results .= $this->edit->set_author($id,$type,addslashes($this->input->post('author')));
+		}
+		if ($this->input->post('published')){
+			$results .= $this->edit->set_published($id,$type,addslashes($this->input->post('published')));
+		}
+		if ($this->input->post('title')){
+			$results .= $this->edit->set_title($id,$type,addslashes($this->input->post('title')));
 		}
 		
+		$data['results'] = $results;
 		$data['id'] = $id;
 		$data['type'] = $type;
 		

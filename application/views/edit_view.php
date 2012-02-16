@@ -14,6 +14,7 @@
 
 			<div class="widget widget_text" id="text-2">
 			<h4><?php echo $type;?> Settings #<?php echo $id;?></h4>
+			<b><?php echo $results;?></b>
 			<table>
 				<tr>
 					<td>Author</td>

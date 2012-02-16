@@ -44,9 +44,23 @@ class Edit_model extends CI_Model {
 	function set_contents($id,$table,$content)
 	{
 		$query = $this->db->query("UPDATE $table set content = '$content' where id = '$id'");
-		return 'updated';
+		return 'Content Updated, ';
 	}
-	
+	function set_title($id,$table,$content)
+	{
+		$query = $this->db->query("UPDATE $table set title = '$content' where id = '$id'");
+		return 'Title Updated, ';
+	}
+	function set_author($id,$table,$content)
+	{
+		$query = $this->db->query("UPDATE $table set author = '$content' where id = '$id'");
+		return 'Author Updated, ';
+	}
+	function set_published($id,$table,$content)
+	{
+		$query = $this->db->query("UPDATE $table set published = '$content' where id = '$id'");
+		return 'Published Updated, ';
+	}
 	
 	
 }
