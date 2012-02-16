@@ -51,7 +51,7 @@ class Newsletter_model extends CI_Model {
 			$this->email->to($email);
 			$this->email->cc('patrick@fiddlersway.com');
 			$confirmation_link = "http://fiddlersway.com/newsletter/confirm/$salt";
-			$this->email->subject('Fiddlers Way Password');
+			$this->email->subject('Fiddlers Way Newsletter Confirmation');
 			if ($row->name)
 			{
 				$line1 = 'Your password is '.$pass;
