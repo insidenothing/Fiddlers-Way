@@ -13,8 +13,9 @@
 		<div class="block-content">
 
 			<div class="widget widget_text" id="text-2">
-			<h4><?php echo $type;?> Settings #<?php echo $id;?></h4>
-			<b><?php echo $results;?></b>
+			<h4 class="widgettitle">Operator: <?php echo $operator;?></h4>
+			<h4>Settings: <?php echo $type;?> #<?php echo $id;?></h4>
+			
 			<table>
 				<tr>
 					<td>Author</td>
@@ -28,9 +29,9 @@
 					<td>Title</td>
 					<td><input name="title" value="<?php echo $title;?>"></td>
 				</tr>
-				<tr>
-					<td></td>
-					<td><input type="submit"></td>
+				<tr bgcolor="#FFDE53">
+					<td><input type="submit" value="Save Updated Page"></td>
+					<td><b><?php echo $results;?></b></td>
 				</tr>
 			</table>				
 	
