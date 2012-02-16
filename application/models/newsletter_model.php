@@ -70,13 +70,7 @@ class Newsletter_model extends CI_Model {
 			$this->email->cc('patrick@fiddlersway.com');
 			$confirmation_link = "http://fiddlersway.com/newsletter/confirm/$salt";
 			$this->email->subject('Fiddlers Way Newsletter Confirmation');
-			if ($row->name != '')
-			{
-				$line1 = 'Your password is '.$pass;
-			}else
-			{
-				$line1 = $row->name.', your password is '.$pass;
-			}
+			$line1 = 'Your password is '.$pass;
 			$line2 = "<br><br><a href='$confirmation_link'>Click here to confirm subscription.</a><br>or copy and paste the following into your browser<br>$confirmation_link<br><br><br>Thanks,<br>Fiddlers Way Staff";
 			$this->email->message($line1.$line2);
 			$this->email->send();
