@@ -2,7 +2,7 @@
 	<div class="block-border">
 		<div class="block-content">
 			<h4 class="widgettitle"><?php echo $title;?></h4>
-			<?php echo $contents;?>
+			<div class="widget widget_text" id="text-2"><?php echo $contents;?></div>
 		</div>
 	</div>
 </div>
