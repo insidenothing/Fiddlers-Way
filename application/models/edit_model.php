@@ -67,6 +67,10 @@ class Edit_model extends CI_Model {
 		$query = $this->db->query("UPDATE $table set published = '$content' where id = '$id'");
 		return 'Published Updated, ';
 	}
-	
+	function set_seo($id,$table,$content)
+	{
+		$query = $this->db->query("UPDATE $table set seo = '$content' where id = '$id'");
+		return 'SEO Link Updated, ';
+	}
 	
 }

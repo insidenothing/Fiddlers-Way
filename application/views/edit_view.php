@@ -28,6 +28,11 @@
 					<td>Page Title</td>
 					<td><input name="title" value="<?php echo $title;?>"></td>
 				</tr>
+				<tr>
+					<td>SEO Link Name*</td>
+					<td><input name="seo" value="<?php echo $seo;?>"></td>
+				</tr>
+				
 				<tr bgcolor="#FFDE53">
 					<td><input type="submit" value="Save Updated Page"></td>
 					<td><b><?php echo $results;?></b></td>
@@ -37,7 +42,7 @@
 					<td colspan="2"><a href="/<?php echo $controller;?>/index/<?php echo $seo;?>"><b>Click this link to view <?php echo $seo;?></b></a></td>
 				</tr>
 			</table>				
-	
+	*This must match the link or parent controller's code
 				
 			</div>
 		</div>
