@@ -11,10 +11,12 @@ class Press_releases extends CI_Controller {
 
 		$data['title1'] = $this->wire->get_title('press_release_2');
 		$data['contents1'] = $this->wire->get_contents('press_release_2');
+		$data['seo1'] = 'press_release_2';
 
 
 		$data['title2'] = $this->wire->get_title('press_release_1');
 		$data['contents2'] = $this->wire->get_contents('press_release_1');
+		$data['seo2'] = 'press_release_1';
 
 
 		$this->load->library('Menu','menu');
