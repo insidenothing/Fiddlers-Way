@@ -46,7 +46,9 @@ class Edit extends CI_Controller {
 		if ($type == 'blogs'){
 			$data['controller'] = 'blog';
 		}
-		
+		if ($type == 'wire'){
+			$data['controller'] = 'wire';
+		}
 		
 		
 		
