@@ -27,7 +27,7 @@
 							<p><a href="/newsletter">Manage Settings</a></p>
 							<p><a href="/login/dologout">Log Out</a></p>
 						<?php }?>
-						<?php if (!$this->input->cookie('level') == 'Operator'){?>
+						<?php if ($this->input->cookie('level') == 'Operator'){?>
 							<p><a href="/edit/new/page">New Page</a></p>
 							<p><a href="/edit/new/wire">New Wire</a></p>
 							<p><a href="/edit/new/blog">New Blog</a></p>
