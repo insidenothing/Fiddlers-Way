@@ -2,7 +2,7 @@
 
 class Admin extends CI_Controller {
 
-	public function index($seo)
+	public function index()
 	{
 		$this->load->model('admin_model','admin');
 		
