@@ -41,7 +41,7 @@ anylinkmenu5.items=[
 
 var anylinkmenu6={divclass:'anylinkmenu', inlinestyle:'', linktarget:''} //First menu variable. Make sure "anylinkmenu1" is a unique name!
 anylinkmenu6.items=[
-	["PRESS RELEASES", "http://www.fiddlersway.com/page/index/new-featuring-us"],
+	["PRESS RELEASES", "http://www.fiddlersway.com/press_releases"],
 	["PRESS CLIPS", "http://www.fiddlersway.com/page/index/video-news-featuring-us"],
 	["VIDEO PRESS CLIPS", "http://www.fiddlersway.com/page/index/ipo-news-other-sources"]
 ]
