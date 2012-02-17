@@ -31,6 +31,7 @@
 							<p><a href="/edit/new/page">New Page</a></p>
 							<p><a href="/edit/new/wire">New Wire</a></p>
 							<p><a href="/edit/new/blog">New Blog</a></p>
+							<p><a href="/admin">Administration</a></p>
 						<?php }?>
 					</div>
 				</div>
