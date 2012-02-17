@@ -1,4 +1,4 @@
-<?php
+<?php 
 class Wire_model extends CI_Model {
 
 
