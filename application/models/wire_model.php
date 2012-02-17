@@ -20,10 +20,10 @@ class Wire_model extends CI_Model {
 	}
 	function get_title($seo)
 	{
-		$query = $this->db->query("SELECT title from pages where seo = '$seo'");
+		$query = $this->db->query("SELECT title from wire where seo = '$seo'");
 		if ($query->num_rows() == 0)
 		{
-			$query = $this->db->query("SELECT title from pages order by id DESC limit 0,1");
+			$query = $this->db->query("SELECT title from wire order by id DESC limit 0,1");
 		}
 		$row = $query->row();
 		$query->free_result();
