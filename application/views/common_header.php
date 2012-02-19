@@ -149,7 +149,14 @@ anylinkmenu.init("menuanchorclass")
 		<div id="menu">
 			<div class="container clearfix">
 				<ul id="primary" class="nav">
-					<li class="current_page_item"><a href="http://www.fiddlersway.com" class="menuanchorclass" rel="anylinkmenu1">Our Story</a>
+				
+				
+					<li class="page_item"><a href="http://fiddlersway.com" class="menuanchorclass" rel="anylinkmenu1">Our Story</a>
+					</li>
+
+					<li class="current_page_item"><a
+						href="http://fiddlersway.com/ipo_calendar"
+						title="IPO Calendar">IPO Calendar</a>
 					</li>
 
 					<li class="page_item"><a
@@ -170,7 +177,7 @@ anylinkmenu.init("menuanchorclass")
 
 				
 					<li class="page_item"><a
-						href="http://www.fiddlersway.com/blog/index/blog-posts"
+						href="http://fiddlersway.com/blog/index/blog-posts"
 						title="Press Room" class="menuanchorclass" rel="anylinkmenu6">Press Room</a>
 					</li>
 					
