@@ -3,7 +3,7 @@
 		<div class="block-content">
 			<h4 class="widgettitle">IPO CALENDAR</h4>
 			<div class="widget widget_text" id="text-2">
-			<table>
+			<table style="white-space: pre">
 				<tr>
 					<td>PUBLISHED</td>
 					<td>NAME</td>
