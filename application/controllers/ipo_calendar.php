@@ -12,7 +12,7 @@ class Ipo_calendar extends CI_Controller {
 		$data['ipos'] = $this->ipo->get_list();
 
 		$this->load->library('Menu','menu');
-		$this->menu->load_common('ipo_calendar_view',$data);
+		$this->menu->load_plain('ipo_calendar_view',$data);
 
 	}
 }

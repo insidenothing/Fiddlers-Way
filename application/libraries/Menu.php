@@ -24,6 +24,12 @@ class Menu   {
 	}
 	
 	
-
+	function load_plain($view,$data)
+	{
+		$CI =& get_instance();
+		$CI->load->view('plain_header');
+		$CI->load->view($view, $data);
+		$CI->load->view('plain_footer');
+	}
 	
 }
