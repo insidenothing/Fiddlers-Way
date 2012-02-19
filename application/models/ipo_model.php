@@ -7,16 +7,27 @@ class Ipo_model extends CI_Model {
 		// Call the Model constructor
 		parent::__construct();
 	}
-	
+	function row_color($i){
+		$bg1 = "#FFFFFF"; // color one
+		$bg2 = "#cc99ff"; // color two
+		if ( $i%2 ) {
+			return $bg1;
+		} else {
+			return $bg2;
+		}
+	}
 	function get_list()
 	{
 		$rows='';
 		$query = $this->db->query("SELECT * from ipo_calendar order by published_date DESC");
 		if ($query->num_rows() > 0)
 		{
+			$i=0;
 			foreach ($query->result() as $row)
 			{
-				$rows .= "<tr>
+				$i++;
+				$bgcolor = $this->row_color($i);
+				$rows .= "<tr bgcolor='$bgcolor'>
 				<td>".$row->published."</td>
 				<td>".$row->name."</td>
 				
