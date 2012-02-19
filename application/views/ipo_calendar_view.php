@@ -1,4 +1,4 @@
-<div class="block" style="margin-top: 5px; width:900px !important;">
+<div class="block" style="margin-top: 5px; width:1100px !important;">
 	<div class="block-border">
 		<div class="block-content">
 			<h4 class="widgettitle">IPO CALENDAR</h4>
