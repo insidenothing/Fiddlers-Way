@@ -2205,9 +2205,9 @@ img#about-image {
 }
 
 .container {
-	text-align: center;
+	text-align: left;
 	margin: 0 auto;
-	width: 960px;
+	width: 1200px;
 	position: relative;
 }
 

@@ -158,15 +158,15 @@ anylinkmenu.init("menuanchorclass")
 					</li>
 
 					<li class="page_item"><a
-						href="http://fiddlersway.com" class="menuanchorclass" rel="anylinkmenu2">News</a></li>
+						href="http://fiddlersway.com" class="menuanchorclass" rel="anylinkmenu2">Archived News</a></li>
 
 
 					<li class="page_item"><a
-						href="http://fiddlersway.com/page/index/contact-us" class="menuanchorclass" rel="anylinkmenu3">Videos</a>
+						href="http://fiddlersway.com/page/index/contact-us" class="menuanchorclass" rel="anylinkmenu3">Archived Videos</a>
 					</li>
 
 					<li class="page_item"><a
-						href="http://fiddlersway.com/page/index/in-the-news" class="menuanchorclass" rel="anylinkmenu4">Blogs</a>
+						href="http://fiddlersway.com/page/index/in-the-news" class="menuanchorclass" rel="anylinkmenu4">Archived Blogs</a>
 					</li>
 
 					<li class="page_item"><a
