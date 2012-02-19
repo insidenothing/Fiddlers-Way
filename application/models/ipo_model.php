@@ -7,6 +7,23 @@ class Ipo_model extends CI_Model {
 		// Call the Model constructor
 		parent::__construct();
 	}
+	
+	function get_list()
+	{
+		$rows='';
+		$query = $this->db->query("SELECT * from ipo_calendar order by published DESC");
+		if ($query->num_rows() > 0)
+		{
+			foreach ($query->result() as $row)
+			{
+				$rows .= "<tr><td>".$row->id."</td><td>".$row->published."</td><td>".$row->name."</td></tr>";
+			}
+		}
+	
+		return $rows;
+	}
+	
+	
 	function get_id($seo)
 	{
 		$query = $this->db->query("SELECT id from wire where seo = '$seo'");

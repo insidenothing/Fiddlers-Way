@@ -9,15 +9,7 @@ class Ipo_calendar extends CI_Controller {
 		
 		/* most recent blog posting */
 
-		$data['title1'] = $this->ipo->get_title('press_release_2');
-		$data['contents1'] = $this->ipo->get_contents('press_release_2');
-		$data['seo1'] = 'press_release_2';
-
-
-		$data['title2'] = $this->ipo->get_title('press_release_1');
-		$data['contents2'] = $this->ipo->get_contents('press_release_1');
-		$data['seo2'] = 'press_release_1';
-
+		$data['ipos'] = $this->ipo->get_list();
 
 		$this->load->library('Menu','menu');
 		$this->menu->load_common('ipo_calendar_view',$data);
