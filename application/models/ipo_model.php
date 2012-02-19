@@ -9,7 +9,7 @@ class Ipo_model extends CI_Model {
 	}
 	function row_color($i){
 		$bg1 = "#FFFFFF"; // color one
-		$bg2 = "#688fa1"; // color two
+		$bg2 = "#FCFCFC"; // color two
 		if ( $i%2 ) {
 			return $bg1;
 		} else {
