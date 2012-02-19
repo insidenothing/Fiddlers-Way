@@ -16,7 +16,7 @@ class Ipo_model extends CI_Model {
 		{
 			foreach ($query->result() as $row)
 			{
-				$rows .= "<tr><td>".$row->id."</td><td>".$row->published."</td><td>".$row->name."</td></tr>";
+				$rows .= "<tr><td>".$row->published."</td><td>".$row->name."</td></tr>";
 			}
 		}
 	
