@@ -16,7 +16,28 @@ class Ipo_model extends CI_Model {
 		{
 			foreach ($query->result() as $row)
 			{
-				$rows .= "<tr><td>".$row->published."</td><td>".$row->name."</td></tr>";
+				$rows .= "<tr>
+				<td>".$row->published."</td>
+				<td>".$row->name."</td>
+				
+				<td>".$row->manager."</td>
+					<td>".$row->catagory."</td>
+					<td>".$row->shares_mm."</td>
+					
+					<td>".$row->price_low."</td>
+					<td>".$row->pre_ipo_price."</td>
+					<td>".$row->price_high."</td>
+					
+					<td>".$row->pre_ipo_amount_mm."</td>
+					<td>".$row->estimate."</td>
+					
+					<td>".$row->expected."</td>
+					<td>".$row->40_day."</td>
+					<td>".$row->180_day."</td>
+				
+				
+				
+				</tr>";
 			}
 		}
 	
