@@ -729,12 +729,7 @@ img#about-image {
 	text-align: center;
 }
 
-.container {
-	margin: 0 auto;
-	position: relative;
-	text-align: left;
-	width: 960px;
-}
+
 
 #logo {
 	margin-bottom: 15px;
@@ -2210,7 +2205,7 @@ img#about-image {
 }
 
 .container {
-	text-align: left;
+	text-align: center;
 	margin: 0 auto;
 	width: 960px;
 	position: relative;
