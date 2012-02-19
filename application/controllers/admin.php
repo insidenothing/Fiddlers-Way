@@ -9,6 +9,7 @@ class Admin extends CI_Controller {
 		$data['pages'] = $this->admin->get_pages('pages');
 		$data['blogs'] = $this->admin->get_pages('blogs');
 		$data['wire'] = $this->admin->get_pages('wire');
+		$data['ipos'] = $this->admin->get_ipos();
 		$this->load->library('Menu','menu');
 		$this->menu->load_common('admin_view',$data);
 	}
