@@ -170,7 +170,7 @@ anylinkmenu.init("menuanchorclass")
 					</li>
 
 					<li class="page_item"><a
-						href="http://fiddlersway.com/page/index/our-story" class="menuanchorclass" rel="anylinkmenu5">Track Record Archives</a>
+						href="http://fiddlersway.com/page/index/our-story" class="menuanchorclass" rel="anylinkmenu5">Track Record</a>
 					</li>
 
 				
