@@ -32,8 +32,8 @@ class Ipo_model extends CI_Model {
 					<td>".$row->estimate."</td>
 					
 					<td>".$row->expected."</td>
-					<td>".$row->40_day."</td>
-					<td>".$row->180_day."</td>
+					<td>".$row->day40."</td>
+					<td>".$row->day180."</td>
 				
 				
 				
