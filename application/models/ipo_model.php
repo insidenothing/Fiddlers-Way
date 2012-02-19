@@ -11,7 +11,7 @@ class Ipo_model extends CI_Model {
 	function get_list()
 	{
 		$rows='';
-		$query = $this->db->query("SELECT * from ipo_calendar order by published DESC");
+		$query = $this->db->query("SELECT * from ipo_calendar order by published_date DESC");
 		if ($query->num_rows() > 0)
 		{
 			foreach ($query->result() as $row)
