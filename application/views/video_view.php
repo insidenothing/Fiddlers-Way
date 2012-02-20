@@ -2,12 +2,12 @@
 	<div class="block-border">
 		<div class="block-content">
 			<div class="widget widget_text" id="text-2">
-				<h4 class="widgettitle"><?php echo $title;?></h4>
+				<h4 class="widgettitle"><?php echo $seo;?></h4>
 				<center>
-					<?php echo $content; ?>
+					<?php echo $contents; ?>
 					<img src="/assets/images/slogan-bg.png" width="400" height="25" />
 					<br> 
-					<?php echo $comment; ?>
+					<?php echo $comments; ?>
 				</center>
 			</div>
 		</div>
