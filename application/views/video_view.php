@@ -2,13 +2,14 @@
 	<div class="block-border">
 		<div class="block-content">
 			<div class="widget widget_text" id="text-2">
-				<h4 class="widgettitle"><?php echo $seo;?></h4>
+				<h4 class="widgettitle"><?php echo $title;?></h4>
 				<center>
 					<?php echo $contents; ?>
 					<img src="/assets/images/slogan-bg.png" width="400" height="25" />
 					<br> 
 					<?php echo $comments; ?>
 				</center>
+				<small><a href="http://fiddlersway.com/video/index/<?php echo $seo;?>">permalink: <?php echo $seo?></a></small>
 			</div>
 		</div>
 	</div>
