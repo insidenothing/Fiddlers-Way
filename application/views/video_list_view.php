@@ -4,7 +4,7 @@
 			<div class="widget widget_text" id="text-2">
 				<h4 class="widgettitle"><?php echo $catagory;?></h4>
 				
-				<table>
+				<table border="1" cellpadding="2" cellspacing="0">
 				<tr>
 					<td>Link</td>
 					<td>Title</td>
