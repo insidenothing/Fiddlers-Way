@@ -2,8 +2,9 @@
 
 class Video extends CI_Controller {
 
-	public function index()
+	public function index($seo='')
 	{
+		/* load a single video */ 
 		$this->load->view('common_header');
 		$this->load->view('video_view');
 		$this->load->view('common_footer');
