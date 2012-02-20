@@ -9,7 +9,8 @@
 					<br> 
 					<?php echo $comments; ?>
 				</center>
-				<small><a href="http://fiddlersway.com/video/index/<?php echo $seo;?>">permalink: <?php echo $seo?></a></small>
+				<br>
+				<small><a href="http://fiddlersway.com/video/index/<?php echo $seo;?>">permalink: <b><?php echo $seo?></b></a></small>
 			</div>
 		</div>
 	</div>
