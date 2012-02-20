@@ -149,8 +149,6 @@ anylinkmenu.init("menuanchorclass")
 		<div id="menu">
 			<div class="container clearfix">
 				<ul id="primary" class="nav">
-				
-				
 					<li class="page_item"><a href="http://fiddlersway.com" class="menuanchorclass" rel="anylinkmenu1">Our Story</a>
 					</li>
 
@@ -177,7 +175,7 @@ anylinkmenu.init("menuanchorclass")
 
 				
 					<li class="page_item"><a
-						href="http://fiddlersway.com/blog/index/blog-posts"
+						href="http://www.fiddlersway.com/blog/index/blog-posts"
 						title="Press Room" class="menuanchorclass" rel="anylinkmenu6">Press Room</a>
 					</li>
 					
@@ -201,77 +199,4 @@ anylinkmenu.init("menuanchorclass")
 
 
 
-				<div id="sidebar-left" class="sidebar">
-					<div class="block">
-						<div class="block-border">
-							<div class="block-content">
-								<div id="text-2" class="widget widget_text">
-									<h4 class="widgettitle">Track Record</h4>
-									<div class="widgetcontent">
-										<div class="textwidget">
-											
-											<p><b class="tr_bold">Francis Gaskins</b> and <b class="tr_bold">Doug McLean</b> continue to deliver useful
-												information to investors, and their track record
-												demonstrates how on-target they are:</p>
-											<p>
-												<b class="tr_bold">Technology Play:</b><br /> One of our highest scored stocks of
-												2011 was InvenSense (INVN). This firm was priced at $7.50 on
-												November 15, 2011, and is now up by more than 100% to $17.44
-												in about two months. http://finance.yahoo.com/q?s=INVN INVN
-												traded in the immediate aftermarket at $8.25, and is up more
-												than 100% in the aftermarket, as well.
-											</p>
-											<p>
-												<b class="tr_bold">High-Yield Play:</b><br /> Another favorite IPO from 2011 is
-												Chesapeake Granite Wash Trust (CHKR) which IPO'd on November
-												10, 2011 at $19. It initially traded down a little and today
-												is $25.78, up 35%. At $19, CHKR was projected to pay a yield
-												in 2012 of 13%.
-											</p>
-											<p>
-												<b class="tr_bold">Another High-Yield Play:</b><br /> We always liked CVR Partners
-												(UAN), because of it yield and its business. UAN IPO'd April
-												7, 2011 at $16, and now trades up 89% at $30.36.<br />
-												http://finance.yahoo.com/q?s=uan&ql=1. At the pre-IPO price
-												range mid-point of $13, UAN was expected to yield 14.8%.
-											</p>
-
-										</div>
-									</div>
-								</div>
-								<!-- end .widget -->
-							</div>
-							<!-- end .block-content -->
-						</div>
-						<!-- end .block-border -->
-					</div>
-					<!-- end .block -->
-
-					<div class="block">
-						<div class="block-border">
-
-							<div class="block-content">
-								<h4 class="widgettitle">Search Resources</h4>
-								<div>
-									<table>
-										<tr>
-											<td><input type="text" value="Enter Search Here..." size="15" />
-											</td>
-											<td><input type="submit" value="Search" /></td>
-											</td>
-										</tr>
-									</table>
-
-								</div>
-
-								<!-- end .widget -->
-							</div>
-							<!-- end .block-content -->
-						</div>
-						<!-- end .block-border -->
-					</div>
-					<!-- end .block -->
-
-				</div>
-				<!-- end #sidebar-left -->
 				<div id="main-content">
