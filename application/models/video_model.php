@@ -56,10 +56,10 @@ class Video_model extends CI_Model {
 
 	function get_comments($seo)
 	{
-		$query = $this->db->query("SELECT comments from videos where seo = '$seo'");
+		$query = $this->db->query("SELECT comment from videos where seo = '$seo'");
 		if ($query->num_rows() == 0)
 		{
-			$query = $this->db->query("SELECT comments from videos order by id DESC limit 0,1");
+			$query = $this->db->query("SELECT comment from videos order by id DESC limit 0,1");
 		}
 		$row = $query->row();
 		$query->free_result();
