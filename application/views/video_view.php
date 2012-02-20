@@ -9,6 +9,7 @@
 				</center>
 				<?php echo $comments; ?>
 				<br>
+				<br>
 				<small><a href="http://fiddlersway.com/video/index/<?php echo $seo;?>">permalink: <b><?php echo $seo?></b></a></small>
 			</div>
 		</div>
