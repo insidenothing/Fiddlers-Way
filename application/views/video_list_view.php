@@ -6,9 +6,9 @@
 				
 				<table>
 				<tr>
-					<td>ID</td>
-					<td>SEO</td>
-					<td>TITLE</td>
+					<td>Link</td>
+					<td>Title</td>
+					<td>Comment</td>
 				</tr>
 				<?php echo $pages?>
 				</table>
