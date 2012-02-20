@@ -63,7 +63,7 @@ class Video_model extends CI_Model {
 		}
 		$row = $query->row();
 		$query->free_result();
-		return $row->comments;
+		return $row->comment;
 	}
 	
 }
