@@ -30,7 +30,7 @@ class Video extends CI_Controller {
 		$this->load->model('video_model','video');
 		
 		
-		$data['list'] = $this->video->get_list('archive');
+		$data['pages'] = $this->video->get_list('archive');
 		$data['catagory'] = 'archive';
 		
 		$this->load->library('Menu','menu');
