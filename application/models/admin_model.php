@@ -16,7 +16,7 @@ class Admin_model extends CI_Model {
 		{
 			foreach ($query->result() as $row)
 			{
-				$rows .= "<tr><td><a href='/video/index/".$row->seo."'>Watch Video</td><td>".$row->title."</td><td>".$row->comment."</td></tr>";
+				$rows .= "<tr><td>".$row->id."</td><td>".$row->seo."</td><td>".$row->title."</td></tr>";
 			}
 		}
 		
