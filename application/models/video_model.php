@@ -1,5 +1,5 @@
 <?php
-class Page_model extends CI_Model {
+class Video_model extends CI_Model {
 
 
 	function __construct()

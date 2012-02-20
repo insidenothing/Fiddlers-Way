@@ -6,12 +6,12 @@ class Video extends CI_Controller {
 	{
 		/* load a single video */
 
-		$this->load->model('page_model','page');
-		$data['title'] = $this->page->get_title($seo);
-		$data['contents'] = $this->page->get_contents($seo);
-		$data['comments'] = $this->page->get_comments($seo);
-		$data['id'] = $this->page->get_id($seo);
-		$data['seo'] = $this->page->get_seo($seo);
+		$this->load->model('video_model','video');
+		$data['title'] = $this->video->get_title($seo);
+		$data['contents'] = $this->video->get_contents($seo);
+		$data['comments'] = $this->video->get_comments($seo);
+		$data['id'] = $this->video->get_id($seo);
+		$data['seo'] = $this->video->get_seo($seo);
 
 		if ($this->input->cookie('level') == 'Operator')
 		{
@@ -26,12 +26,12 @@ class Video extends CI_Controller {
 
 	public function archive()
 	{
-		$this->load->model('page_model','page');
-		$data['seo'] = $this->page->get_seo();
-		$data['title'] = $this->page->get_title($data['seo']);
-		$data['contents'] = $this->page->get_contents($data['seo']);
-		$data['comments'] = $this->page->get_comments($data['seo']);
-		$data['id'] = $this->page->get_id($data['seo']);
+		$this->load->model('video_model','video');
+		$data['seo'] = $this->video->get_seo();
+		$data['title'] = $this->video->get_title($data['seo']);
+		$data['contents'] = $this->video->get_contents($data['seo']);
+		$data['comments'] = $this->video->get_comments($data['seo']);
+		$data['id'] = $this->video->get_id($data['seo']);
 		
 
 		if ($this->input->cookie('level') == 'Operator')
@@ -49,12 +49,12 @@ class Video extends CI_Controller {
 	public function blog()
 	{
 
-		$this->load->model('page_model','page');
-		$data['seo'] = $this->page->get_seo();
-		$data['title'] = $this->page->get_title($data['seo']);
-		$data['contents'] = $this->page->get_contents($data['seo']);
-		$data['comments'] = $this->page->get_comments($data['seo']);
-		$data['id'] = $this->page->get_id($data['seo']);
+		$this->load->model('video_model','video');
+		$data['seo'] = $this->video->get_seo();
+		$data['title'] = $this->video->get_title($data['seo']);
+		$data['contents'] = $this->video->get_contents($data['seo']);
+		$data['comments'] = $this->video->get_comments($data['seo']);
+		$data['id'] = $this->video->get_id($data['seo']);
 		
 
 		if ($this->input->cookie('level') == 'Operator')
@@ -71,12 +71,12 @@ class Video extends CI_Controller {
 	public function news()
 	{
 
-		$this->load->model('page_model','page');
-		$data['seo'] = $this->page->get_seo();
-		$data['title'] = $this->page->get_title($data['seo']);
-		$data['contents'] = $this->page->get_contents($data['seo']);
-		$data['comments'] = $this->page->get_comments($data['seo']);
-		$data['id'] = $this->page->get_id($data['seo']);
+		$this->load->model('video_model','video');
+		$data['seo'] = $this->video->get_seo();
+		$data['title'] = $this->video->get_title($data['seo']);
+		$data['contents'] = $this->video->get_contents($data['seo']);
+		$data['comments'] = $this->video->get_comments($data['seo']);
+		$data['id'] = $this->video->get_id($data['seo']);
 		
 
 		if ($this->input->cookie('level') == 'Operator')
