@@ -6,9 +6,8 @@
 				<center>
 					<?php echo $contents; ?>
 					<img src="/assets/images/slogan-bg.png" width="400" height="25" />
-					<br> 
-					<?php echo $comments; ?>
 				</center>
+				<?php echo $comments; ?>
 				<br>
 				<small><a href="http://fiddlersway.com/video/index/<?php echo $seo;?>">permalink: <b><?php echo $seo?></b></a></small>
 			</div>
