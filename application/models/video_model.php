@@ -7,6 +7,22 @@ class Video_model extends CI_Model {
 		// Call the Model constructor
 		parent::__construct();
 	}
+	
+	function get_list($catagory)
+	{
+		$rows='';
+		$query = $this->db->query("SELECT * from videos  where catagory = '$catagory' order by id DESC");
+		if ($query->num_rows() > 0)
+		{
+			foreach ($query->result() as $row)
+			{
+				$rows .= "<tr><td>".$row->id."</td><td>".$row->seo."</td><td>".$row->title."</td></tr>";
+			}
+		}
+	
+		return $rows;
+	}
+	
 	function get_seo($seo='')
 	{
 		$query = $this->db->query("SELECT seo from videos where seo = '$seo'");
