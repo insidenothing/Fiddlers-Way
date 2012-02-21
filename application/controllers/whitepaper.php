@@ -8,6 +8,8 @@ class Whitepaper extends CI_Controller {
 		$data['title'] = $this->whitepaper->get_title($seo);
 		$data['contents'] = $this->whitepaper->get_contents($seo);
 		$data['id'] = $this->whitepaper->get_id($seo);
+		$data['author'] = $this->whitepaper->get_author($seo);
+		$data['published'] = $this->whitepaper->get_published($seo);
 		
 		if ($this->input->cookie('level') == 'Operator')
 		{

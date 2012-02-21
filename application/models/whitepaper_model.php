@@ -41,7 +41,27 @@ class Whitepaper_model extends CI_Model {
 		$query->free_result();
 		return $row->content;
 	}
-
-	
+	function get_published($seo)
+	{
+		$query = $this->db->query("SELECT published from whitepapers where seo = '$seo'");
+		if ($query->num_rows() == 0)
+		{
+			$query = $this->db->query("SELECT published from whitepapers order by id DESC limit 0,1");
+		}
+		$row = $query->row();
+		$query->free_result();
+		return $row->published;
+	}
+	function get_author($seo)
+	{
+		$query = $this->db->query("SELECT author from whitepapers where seo = '$seo'");
+		if ($query->num_rows() == 0)
+		{
+			$query = $this->db->query("SELECT author from whitepapers order by id DESC limit 0,1");
+		}
+		$row = $query->row();
+		$query->free_result();
+		return $row->author;
+	}
 	
 }

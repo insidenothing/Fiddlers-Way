@@ -17,11 +17,11 @@
 			<h4>Settings: <?php echo $type;?> #<?php echo $id;?></h4>
 			<table width="100%">
 				<tr>
-					<td>Author (blog only)</td>
+					<td>Author</td>
 					<td><input name="author" value="<?php echo $author;?>"></td>
 				</tr>
 				<tr>
-					<td>Published (blog only)</td>
+					<td>Published</td>
 					<td><input name="published" value="<?php echo $published;?>"></td>
 				</tr>
 				<tr>
