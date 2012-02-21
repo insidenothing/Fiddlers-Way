@@ -13,7 +13,7 @@ class Sales_model extends CI_Model {
 	{
 		$ip = $this->input->ip_address();
 		$query = $this->db->query("insert into ipn_transactions ( ip, processed ) values ( '$ip', NOW() ) ");
-		if ($query->num_rows() > 0)
+		if ($this->db->insert_id() > 0)
 		{
 			return $this->db->insert_id();
 		}
