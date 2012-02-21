@@ -28,8 +28,26 @@ class Ipo_model extends CI_Model {
 				$i++;
 				$bgcolor = $this->row_color($i);
 				$rows .= "<tr bgcolor='$bgcolor'>
-				<td>".$row->name."</td>
 				<td>".$row->published."</td>
+				<td>".$row->name."</td>
+				
+				<td>".$row->manager."</td>
+					<td>".$row->catagory."</td>
+					<td>".$row->shares_mm."</td>
+					
+					<td>".$row->price_low."</td>
+					<td>".$row->pre_ipo_price."</td>
+					<td>".$row->price_high."</td>
+					
+					<td>".$row->pre_ipo_amount_mm."</td>
+					<td>".$row->estimate."</td>
+					
+					<td>".$row->expected."</td>
+					<td>".$row->day40."</td>
+					<td>".$row->day180."</td>
+				
+				
+				
 				</tr>";
 			}
 		}
@@ -48,27 +66,9 @@ class Ipo_model extends CI_Model {
 				$i++;
 				$bgcolor = $this->row_color($i);
 				$rows .= "<tr bgcolor='$bgcolor'>
-					<td>".$row->published."</td>
 					<td>".$row->name."</td>
-					
-					<td>".$row->manager."</td>
-						<td>".$row->catagory."</td>
-						<td>".$row->shares_mm."</td>
-						
-						<td>".$row->price_low."</td>
-						<td>".$row->pre_ipo_price."</td>
-						<td>".$row->price_high."</td>
-						
-						<td>".$row->pre_ipo_amount_mm."</td>
-						<td>".$row->estimate."</td>
-						
-						<td>".$row->expected."</td>
-						<td>".$row->day40."</td>
-						<td>".$row->day180."</td>
-					
-					
-					
-					</tr>";
+					<td>".$row->published."</td>
+				</tr>";
 			}
 		}
 	
