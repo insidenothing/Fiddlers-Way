@@ -42,7 +42,7 @@ class Sales extends CI_Controller {
 		//$this->load->model('admin_model','admin');
 		//$data['pages'] = $this->admin->get_pages('pages');
 	
-		error_log(date('r').' IPN Ping \n',3,'/logs/ipn.log');
+		error_log(date('r').' IPN Ping '."\n",3,'/logs/ipn.log');
 		// PHP 4.1
 		
 		// read the post from PayPal system and add 'cmd'
@@ -81,9 +81,11 @@ class Sales extends CI_Controller {
 					// check that receiver_email is your Primary PayPal email
 					// check that payment_amount/payment_currency are correct
 					// process payment
+					error_log(date('r').' IPN VERIFIED '."\n",3,'/logs/ipn.log');
 				}
 				else if (strcmp ($res, "INVALID") == 0) {
 					// log for manual investigation
+					error_log(date('r').' IPN INVALID '."\n",3,'/logs/ipn.log');
 				}
 			}
 			fclose ($fp);
