@@ -110,7 +110,7 @@ class Sales extends CI_Controller {
 			fclose ($fp);
 		}
 		
-		
+		 $this->sales->post_ipn_hook($transaction_id);
 	}
 	
 	

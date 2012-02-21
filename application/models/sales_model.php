@@ -29,4 +29,16 @@ class Sales_model extends CI_Model {
 		}
 	}
 	
+	function post_ipn_hook($transaction_id)
+	{
+		$ip = $this->input->ip_address();
+		$this->load->library('email');
+		$this->email->from('no-reply@fiddlersway.com', 'Account Management');
+		$this->email->to('patrick@fiddlersway.com');
+		//$this->email->cc('');
+		$this->email->subject('Paypal IPN Tranasaction #'.$transaction_id);
+		$this->email->message('We have a new transaction, make sure it set itself up right!');
+		$this->email->send();
+	}
+	
 }
