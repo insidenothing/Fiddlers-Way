@@ -256,7 +256,8 @@ anylinkmenu.init("menuanchorclass")
 									<table width="100%" border="1" cellpadding="1" cellspacing="0">
 										<tr>
 											<td>Symbol</td>
-											<td>Report Published</td>
+											<td>Published</td>
+											<td>Report</td>
 										</tr>
 										<?php echo $home_ipos;?>
 									</table>

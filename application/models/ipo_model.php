@@ -65,6 +65,7 @@ class Ipo_model extends CI_Model {
 				$rows .= "<tr>
 					<td>".$row->symbol."</td>
 					<td>".$row->published."</td>
+					<td><a href='http://fiddlersway.com/ipo/index/".$row->symbol."'>View</td>
 				</tr>";
 			}
 		}
