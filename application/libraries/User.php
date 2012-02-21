@@ -60,6 +60,7 @@ class User {
     	delete_cookie('email');
     	delete_cookie('level');
     	delete_cookie('newsletter');
+    	delete_cookie('premium');
     }
     
     
