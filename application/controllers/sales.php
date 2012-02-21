@@ -49,13 +49,16 @@ class Sales extends CI_Controller {
 		 */
 		
 		
-		
-		$this->output->enable_profiler(TRUE);
+		$this->load->model('sales_model','sales');
+		$this->output->enable_profiler(FALSE);
 		//$this->load->model('admin_model','admin');
 		//$data['pages'] = $this->admin->get_pages('pages');
 	
 		error_log(date('r').' IPN Ping '."\n",3,'/logs/ipn.log');
 		// PHP 4.1
+		
+		$transaction_id = $this->sales->new_transaction();
+		
 		
 		// read the post from PayPal system and add 'cmd'
 		$req = 'cmd=_notify-validate';
@@ -105,13 +108,7 @@ class Sales extends CI_Controller {
 			fclose ($fp);
 		}
 		
-				
 		
-		
-		
-		$data['debug'] = 'debug';
-		$this->load->library('Menu','menu');
-		$this->menu->load_common('sales_view',$data);
 	}
 	
 	
