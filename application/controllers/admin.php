@@ -6,9 +6,9 @@ class Admin extends CI_Controller {
 	{
 		$this->output->enable_profiler(TRUE);
 		$this->load->model('admin_model','admin');
-		$data['pages'] = $this->admin->get_pages('pages');
-		$data['blogs'] = $this->admin->get_pages('blogs');
-		$data['wire'] = $this->admin->get_pages('wire');
+		$data['pages'] = $this->admin->get_pages('pages','page');
+		$data['blogs'] = $this->admin->get_pages('blogs','blog');
+		$data['wire'] = $this->admin->get_pages('wire','wire');
 		$data['ipos'] = $this->admin->get_ipos();
 		$this->load->library('Menu','menu');
 		$this->menu->load_common('admin_view',$data);

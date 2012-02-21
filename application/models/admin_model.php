@@ -8,7 +8,7 @@ class Admin_model extends CI_Model {
 		parent::__construct();
 	}
 
-	function get_pages($table)
+	function get_pages($table,$controller)
 	{
 		$rows='';
 		$query = $this->db->query("SELECT * from $table order by id DESC");
@@ -16,7 +16,7 @@ class Admin_model extends CI_Model {
 		{
 			foreach ($query->result() as $row)
 			{
-				$rows .= "<tr><td>".$row->id."</td><td>".$row->seo."</td><td>".$row->title."</td></tr>";
+				$rows .= "<tr><td>".$row->id."</td><td><a href='/$controller/index/".$row->seo."'>".$row->seo."</a></td><td>".$row->title."</td></tr>";
 			}
 		}
 		
