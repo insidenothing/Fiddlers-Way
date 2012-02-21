@@ -68,6 +68,14 @@ class Blog_model extends CI_Model {
 		return $row->content;
 	}
 
+	function get_last_id($limit)
+	{
+		$limit = $limit - 1; /* offset for index starting at 1 */
+		$query = $this->db->query("SELECT id from blogs order by id DESC limit $limit, 1");
+		$row = $query->row();
+		$query->free_result();
+		return $row->id;
+	}
 	
 	
 }
