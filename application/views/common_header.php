@@ -255,8 +255,8 @@ anylinkmenu.init("menuanchorclass")
 								<div>
 									<table>
 										<tr>
-											<td>Name</td>
-											<td>Date</td>
+											<td>Symbol</td>
+											<td>Report Published</td>
 										</tr>
 										<?php echo $home_ipos;?>
 									</table>
