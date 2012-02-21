@@ -8,6 +8,8 @@ class Ipo extends CI_Controller {
 		$data['symbol'] = $symbol;
 		$data['details'] = $this->ipo->get_list($symbol);
 
+		$data['premium'] = $this->input->cookie('premium');
+		
 		$this->load->library('Menu','menu');
 		$this->menu->load_plain('ipo_view',$data);
 	}

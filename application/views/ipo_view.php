@@ -35,7 +35,7 @@
 <div class="block" style="margin-top: 5px; width:1000px !important;">
 <div class="block-border">
 <div class="block-content">
-<?php if ($this->input->cookie('premium') == 'yes') { ?>			
+<?php if ($premium == 'yes') { ?>			
 <h4 class="widgettitle">Fiddlers Way Premium IPO Report</h4>			
 
 
