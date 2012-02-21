@@ -62,7 +62,9 @@ class Sales_model extends CI_Model {
 				$ipn_status = "Unable to find email address (".$row->data_value.") in <b>ipn data</b>.";
 			}
 		}else{
-			$ipn_status = "Payment Status <b>Not</b> Complete";
+			$query = $this->db->query("select data_value from ipn_data where data_type = 'payment_status' AND transaction_id = '$transaction_id'");
+			$row = $query->row();
+			$ipn_status = "Payment Status (".$row->data_value.") <b>Not</b> Complete";
 		}
 		
 		
