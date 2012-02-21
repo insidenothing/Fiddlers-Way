@@ -34,7 +34,10 @@ class User {
 	{
 		$this->newsletter = $newsletter;
 	}
-	
+	public function set_premium($premium)
+	{
+		$this->premium = $premium;
+	}
 	public function set_cookies()
     {
 		$CI =& get_instance();
@@ -44,6 +47,7 @@ class User {
     	$CI->input->set_cookie('email', $this->email, '86500', '', '/', '', FALSE);
     	$CI->input->set_cookie('level', $this->level, '86500', '', '/', '', FALSE); 
        	$CI->input->set_cookie('newsletter', $this->newsletter, '86500', '', '/', '', FALSE); 
+       	$CI->input->set_cookie('premium', $this->premium, '86500', '', '/', '', FALSE);
     }
     
 

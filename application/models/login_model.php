@@ -30,6 +30,7 @@ class Login_model extends CI_Model {
 				$this->user->set_email($row->email);
 				$this->user->set_level($row->level);
 				$this->user->set_newsletter($row->newsletter_status);
+				$this->user->set_premium($row->premium_status);
 				$this->user->set_cookies();
 				$query->free_result();
 				$this->output->set_header("Location: /".str_replace('-','/',$this->input->post('from')));
