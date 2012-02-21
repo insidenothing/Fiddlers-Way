@@ -61,118 +61,76 @@
 		<div class="bottom">
 			<div class="entry-content clearfix">
 				<h3 class="title">
-					<a href="http://www.fiddlersway.com/archives/40">Francis Gaskins in
-						the News - ...</a>
+					<a href="<?php echo $box2_link;?>"><?php echo $box2_title;?></a>
 				</h3>
 				<p class="meta-info">
-					Feb 3, 2012 <span>by</span> <a
-						href="http://www.fiddlersway.com/archives/author/admin"
-						title="Posts by Francis and Doug" rel="author">Francis and Doug</a>
+					<?php echo $box2_tag;?>
 				</p>
-
-
-				<p>What is Facebook worth? It will be months before the market sets
-					a final price, but already the valuation question has become a tug
-					of...</p>
-				<a href="http://www.fiddlersway.com/archives/40" class="readmore"><span>read
-						more</span> </a>
+				<p><?php echo $box2_content;?></p>
+				<a href="<?php echo $box2_link;?>" class="readmore">
+					<span>read more</span>
+				</a>
 			</div>
-			<!-- end .entry-content -->
 		</div>
-		<!-- end .bottom -->
 	</div>
-	<!-- end .border -->
 </div>
-<!-- end .entry -->
 
 <div class="entry">
-
 	<div class="border">
 		<div class="bottom">
 			<div class="entry-content clearfix">
 				<h3 class="title">
-					<a href="http://www.fiddlersway.com/archives/36">Gaskins on
-						Facebook IPO on Al ...</a>
+					<a href="<?php echo $box3_link;?>"><?php echo $box3_title;?></a>
 				</h3>
 				<p class="meta-info">
-					Feb 3, 2012 <span>by</span> <a
-						href="http://www.fiddlersway.com/archives/author/admin"
-						title="Posts by Francis and Doug" rel="author">Francis and Doug</a>
+					<?php echo $box3_tag;?>
 				</p>
-
-				<p>Francis Gaskins "bookends" this interview, appearing at the
-					beginning and at the end and providing insights into the
-					forthcoming...</p>
-
-				<a href="http://www.fiddlersway.com/archives/36" class="readmore"><span>read
-						more</span> </a>
+				<p><?php echo $box3_content;?></p>
+				<a href="<?php echo $box3_link;?>" class="readmore">
+					<span>read more</span>
+				</a>
 			</div>
-			<!-- end .entry-content -->
 		</div>
-		<!-- end .bottom -->
 	</div>
-	<!-- end .border -->
 </div>
-<!-- end .entry -->
 
 <div class="entry last">
 	<div class="border">
 		<div class="bottom">
-
 			<div class="entry-content clearfix">
 				<h3 class="title">
-					<a href="http://www.fiddlersway.com/archives/32">Renewable Energy
-						Group, Inc. -...</a>
+					<a href="<?php echo $box4_link;?>"><?php echo $box4_title;?></a>
 				</h3>
 				<p class="meta-info">
-					Feb 3, 2012 <span>by</span> <a
-						href="http://www.fiddlersway.com/archives/author/admin"
-						title="Posts by Francis and Doug" rel="author">Francis and Doug</a>
+					<?php echo $box4_tag;?>
 				</p>
-
-				<p>When it first went public last month, we noted that it was
-					opening well below its target, and indicated that this company's
-					market...</p>
-				<a href="http://www.fiddlersway.com/archives/32" class="readmore"><span>read
-						more</span> </a>
-
+				<p><?php echo $box4_content;?></p>
+				<a href="<?php echo $box4_link;?>" class="readmore">
+					<span>read more</span>
+				</a>
 			</div>
-			<!-- end .entry-content -->
 		</div>
-		<!-- end .bottom -->
 	</div>
-	<!-- end .border -->
 </div>
-<!-- end .entry -->
 
 <div class="entry">
 	<div class="border">
 		<div class="bottom">
 			<div class="entry-content clearfix">
-
 				<h3 class="title">
-					<a href="http://www.fiddlersway.com/archives/30">Facebooks 100
-						Billion Too High...</a>
+					<a href="<?php echo $box5_link;?>"><?php echo $box5_title;?></a>
 				</h3>
 				<p class="meta-info">
-					Feb 3, 2012 <span>by</span> <a
-						href="http://www.fiddlersway.com/archives/author/admin"
-						title="Posts by Francis and Doug" rel="author">Francis and Doug</a>
+					<?php echo $box5_tag;?>
 				</p>
-
-				<p>Bookmark on Delicious Digg this post Recommend on Facebook share
-					via Reddit Share with Stumblers Tweet about it Subscribe to the
-					comme</p>
-				<a href="http://www.fiddlersway.com/archives/30" class="readmore"><span>read
-						more</span> </a>
+				<p><?php echo $box5_content;?></p>
+				<a href="<?php echo $box5_link;?>" class="readmore">
+					<span>read more</span>
+				</a>
 			</div>
-			<!-- end .entry-content -->
 		</div>
-		<!-- end .bottom -->
 	</div>
-	<!-- end .border -->
 </div>
-<!-- end .entry -->
 
 
 <div class="entry last">
@@ -180,28 +138,19 @@
 		<div class="bottom">
 			<div class="entry-content clearfix">
 				<h3 class="title">
-					<a href="http://www.fiddlersway.com/archives/20">The Facebook IPO
-						Basics</a>
+					<a href="<?php echo $box6_link;?>"><?php echo $box6_title;?></a>
 				</h3>
 				<p class="meta-info">
-					Feb 1, 2012 <span>by</span> <a
-						href="http://www.fiddlersway.com/archives/author/admin"
-						title="Posts by Francis and Doug" rel="author">Francis and Doug</a>
+					<?php echo $box6_tag;?>
 				</p>
-
-
-				<p>Summary/Overview The pending Facebook Initial Public Offering -
-					IPO - will put, at least for the moment, put IPOs on the map,...</p>
-				<a href="http://www.fiddlersway.com/archives/20" class="readmore"><span>read
-						more</span> </a>
+				<p><?php echo $box6_content;?></p>
+				<a href="<?php echo $box6_link;?>" class="readmore">
+					<span>read more</span>
+				</a>
 			</div>
-			<!-- end .entry-content -->
 		</div>
-		<!-- end .bottom -->
 	</div>
-	<!-- end .border -->
 </div>
-<!-- end .entry -->
 
 <div class="clear"></div>
 
@@ -210,44 +159,3 @@
 	</a>
 </div>
 <!-- end #controllers -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-<?php
-/*
- <center>
-<iframe width="560" height="315"
-src="http://www.youtube.com/embed/B3an6Cnxs4A" frameborder="0"
-allowfullscreen></iframe>
-</center>
-
-<center>
-<iframe width="560" height="315"
-src="http://www.youtube.com/embed/J1A4PUZfVg8" frameborder="0"
-allowfullscreen></iframe>
-</center>
-
-
-<h1>IPO Previews</h1>
-
-<div class="title">Is the Renewable Industry Renewable?</div>
-<div class="post">
-Based in Ames, Iowa, Renewable Energy Group, (REGI), scheduled, as the
-first initial public offering of 2012, a $100 million IPO with a market
-capitalization of $401 million at a price range mid-point of $14 for
-today, Thursday, January 19, 2011. REGI priced last night (January 18)
-at $10, 28% below mid-range & now trades flat... <a href="/preview">[READ
-MORE]</a>
-</div>
-*/
-?>
