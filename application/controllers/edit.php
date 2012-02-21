@@ -58,7 +58,7 @@ class Edit extends CI_Controller {
 		
 		
 		$this->load->library('Menu','menu');
-		$this->menu->load_common('edit_view',$data);
+		$this->menu->load_plain('edit_view',$data);
 		
 		
 	}
