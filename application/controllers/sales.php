@@ -52,7 +52,7 @@ class Sales extends CI_Controller {
 			$value = urlencode(stripslashes($value));
 			$req .= "&$key=$value";
 			
-			error_log(date('r').' IPN: '." $req  \n",3,'/logs/ipn.log');
+			error_log(date('r').' IPN: '."[ $key ] [ $value ] \n",3,'/logs/ipn.log');
 		}
 		
 		// post back to PayPal system to validate
@@ -83,11 +83,11 @@ class Sales extends CI_Controller {
 					// check that receiver_email is your Primary PayPal email
 					// check that payment_amount/payment_currency are correct
 					// process payment
-					error_log(date('r').' IPN VERIFIED '."\n",3,'/logs/ipn.log');
+					//error_log(date('r').' IPN VERIFIED '."\n",3,'/logs/ipn.log');
 				}
 				else if (strcmp ($res, "INVALID") == 0) {
 					// log for manual investigation
-					error_log(date('r').' IPN INVALID '."\n",3,'/logs/ipn.log');
+					//error_log(date('r').' IPN INVALID '."\n",3,'/logs/ipn.log');
 				}
 			}
 			fclose ($fp);
