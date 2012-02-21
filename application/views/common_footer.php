@@ -109,6 +109,8 @@
 
 					
 					<div class="widgetcontent">
+					
+					
 						<ul class="tweets">
 							<li>Facebook&#039;s $100 Million Evaluation Too High according to
 								Francis Gaskins. <a href="http://t.co/lGUrbXi4" rel="nofollow">http://t.co/lGUrbXi4</a>$$$<a
@@ -131,62 +133,15 @@
 								class="timesince">2&nbsp;weeks&nbsp;ago</a></li>
 
 						</ul>
-					</div>
-				</div>
-				<!-- end .widget -->
-				<div id="tag_cloud-2" class="widget widget_tag_cloud">
-					<h4 class="widgettitle">Tags</h4>
-					<div class="widgetcontent">
-						<div class="tagcloud">
-							<a href='http://www.fiddlersway.com/archives/tag/10-best-ipos'
-								class='tag-link-19' title='1 topic' style='font-size: 8pt;'>10
-								Best IPOs</a> <a
-								href='http://www.fiddlersway.com/archives/tag/bloomberg'
-								class='tag-link-15' title='1 topic' style='font-size: 8pt;'>Bloomberg</a>
-							<a href='http://www.fiddlersway.com/archives/tag/bloomberg-zynga'
-								class='tag-link-16' title='1 topic' style='font-size: 8pt;'>Bloomberg-Zynga</a>
-							<a href='http://www.fiddlersway.com/archives/tag/cnbc'
-								class='tag-link-17' title='1 topic' style='font-size: 8pt;'>CNBC</a>
-							<a href='http://www.fiddlersway.com/archives/tag/facebook'
-								class='tag-link-8' title='2 topics' style='font-size: 22pt;'>Facebook</a>
-							<a href='http://www.fiddlersway.com/archives/tag/francis-gaskins'
-								class='tag-link-9' title='2 topics' style='font-size: 22pt;'>Francis
-								Gaskins</a> <a
-								href='http://www.fiddlersway.com/archives/tag/ipo'
-								class='tag-link-10' title='2 topics' style='font-size: 22pt;'>IPO</a>
-							<a href='http://www.fiddlersway.com/archives/tag/largest-ipo'
-								class='tag-link-18' title='1 topic' style='font-size: 8pt;'>Largest
-								IPO</a> <a href='http://www.fiddlersway.com/archives/tag/nasdaq'
-								class='tag-link-12' title='1 topic' style='font-size: 8pt;'>Nasdaq</a>
-							<a href='http://www.fiddlersway.com/archives/tag/regi'
-								class='tag-link-11' title='1 topic' style='font-size: 8pt;'>REGI</a>
-							<a
-								href='http://www.fiddlersway.com/archives/tag/renewable-energy'
-								class='tag-link-13' title='1 topic' style='font-size: 8pt;'>Renewable
-								Energy</a>
-						</div>
-					</div>
-				</div>
-				<!-- end .widget -->
-				<div id="categories-3" class="widget widget_categories">
-					<h4 class="widgettitle">Categories</h4>
-					<div class="widgetcontent">
-						<select name='cat' id='cat' class='postform'>
-							<option value='-1'>Select Category</option>
-							<option class="level-0" value="3">Blog Posts&nbsp;&nbsp;(1)</option>
-							<option class="level-0" value="14">In the News&nbsp;&nbsp;(1)</option>
-
-							<option class="level-0" value="6">IPO News&nbsp;&nbsp;(1)</option>
-							<option class="level-0" value="7">IPO Track Record&nbsp;&nbsp;(1)</option>
-							<option class="level-0" value="4">Videos&nbsp;&nbsp;(5)</option>
-							<option class="level-0" value="5">White Papers&nbsp;&nbsp;(3)</option>
-						</select>
-
 						
-
+						
 					</div>
 				</div>
 				<!-- end .widget -->
+				
+				
+				
+				
 			</div>
 			<!-- end .block-content -->
 		</div>
