@@ -64,10 +64,11 @@ class Sales extends CI_Controller {
 		$req = 'cmd=_notify-validate';
 		
 		foreach ($_POST as $key => $value) {
+			$raw = $value;
 			$value = urlencode(stripslashes($value));
 			$req .= "&$key=$value";
 			
-			$data_id = $this->sales->record_ipn_data($transaction_id,$key,$value);
+			$data_id = $this->sales->record_ipn_data($transaction_id,$key,$raw);
 			error_log(date('r').' IPN: '." [ $transaction_id ] [ $data_id ] [ $key ] [ $value ] \n",3,'/logs/ipn.log');
 		}
 		
