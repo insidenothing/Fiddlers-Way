@@ -37,7 +37,13 @@ class Edit_model extends CI_Model {
 		$query->free_result();
 		return $row->published;
 	}
-
+	function get_published_date($id,$table)
+	{
+		$query = $this->db->query("SELECT published_date from $table where id = '$id'");
+		$row = $query->row();
+		$query->free_result();
+		return $row->published_date;
+	}
 	function get_contents($id,$table)
 	{
 		$query = $this->db->query("SELECT content from $table where id = '$id'");
@@ -72,6 +78,11 @@ class Edit_model extends CI_Model {
 	{
 		$query = $this->db->query("UPDATE $table set published = '$content' where id = '$id'");
 		return 'Published Updated, ';
+	}
+	function set_published_date($id,$table,$content)
+	{
+		$query = $this->db->query("UPDATE $table set published_date = '$content' where id = '$id'");
+		return 'Published Date Updated, ';
 	}
 	function set_seo($id,$table,$content)
 	{

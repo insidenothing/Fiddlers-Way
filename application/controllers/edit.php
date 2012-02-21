@@ -16,6 +16,9 @@ class Edit extends CI_Controller {
 		if ($this->input->post('published')){
 			$results .= $this->edit->set_published($id,$type,addslashes($this->input->post('published')));
 		}
+		if ($this->input->post('published_date')){
+			$results .= $this->edit->set_published_date($id,$type,addslashes($this->input->post('published_date')));
+		}
 		if ($this->input->post('title')){
 			$results .= $this->edit->set_title($id,$type,addslashes($this->input->post('title')));
 		}
@@ -38,6 +41,7 @@ class Edit extends CI_Controller {
 		$data['title'] = $this->edit->get_title($id,$type);
 		$data['author'] = $this->edit->get_author($id,$type);
 		$data['published'] = $this->edit->get_published($id,$type);
+		$data['published_date'] = $this->edit->get_published_date($id,$type);
 		$data['contents'] = $this->edit->get_contents($id,$type);
 		$data['seo'] = $this->edit->get_seo($id,$type);
 		
