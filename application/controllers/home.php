@@ -10,6 +10,7 @@ class Home extends CI_Controller {
 		$this->load->model('blog_model','blog');
 		$this->load->model('page_model','page');
 		$this->load->model('wire_model','wire');
+		$this->load->model('whitepaper_model','whitepaper');
 		
 		/** Last 2 Blogs */
 		$data['box1_title'] = $this->blog->get_title('2');
@@ -29,12 +30,10 @@ class Home extends CI_Controller {
 		$data['box3_link'] = "http://fiddlersway.com/wire/index/press_release_2";
 		
 		/** Last White Paper */
-		$data['box4_title'] = "";
+		$data['box4_title'] = $this->whitepaper->get_title('technology-tremors');
 		$data['box4_tag'] = "Francis Gaskins and Doug McLean";
-		$data['box4_content'] = "";
-		$data['box4_link'] = "";
-		
-		
+		$data['box4_content'] = substr($this->whitepaper->get_contents('technology-tremors'),0,100)."...";
+		$data['box4_link'] = "http://fiddlersway.com/whitepaper/index/technology-tremors";
 		
 		/** Last 2 Pages */
 		$data['box5_title'] = $this->page->get_title('bio');
