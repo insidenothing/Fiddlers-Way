@@ -76,10 +76,13 @@ UAN  quote  IPOreport
 <div>+144% TECHNOLOGY PLAY<br>
 One of our highest scored stocks of 2011 was InvenSense (INVN)
 </div>
+
+<br><br>
 <div>
 INVN priced at $7.50 November 15 and is now up 144% to $18.30 in about three months.
 You could have bought it in the IPO after market for $8.25 and received an 118% gain in three months.  quote  IPOreport
 </div>
+<br><br>
 <div>
 +110% CONSUMER PRODUCTS<br>
 We always liked Michael Kors (KORS)  quote  IPOreport
@@ -87,7 +90,7 @@ KORS IPO'd at $20 and is up 109% at $41.99.  There was stock around, because the
 the $24 to $25 range the first day, and is up 71% in the IPO after-market.  We recommended a buy on the IPO at $20 and also 
 the first day of trading, via email.
 </div>
-
+<br><br>
 <div>
 PROFIT from high-yielding IPOs<br>
 AVOID money-losing IPOs<br>
