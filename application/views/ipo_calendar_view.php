@@ -35,7 +35,7 @@ table.sortable thead {
 					<td style="white-space: pre">Expected</td>
 					<td style="white-space: pre">40 Day</td>
 					<td style="white-space: pre">180 Day</td>
-					
+					<td>Report</td>
 				</tr>
 				</thead>
 				<?php echo $ipos?>

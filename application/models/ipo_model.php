@@ -16,10 +16,17 @@ class Ipo_model extends CI_Model {
 			return $bg2;
 		}
 	}
-	function get_list()
+	function get_list($symbol='')
 	{
 		$rows='';
-		$query = $this->db->query("SELECT * from ipo_calendar order by published_date DESC");
+		if ($symbol=='')
+		{
+			$query = $this->db->query("SELECT * from ipo_calendar order by published_date DESC");
+		}else{
+			$query = $this->db->query("SELECT * from ipo_calendar where symbol = '$symbol'");
+		}
+		
+		
 		if ($query->num_rows() > 0)
 		{
 			$i=0;
@@ -46,7 +53,7 @@ class Ipo_model extends CI_Model {
 					<td>".$row->day40."</td>
 					<td>".$row->day180."</td>
 				
-				
+				<td><a href='http://fiddlersway.com/ipo/index/".$row->symbol."'>Link</a></td>
 				
 				</tr>";
 			}
@@ -54,6 +61,8 @@ class Ipo_model extends CI_Model {
 	
 		return $rows;
 	}
+	
+	
 	function get_home_list()
 	{
 		$rows='';
