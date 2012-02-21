@@ -9,7 +9,7 @@ class Ipo extends CI_Controller {
 		$data['details'] = $this->ipo->get_list($symbol);
 
 		$this->load->library('Menu','menu');
-		$this->menu->load_common('ipo_view',$data);
+		$this->menu->load_plain('ipo_view',$data);
 	}
 }
 
