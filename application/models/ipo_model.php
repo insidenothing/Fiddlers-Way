@@ -85,6 +85,7 @@ class Ipo_model extends CI_Model {
 	function get_premium($symbol)
 	{
 		$query = $this->db->query("SELECT premium_report from ipo_calendar where symbol = '$symbol'");
+		$row = $query->row();
 		if ($row->content == '')
 		{
 			return "Premium Content Not Yet Released, Check Back Soon";
