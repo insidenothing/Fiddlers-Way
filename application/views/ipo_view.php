@@ -32,7 +32,7 @@
 </div>
 
 
-<div class="block" style="margin-top: 5px; width:1300px !important;">
+<div class="block" style="margin-top: 5px; width:1000px !important;">
 	<div class="block-border">
 		<div class="block-content">
 		<?php if ($premium == 'yes') { ?>
