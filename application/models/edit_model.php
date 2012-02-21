@@ -8,6 +8,12 @@ class Edit_model extends CI_Model {
 		parent::__construct();
 	}
 
+	function new_item($table)
+	{
+		$query = $this->db->query("insert into $table (title) values ('New')");
+		return $this->db->insert_id();
+	}
+	
 	function get_title($id,$table)
 	{
 		$query = $this->db->query("SELECT title from $table where id = '$id'");

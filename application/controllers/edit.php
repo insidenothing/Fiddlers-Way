@@ -64,7 +64,12 @@ class Edit extends CI_Controller {
 	}
 	
 	
-	
+	public function create($type)
+	{
+		$this->load->model('Edit_model','edit');
+		$id = new_item($type);
+		$this->output->set_header("Location: /edit/index/$type/$id");
+	}
 	
 	
 	

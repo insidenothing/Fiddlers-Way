@@ -28,9 +28,9 @@
 							<p><a href="/login/dologout">Log Out</a></p>
 						<?php }?>
 						<?php if ($this->input->cookie('level') == 'Operator'){?>
-							<p><a href="/edit/new/page">New Page</a></p>
-							<p><a href="/edit/new/wire">New Wire</a></p>
-							<p><a href="/edit/new/blog">New Blog</a></p>
+							<p><a href="/edit/create/pages">New Page</a></p>
+							<p><a href="/edit/creste/wires">New Wire</a></p>
+							<p><a href="/edit/create/blogs">New Blog</a></p>
 							<p><a href="/admin">Administration</a></p>
 						<?php }?>
 					</div>
