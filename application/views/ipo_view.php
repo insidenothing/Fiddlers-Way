@@ -1,7 +1,7 @@
 <div class="block" style="margin-top: 5px; width:1000px !important;">
 	<div class="block-border">
 		<div class="block-content">
-			<h4 class="widgettitle">IPO Details for <?php echo $symbol;?> (<?php echo $premium;?>)</h4>
+			<h4 class="widgettitle">IPO Details for <?php echo $symbol;?></h4>
 			<table cellspacing="0" cellpadding="2" border="1" width="100%" style="border-colapse:colaspe;">				
 				<tr>
 					<td style="white-space: pre">Published</td>
