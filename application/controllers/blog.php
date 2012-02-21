@@ -12,6 +12,7 @@ class Blog extends CI_Controller {
 			$data['operator'] = '';
 		}
 		$data['title'] = $this->blog->get_title($id);
+		$data['id'] = $id;
 		$data['author'] = $this->blog->get_author($id);
 		$data['published'] = $this->blog->get_published($id);
 		$data['contents'] = $this->blog->get_contents($id);
