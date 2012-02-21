@@ -33,7 +33,7 @@ class Sales_model extends CI_Model {
 	function post_ipn_hook($transaction_id)
 	{
 		$ip = $this->input->ip_address();
-		$query = $this->db->query("select payer_email from ipn_data where transaction_id = '$transaction_id'");
+		$query = $this->db->query("select data_value from ipn_data where data_type = 'payer_email' AND transaction_id = '$transaction_id'");
 		if ($query->num_rows() > 0)
 		{
 			$row = $query->row();
