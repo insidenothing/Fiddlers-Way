@@ -1,7 +1,7 @@
 <div class="block" style="margin-top: 5px; width:1000px !important;">
 	<div class="block-border">
 		<div class="block-content">
-			<h4 class="widgettitle">IPO Details for <?php echo $symbol;?></h4>
+			<h4 class="widgettitle">IPO Details for <?php echo $symbol;?> (<?php echo $premium;?>)</h4>
 			<table cellspacing="0" cellpadding="2" border="1" width="100%" style="border-colapse:colaspe;">				
 				<tr>
 					<td style="white-space: pre">Published</td>
@@ -35,7 +35,7 @@
 <div class="block" style="margin-top: 5px; width:1000px !important;">
 <div class="block-border">
 <div class="block-content">
-<?php if ($premium == 'yes') { ?>			
+<?php if ($premium == 'yes') { ?>
 <h4 class="widgettitle">Fiddlers Way Premium IPO Report</h4>			
 
 
@@ -52,15 +52,31 @@ pre & post IPO  - with special emphasis on HIGH YIELDING IPOs.</div>
 
 
 <br><br>
-<center>
+
+<table width="100%">
+	<tr>
+		<td align="left">
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="S2KFMD6XY7X9L">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
+			
+		</td>
+		<td align="right">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="S2KFMD6XY7X9L">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+			
+		</td>
+	</tr>		
+</table>
 
-</center>
+
 
 <br><br>
 
