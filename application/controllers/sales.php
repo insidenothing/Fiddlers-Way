@@ -38,6 +38,18 @@ class Sales extends CI_Controller {
 	
 	public function ipn()
 	{
+		
+		
+		/**
+		 * Requirements:
+		 * 
+		 * 1) Make a transactions table
+		 * 2) record all key/value pairs into the database
+		 * 3) update member account to "paid"
+		 */
+		
+		
+		
 		$this->output->enable_profiler(TRUE);
 		//$this->load->model('admin_model','admin');
 		//$data['pages'] = $this->admin->get_pages('pages');
