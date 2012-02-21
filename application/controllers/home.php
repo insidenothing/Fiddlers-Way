@@ -12,12 +12,12 @@ class Home extends CI_Controller {
 		/** Last 2 Blogs */
 		$data['box1_title'] = $this->blog->get_title('2');
 		$data['box1_tag'] = $this->blog->get_published('2')." by ".$this->blog->get_author('2');
-		$data['box1_content'] = $this->blog->get_contents('2');
+		$data['box1_content'] = substr($this->blog->get_contents('2'),0,50)."...";
 		$data['box1_link'] = "http://fiddlersway.com/blog/index/2";
 		
 		$data['box2_title'] = $this->blog->get_title('3');
 		$data['box2_tag'] = $this->blog->get_published('3')." by ".$this->blog->get_author('3');
-		$data['box2_content'] = $this->blog->get_contents('3');
+		$data['box2_content'] = substr($this->blog->get_contents('3'),0,50)."...";
 		$data['box2_link'] = "http://fiddlersway.com/blog/index/3";
 		
 		/** Last 2 Pages */
