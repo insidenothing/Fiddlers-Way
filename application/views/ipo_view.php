@@ -1,7 +1,7 @@
 <div class="block" style="margin-top: 5px; width:1000px !important;">
 	<div class="block-border">
 		<div class="block-content">
-			<h4 class="widgettitle"><?php echo $symbol;?></h4>
+			<h4 class="widgettitle">IPO Details for <?php echo $symbol;?></h4>
 			
 			<table cellspacing="0" cellpadding="2" border="1" width="100%" style="border-colapse:colaspe;">
 				
@@ -23,7 +23,7 @@
 					<td style="white-space: pre">Expected</td>
 					<td style="white-space: pre">40 Day</td>
 					<td style="white-space: pre">180 Day</td>
-					
+					<td>Report</td>
 				</tr>
 				<?php echo $details; ?>
 				</table>
