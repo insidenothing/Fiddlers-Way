@@ -33,27 +33,43 @@ class Sales_model extends CI_Model {
 	function post_ipn_hook($transaction_id)
 	{
 		$ip = $this->input->ip_address();
-		$query = $this->db->query("select data_value from ipn_data where data_type = 'payer_email' AND transaction_id = '$transaction_id'");
+		/* check for a good transaction */
+		$query = $this->db->query("select data_value from ipn_data where data_value = '	Completed' AND data_type = 'payment_status' AND transaction_id = '$transaction_id'");
 		if ($query->num_rows() > 0)
 		{
-			$row = $query->row();
-			$query2 = $this->db->query("select email from users where email = '".$row->data_value."'");
-			if ($query2->num_rows() > 0)
+			/* get email address */
+			$query = $this->db->query("select data_value from ipn_data where data_type = 'payer_email' AND transaction_id = '$transaction_id'");
+			if ($query->num_rows() > 0)
 			{
-				$row2 = $query2->row();
-				$query3 = $this->db->query("update users set premium_status = 'yes' where email = '".$row->data_value."'");
-				$ipn_status = "account successfully set to premium status";
+				/* check for matching user */
+				$row = $query->row();
+				$query2 = $this->db->query("select email from users where email = '".$row->data_value."'");
+				if ($query2->num_rows() > 0)
+				{
+					/* update user to premium */
+					$row2 = $query2->row();
+					$query3 = $this->db->query("update users set premium_status = 'yes' where email = '".$row->data_value."'");
+					$ipn_status = "Account (".$row->data_value.") <b>successfully</b> set to <b>premium status</b>";
+				}else{
+					/**
+					 *
+					 * This is where we should have a routine for automatically creating a user
+					 *
+					 */
+					$ipn_status = "Unable to find email address in <b>user table</b>";
+				}
 			}else{
-				/**
-				 *
-				 * This is where we should have a routine for automatically creating a user
-				 *
-				 */
-				$ipn_status = "unable to find email address in user table";
+				$ipn_status = "Unable to find email address in <b>ipn data</b>.";
 			}
 		}else{
-			$ipn_status = "Unable to find email address in ipn data.";
+			$ipn_status = "Payment Status <b>Not</b> Complete";
 		}
+		
+		
+		
+		
+		
+		
 		$this->load->library('email');
 		$this->email->from('no-reply@fiddlersway.com', 'Account Management');
 		$this->email->to('patrick@fiddlersway.com');
