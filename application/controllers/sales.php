@@ -67,7 +67,8 @@ class Sales extends CI_Controller {
 			$value = urlencode(stripslashes($value));
 			$req .= "&$key=$value";
 			
-			error_log(date('r').' IPN: '."[ $key ] [ $value ] \n",3,'/logs/ipn.log');
+			$data_id = record_ipn_data($transaction_id,$key,$value);
+			error_log(date('r').' IPN: '." [ $transaction_id ] [ $data_id ] [ $key ] [ $value ] \n",3,'/logs/ipn.log');
 		}
 		
 		// post back to PayPal system to validate
