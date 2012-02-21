@@ -35,8 +35,8 @@ cssDir = "/assets/wysiwyg/styles/";
 popupsDir = "/assets/wysiwyg/popups/";
 
 // WYSIWYG Width and Height
-wysiwygWidth = 450;
-wysiwygHeight = 800;
+wysiwygWidth = 950;
+wysiwygHeight = 400;
 
 // Include Style Sheet
 document.write('<link rel="stylesheet" type="text/css" href="' +cssDir+ 'styles.css">\n');
