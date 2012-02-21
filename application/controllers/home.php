@@ -21,29 +21,32 @@ class Home extends CI_Controller {
 		$data['box2_content'] = substr($this->blog->get_contents('3'),0,100)."...";
 		$data['box2_link'] = "http://fiddlersway.com/blog/index/3";
 		
-		/** Last 2 Pages */
-		$data['box3_title'] = $this->page->get_title('bio');
-		$data['box3_tag'] = "Francis Gaskins and Doug McLean";
-		$data['box3_content'] = substr($this->page->get_contents('bio'),0,100)."...";
-		$data['box3_link'] = "http://fiddlersway.com/page/index/bio";
-		
-		$data['box4_title'] = $this->page->get_title('backgrounder');
-		$data['box4_tag'] = "Francis Gaskins and Doug McLean";
-		$data['box4_content'] = substr($this->page->get_contents('backgrounder'),0,100)."...";
-		$data['box4_link'] = "http://fiddlersway.com/page/index/backgrounder";
-		
 		/** Last Press Release */
-		$data['box5_title'] = "";
-		$data['box5_tag'] = "";
-		$data['box5_content'] = "";
-		$data['box5_link'] = "";
-
-		/** Last White Paper */
-		$data['box6_title'] = "";
-		$data['box6_tag'] = "";
-		$data['box6_content'] = "";
-		$data['box6_link'] = "";
+		$data['box3_title'] = "";
+		$data['box3_tag'] = "";
+		$data['box3_content'] = "";
+		$data['box3_link'] = "";
 		
+		/** Last White Paper */
+		$data['box4_title'] = "";
+		$data['box4_tag'] = "";
+		$data['box4_content'] = "";
+		$data['box4_link'] = "";
+		
+		
+		
+		/** Last 2 Pages */
+		$data['box5_title'] = $this->page->get_title('bio');
+		$data['box5_tag'] = "Francis Gaskins and Doug McLean";
+		$data['box5_content'] = substr($this->page->get_contents('bio'),0,100)."...";
+		$data['box5_link'] = "http://fiddlersway.com/page/index/bio";
+		
+		$data['box6_title'] = $this->page->get_title('backgrounder');
+		$data['box6_tag'] = "Francis Gaskins and Doug McLean";
+		$data['box6_content'] = substr($this->page->get_contents('backgrounder'),0,100)."...";
+		$data['box6_link'] = "http://fiddlersway.com/page/index/backgrounder";
+		
+				
 		
 		
 		
