@@ -8,6 +8,35 @@ class Sales_model extends CI_Model {
 		parent::__construct();
 	}
 
+	function ipn2user($transaction_id)
+	{
+		$query = $this->db->query("select payer_email from ipn_data where transaction_id = '$transaction_id'");
+		
+		if ($query->num_rows() > 0)
+		{
+			$row = $query->row();
+			$query2 = $this->db->query("select email from users where email = '".$row->payer_email."'");
+			if ($query->num_rows() > 0)
+			{
+				$row2 = $query->row();
+				$query3 = $this->db->query("update users set premium_status = 'yes' where email = '".$row->payer_email."'");
+				return "account successfully set to premium status";
+				
+				
+			}else{
+				/**
+				 * 
+				 * This is where we should have a routine for automatically creating a user
+				 * 
+				 */
+				return "unable to find email address in user table";
+			}
+			
+			
+		}else{
+			return "Unable to find email address in ipn data.";
+		}
+	}
 	
 	function new_transaction()
 	{
@@ -32,12 +61,13 @@ class Sales_model extends CI_Model {
 	function post_ipn_hook($transaction_id)
 	{
 		$ip = $this->input->ip_address();
+		$ipn_status = $this->ipn2user($transaction_id);
 		$this->load->library('email');
 		$this->email->from('no-reply@fiddlersway.com', 'Account Management');
 		$this->email->to('patrick@fiddlersway.com');
 		//$this->email->cc('');
 		$this->email->subject('Paypal IPN Tranasaction #'.$transaction_id);
-		$this->email->message('We have a new transaction, make sure it set itself up right!');
+		$this->email->message('We have a new transaction, make sure it set itself up right!<br><br>'.$ipn_status);
 		$this->email->send();
 	}
 	
