@@ -82,41 +82,17 @@ class Ipo_model extends CI_Model {
 		return $rows;
 	}
 	
-	function get_id($seo)
+	function get_premium($symbol)
 	{
-		$query = $this->db->query("SELECT id from wire where seo = '$seo'");
-		if ($query->num_rows() == 0)
+		$query = $this->db->query("SELECT premium_report from ipo_calendar where symbol = '$symbol'");
+		if ($row->content == '')
 		{
-			$query = $this->db->query("SELECT id from wire order by id DESC limit 0,1");
-		}
-		$row = $query->row();
-		$query->free_result();
-		return $row->id;
-	}
-	function get_title($seo)
-	{
-		$query = $this->db->query("SELECT title from wire where seo = '$seo'");
-		if ($query->num_rows() == 0)
-		{
-			$query = $this->db->query("SELECT title from wire order by id DESC limit 0,1");
-		}
-		$row = $query->row();
-		$query->free_result();
-		return $row->title;
-	}
-
-	function get_contents($seo)
-	{
-		$query = $this->db->query("SELECT content from wire where seo = '$seo'");
-		if ($query->num_rows() == 0)
-		{
-			$query = $this->db->query("SELECT content from wire order by id DESC limit 0,1");
+			return "Premium Content Not Yet Released, Check Back Soon";
 		}
 		$row = $query->row();
 		$query->free_result();
 		return $row->content;
 	}
-
 	
 	
 }
