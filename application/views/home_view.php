@@ -40,27 +40,20 @@
 		<div class="bottom">
 			<div class="entry-content clearfix">
 				<h3 class="title">
-					<a href="http://www.fiddlersway.com/archives/53">Fiddler&#8217;s
-						Way</a>
+					<a href="<?php echo $box1_link;?>"><?php echo $box1_title;?></a>
 				</h3>
 				<p class="meta-info">
-					Feb 9, 2012 <span>by</span> <a
-						href="http://www.fiddlersway.com/archives/author/admin"
-						title="Posts by Francis and Doug" rel="author">Francis and Doug</a>
+					<?php echo $box1_tag;?>
 				</p>
-
-				<p>&nbsp; &nbsp; Bookmark on Delicious Digg this post Recommend on
-					Facebook share via Reddit Share with Stumblers Tweet about it...</p>
-				<a href="http://www.fiddlersway.com/archives/53" class="readmore"><span>read
-						more</span> </a>
+				<p><?php echo $box1_content;?></p>
+				<a href="<?php echo $box1_link;?>" class="readmore">
+					<span>read more</span>
+				</a>
 			</div>
-			<!-- end .entry-content -->
 		</div>
-		<!-- end .bottom -->
 	</div>
-	<!-- end .border -->
 </div>
-<!-- end .entry -->
+
 
 
 <div class="entry last">
@@ -217,6 +210,7 @@
 	</a>
 </div>
 <!-- end #controllers -->
+
 
 
 
