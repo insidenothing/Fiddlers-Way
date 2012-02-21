@@ -5,6 +5,12 @@ class Blog extends CI_Controller {
 	public function index($id='1')
 	{
 		$this->load->model('blog_model','blog');
+		if ($this->input->cookie('level') == 'Operator')
+		{
+			$data['operator'] = $this->input->cookie('name');
+		}else{
+			$data['operator'] = '';
+		}
 		$data['title'] = $this->blog->get_title($id);
 		$data['author'] = $this->blog->get_author($id);
 		$data['published'] = $this->blog->get_published($id);
