@@ -38,7 +38,7 @@ class Sales extends CI_Controller {
 	
 	public function ipn()
 	{
-		//$this->output->enable_profiler(TRUE);
+		$this->output->enable_profiler(TRUE);
 		//$this->load->model('admin_model','admin');
 		//$data['pages'] = $this->admin->get_pages('pages');
 	
