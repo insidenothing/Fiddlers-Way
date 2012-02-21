@@ -2,7 +2,7 @@
 
 class Blog extends CI_Controller {
 
-	public function index($id='1')
+	public function index($seo)
 	{
 		$this->load->model('blog_model','blog');
 		if ($this->input->cookie('level') == 'Operator')
@@ -11,11 +11,11 @@ class Blog extends CI_Controller {
 		}else{
 			$data['operator'] = '';
 		}
-		$data['title'] = $this->blog->get_title($id);
-		$data['id'] = $id;
-		$data['author'] = $this->blog->get_author($id);
-		$data['published'] = $this->blog->get_published($id);
-		$data['contents'] = $this->blog->get_contents($id);
+		$data['title'] = $this->blog->get_title($seo);
+		$data['id'] =  $this->blog->get_id($seo);
+		$data['author'] = $this->blog->get_author($seo);
+		$data['published'] = $this->blog->get_published($seo);
+		$data['contents'] = $this->blog->get_contents($seo);
 		$this->load->library('Menu','menu');
 		$this->menu->load_common('blog_view',$data);
 	}

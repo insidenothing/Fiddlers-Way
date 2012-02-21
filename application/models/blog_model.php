@@ -8,60 +8,61 @@ class Blog_model extends CI_Model {
 		parent::__construct();
 	}
 
-	function get_title($id)
+	function get_id($seo)
 	{
-		if ($id > 0)
+		
+		$query = $this->db->query("SELECT id from blogs where seo = '$seo'");
+		if ($query->num_rows() == 0)
 		{
-			$query = $this->db->query("SELECT title from blogs where id = '$id'");
-			if ($query->num_rows() == 0)
-			{
-				$query = $this->db->query("SELECT title from blogs order by id DESC limit 0,1");
-			}
+			$query = $this->db->query("SELECT id from blogs order by id DESC limit 0,1");
+		}
+		$row = $query->row();
+		$query->free_result();
+		return $row->id;
+	}
+	
+	function get_title($seo)
+	{
+		$query = $this->db->query("SELECT title from blogs where seo = '$seo'");
+		if ($query->num_rows() == 0)
+		{
+			$query = $this->db->query("SELECT title from blogs order by id DESC limit 0,1");
 		}
 		$row = $query->row();
 		$query->free_result();
 		return $row->title;
 	}
 
-	function get_author($id)
+	function get_author($seo)
 	{
-		if ($id > 0)
+		$query = $this->db->query("SELECT author from blogs where seo = '$seo'");
+		if ($query->num_rows() == 0)
 		{
-			$query = $this->db->query("SELECT author from blogs where id = '$id'");
-			if ($query->num_rows() == 0)
-			{
-				$query = $this->db->query("SELECT author from blogs order by id DESC limit 0,1");
-			}
+			$query = $this->db->query("SELECT author from blogs order by id DESC limit 0,1");
 		}
 		$row = $query->row();
 		$query->free_result();
 		return $row->author;
 	}
 
-	function get_published($id)
+	function get_published($seo)
 	{
-		if ($id > 0)
+		$query = $this->db->query("SELECT published from blogs where seo = '$seo'");
+		if ($query->num_rows() == 0)
 		{
-			$query = $this->db->query("SELECT published from blogs where id = '$id'");
-			if ($query->num_rows() == 0)
-			{
-				$query = $this->db->query("SELECT published from blogs order by id DESC limit 0,1");
-			}
+			$query = $this->db->query("SELECT published from blogs order by id DESC limit 0,1");
 		}
 		$row = $query->row();
 		$query->free_result();
 		return $row->published;
 	}
 
-	function get_contents($id)
+	function get_contents($seo)
 	{
-			if ($id > 0)
+		$query = $this->db->query("SELECT content from blogs where seo = '$seo'");
+		if ($query->num_rows() == 0)
 		{
-			$query = $this->db->query("SELECT content from blogs where id = '$id'");
-			if ($query->num_rows() == 0)
-			{
-				$query = $this->db->query("SELECT content from blogs order by id DESC limit 0,1");
-			}
+			$query = $this->db->query("SELECT content from blogs order by id DESC limit 0,1");
 		}
 		$row = $query->row();
 		$query->free_result();
@@ -71,10 +72,10 @@ class Blog_model extends CI_Model {
 	function get_last_id($limit)
 	{
 		$limit = $limit - 1; /* offset for index starting at 1 */
-		$query = $this->db->query("SELECT id from blogs order by published_date DESC limit $limit, 1");
+		$query = $this->db->query("SELECT seo from blogs order by published_date DESC limit $limit, 1");
 		$row = $query->row();
 		$query->free_result();
-		return $row->id;
+		return $row->seo;
 	}
 	
 	
