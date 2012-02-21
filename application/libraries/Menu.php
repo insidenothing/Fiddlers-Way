@@ -18,7 +18,11 @@ class Menu   {
 	function load_common($view,$data)
 	{
 		$CI =& get_instance();
-		$CI->load->view('common_header');
+		
+		$CI->load->model('ipo_model','ipo');
+		$data['home_ipos'] = $CI->ipo->get_home_list();
+		
+		$CI->load->view('common_header',$data);
 		$CI->load->view($view, $data);
 		$CI->load->view('common_footer');
 	}

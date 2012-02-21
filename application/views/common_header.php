@@ -251,15 +251,14 @@ anylinkmenu.init("menuanchorclass")
 						<div class="block-border">
 
 							<div class="block-content">
-								<h4 class="widgettitle">Search Resources</h4>
+								<h4 class="widgettitle">IPO Activity</h4>
 								<div>
 									<table>
 										<tr>
-											<td><input type="text" value="Enter Search Here..." size="15" />
-											</td>
-											<td><input type="submit" value="Search" /></td>
-											</td>
+											<td>Name</td>
+											<td>Date</td>
 										</tr>
+										<?php echo $home_ipos;?>
 									</table>
 
 								</div>
