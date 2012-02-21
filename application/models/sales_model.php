@@ -37,11 +37,11 @@ class Sales_model extends CI_Model {
 		if ($query->num_rows() > 0)
 		{
 			$row = $query->row();
-			$query2 = $this->db->query("select email from users where email = '".$row->payer_email."'");
+			$query2 = $this->db->query("select email from users where email = '".$row->data_value."'");
 			if ($query2->num_rows() > 0)
 			{
 				$row2 = $query2->row();
-				$query3 = $this->db->query("update users set premium_status = 'yes' where email = '".$row->payer_email."'");
+				$query3 = $this->db->query("update users set premium_status = 'yes' where email = '".$row->data_value."'");
 				$ipn_status = "account successfully set to premium status";
 			}else{
 				/**
