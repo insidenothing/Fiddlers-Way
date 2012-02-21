@@ -60,12 +60,9 @@ class Ipo_model extends CI_Model {
 		$query = $this->db->query("SELECT * from ipo_calendar order by published_date DESC");
 		if ($query->num_rows() > 0)
 		{
-			$i=0;
 			foreach ($query->result() as $row)
 			{
-				$i++;
-				$bgcolor = $this->row_color($i);
-				$rows .= "<tr bgcolor='$bgcolor'>
+				$rows .= "<tr>
 					<td>".$row->name."</td>
 					<td>".$row->published."</td>
 				</tr>";
