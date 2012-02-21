@@ -36,4 +36,16 @@ class Sales extends CI_Controller {
 		$this->menu->load_common('sales_view',$data);
 	}
 	
+	public function ipn()
+	{
+		//$this->output->enable_profiler(TRUE);
+		//$this->load->model('admin_model','admin');
+		//$data['pages'] = $this->admin->get_pages('pages');
+	
+		$data['debug'] = 'debug';
+		$this->load->library('Menu','menu');
+		$this->menu->load_common('sales_view',$data);
+	}
+	
+	
 }
