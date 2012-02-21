@@ -7,18 +7,19 @@ class Home extends CI_Controller {
 		$data=array();
 		
 		/* 6 boxes */
+		$this->load->model('blog_model','blog');
 		
 		/** Last 2 Blogs */
-		$data['box1_title'] = "Fiddler's Way";
-		$data['box1_tag'] = "Feb 9, 2012 by Francis and Doug";
-		$data['box1_content'] = "Bookmark on Delicious Digg this post Recommend on Facebook share via Reddit Share with Stumblers Tweet about it...";
-		$data['box1_link'] = "http://www.fiddlersway.com/archives/53";
+		$data['box1_title'] = $this->blog->get_title('2');
+		$data['box1_tag'] = $this->blog->get_published('2')." by ".$this->blog->get_author('2');
+		$data['box1_content'] = $this->blog->get_contents('2');
+		$data['box1_link'] = "http://fiddlersway.com/blog/index/2";
 		
-		$data['box2_title'] = "";
-		$data['box2_tag'] = "";
-		$data['box2_content'] = "";
-		$data['box2_link'] = "";
-
+		$data['box2_title'] = $this->blog->get_title('3');
+		$data['box2_tag'] = $this->blog->get_published('3')." by ".$this->blog->get_author('3');
+		$data['box2_content'] = $this->blog->get_contents('3');
+		$data['box2_link'] = "http://fiddlersway.com/blog/index/3";
+		
 		/** Last 2 Pages */
 		$data['box3_title'] = "";
 		$data['box3_tag'] = "";
