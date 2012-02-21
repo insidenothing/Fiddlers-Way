@@ -17,7 +17,7 @@ class Whitepaper extends CI_Controller {
 		}
 		
 		$this->load->library('Menu','menu');
-		$this->menu->load_common('whitepaper_view',$data);
+		$this->menu->load_plain('whitepaper_view',$data);
 	}
 }
 
