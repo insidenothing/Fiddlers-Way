@@ -8,6 +8,7 @@ class Home extends CI_Controller {
 		
 		/* 6 boxes */
 		$this->load->model('blog_model','blog');
+		$this->load->model('page_model','page');
 		
 		/** Last 2 Blogs */
 		$data['box1_title'] = $this->blog->get_title('2');
@@ -21,15 +22,15 @@ class Home extends CI_Controller {
 		$data['box2_link'] = "http://fiddlersway.com/blog/index/3";
 		
 		/** Last 2 Pages */
-		$data['box3_title'] = "";
-		$data['box3_tag'] = "";
-		$data['box3_content'] = "";
-		$data['box3_link'] = "";
+		$data['box3_title'] = $this->page->get_title('bio');
+		$data['box3_tag'] = "Francis Gaskins and Doug McLean";
+		$data['box3_content'] = substr($this->page->get_contents('bio'),0,100)."...";
+		$data['box3_link'] = "http://fiddlersway.com/page/index/bio";
 		
-		$data['box4_title'] = "";
-		$data['box4_tag'] = "";
-		$data['box4_content'] = "";
-		$data['box4_link'] = "";
+		$data['box4_title'] = $this->page->get_title('backgrounder');
+		$data['box4_tag'] = "Francis Gaskins and Doug McLean";
+		$data['box4_content'] = substr($this->page->get_contents('backgrounder'),0,100)."...";
+		$data['box4_link'] = "http://fiddlersway.com/page/index/backgrounder";
 		
 		/** Last Press Release */
 		$data['box5_title'] = "";
