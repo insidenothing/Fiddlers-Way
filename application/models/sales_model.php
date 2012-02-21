@@ -34,7 +34,7 @@ class Sales_model extends CI_Model {
 	{
 		$ip = $this->input->ip_address();
 		/* check for a good transaction */
-		$query = $this->db->query("select data_value from ipn_data where data_value = '	Completed' AND data_type = 'payment_status' AND transaction_id = '$transaction_id'");
+		$query = $this->db->query("select data_value from ipn_data where data_value = 'Completed' AND data_type = 'payment_status' AND transaction_id = '$transaction_id'");
 		if ($query->num_rows() > 0)
 		{
 			/* get email address */
@@ -56,10 +56,10 @@ class Sales_model extends CI_Model {
 					 * This is where we should have a routine for automatically creating a user
 					 *
 					 */
-					$ipn_status = "Unable to find email address in <b>user table</b>";
+					$ipn_status = "Unable to find email address (".$row->data_value.") in <b>user table</b>";
 				}
 			}else{
-				$ipn_status = "Unable to find email address in <b>ipn data</b>.";
+				$ipn_status = "Unable to find email address (".$row->data_value.") in <b>ipn data</b>.";
 			}
 		}else{
 			$ipn_status = "Payment Status <b>Not</b> Complete";
