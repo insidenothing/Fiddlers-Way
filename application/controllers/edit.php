@@ -51,7 +51,9 @@ class Edit extends CI_Controller {
 		if ($type == 'wire'){
 			$data['controller'] = 'wire';
 		}
-		
+		if ($type == 'whitepapers'){
+			$data['controller'] = 'whitepaper';
+		}
 		
 		
 		
