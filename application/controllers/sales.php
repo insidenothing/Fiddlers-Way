@@ -51,6 +51,8 @@ class Sales extends CI_Controller {
 		foreach ($_POST as $key => $value) {
 			$value = urlencode(stripslashes($value));
 			$req .= "&$key=$value";
+			
+			error_log(date('r').' IPN: '." $req  \n",3,'/logs/ipn.log');
 		}
 		
 		// post back to PayPal system to validate
