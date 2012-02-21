@@ -25,6 +25,10 @@
 					<td><input name="published" value="<?php echo $published;?>"></td>
 				</tr>
 				<tr>
+					<td>Published Date for Sorting</td>
+					<td><input name="published_date" value="<?php echo $published_date;?>"></td>
+				</tr>
+				<tr>
 					<td>Page Title</td>
 					<td><input name="title" value="<?php echo $title;?>"></td>
 				</tr>
