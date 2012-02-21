@@ -30,7 +30,7 @@ class Ipo_model extends CI_Model {
 				$rows .= "<tr bgcolor='$bgcolor'>
 				<td>".$row->published."</td>
 				<td>".$row->name."</td>
-				
+				<td>".$row->symbol."</td>
 				<td>".$row->manager."</td>
 					<td>".$row->catagory."</td>
 					<td>".$row->shares_mm."</td>
@@ -63,7 +63,7 @@ class Ipo_model extends CI_Model {
 			foreach ($query->result() as $row)
 			{
 				$rows .= "<tr>
-					<td>".$row->name."</td>
+					<td>".$row->symbol."</td>
 					<td>".$row->published."</td>
 				</tr>";
 			}

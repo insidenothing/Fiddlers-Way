@@ -20,6 +20,7 @@ table.sortable thead {
 				<tr>
 					<td style="white-space: pre">Published</td>
 					<td style="white-space: pre">Name</td>
+					<td style="white-space: pre">Symbol</td>
 					<td>Manager</td>
 					<td style="white-space: pre">Catagory</td>
 					<td style="white-space: pre">Shares (mm)</td>
