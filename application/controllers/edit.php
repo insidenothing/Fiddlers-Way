@@ -14,7 +14,8 @@ class Edit extends CI_Controller {
 			$this->email->to('patrick@fiddlersway.com');
 			//$this->email->cc('patrick@fiddlersway.com');
 			$this->email->subject($this->input->post('title').' on '.$this->input->post('published'));
-			$this->email->message($this->input->post('content'));
+			$permalink = "<hr>http://fiddlersway.com/$type/index/".$this->input->post('seo');
+			$this->email->message($this->input->post('content').$permalink);
 			$this->email->send();
 		}
 		if ($this->input->post('author')){
