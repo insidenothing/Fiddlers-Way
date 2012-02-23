@@ -15,6 +15,8 @@
 	</div>
 </div>
 
+<form method="post" action="/contact">
+
 <div class="block" style="margin-top: 5px;">
 	<div class="block-border">
 		<div class="block-content">
@@ -22,7 +24,7 @@
 				<h4>Send Message</h4>
 				<table width="100%">
 					<tr>
-						<td width="50%">Spam Control: What is 1 + 1?</td>
+						<td width="50%"><?php echo $feedback; ?></td>
 						<td width="50%"><select name="spam"><option>1</option><option>2</option></select></td>
 					</tr>
 					<tr>
@@ -35,17 +37,17 @@
 					</tr>
 					<tr>
 						<td width="50%">Subject:</td>
-						<td width="50%"><input name="subject"></td>
+						<td width="50%"><input name="subject" value="<?php echo $subject;?>"></td>
 					</tr>
 					<tr>
-						<td colspan="2" align="center"><textarea rows="5" cols="45" name="body"></textarea></td>
+						<td colspan="2" align="center"><textarea rows="5" cols="45" name="body"><?php echo $body;?></textarea></td>
 					</tr>
 				</table>
-				<center><img src="/assets/images/slogan-bg.png" width="400" height="25" /><br><input type="submit" value="Send Message"></center>
+				<center><img src="/assets/images/slogan-bg.png" width="400" height="25" /><br><input type="submit" value="<?php echo $feedback2; ?>"></center>
 			</div>
 		</div>
 	</div>
 </div>
 
-
+</form>
 
