@@ -198,7 +198,7 @@ anylinkmenu.init("menuanchorclass")
 		<!-- end #menu -->
 
 
-<div id="menu">
+<div id="menu2">
 	<div class="container clearfix">
 		Beta Test
 	</div>

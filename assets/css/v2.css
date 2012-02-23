@@ -2236,6 +2236,13 @@ img#about-image {
 	padding-bottom: 25px;
 }
 
+#menu2 {
+	background: url(/assets/images/menu-bg.png) repeat-x;
+	height: 25px;
+	margin-top: 12px;
+	padding-bottom: 25px;
+}
+
 #content {
 	background: url(/assets/images/content-bg.png) repeat-x bottom left;
 	padding-bottom: 40px;
