@@ -20,7 +20,7 @@ class Contact extends CI_Controller {
 			$this->load->library('email');
 			if ($this->input->cookie('name')){
 				$this->email->subject('Member Message: '.$this->input->post('subject'));
-				$name = $this->input->post('name');
+				$name = $this->input->cookie('name');
 			}else{
 				$name = "Website Guest";
 				$this->email->subject('Guest Message: '.$this->input->post('subject'));
