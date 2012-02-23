@@ -9,6 +9,13 @@ class Edit extends CI_Controller {
 		$results = '';
 		if ($this->input->post('content')){
 			$results .= $this->edit->set_contents($id,$type,addslashes($this->input->post('content')));
+			$this->load->library('email');
+			$this->email->from('no-reply@fiddlersway.com', 'Fiddlers Way Update');
+			$this->email->to('patrick@fiddlersway.com');
+			//$this->email->cc('patrick@fiddlersway.com');
+			$this->email->subject('New Fiddlers Way Blog Post');
+			$this->email->message($this->input->post('content'));
+			$this->email->send();
 		}
 		if ($this->input->post('author')){
 			$results .= $this->edit->set_author($id,$type,addslashes($this->input->post('author')));
