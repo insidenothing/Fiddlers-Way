@@ -25,7 +25,7 @@ anylinkmenu3.items=[
 var anylinkmenu4={divclass:'anylinkmenu', inlinestyle:'', linktarget:''} //First menu variable. Make sure "anylinkmenu1" is a unique name!
 anylinkmenu4.items=[
 	["Archived Blogs", "http://fiddlersway.com/page/index/archive_blogs"],
-	["White Papers", "http://fiddlersway.com/page/index/video_blogs"],
+	["White Papers", "http://fiddlersway.com/page/index/white_papers"],
 	["Case Studies", "http://fiddlersway.com/page/index/case_studies"]
 ]
 
