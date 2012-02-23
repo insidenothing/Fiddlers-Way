@@ -13,7 +13,7 @@ class Edit extends CI_Controller {
 			$this->email->from('no-reply@fiddlersway.com', 'Fiddlers Way Update');
 			$this->email->to('patrick@fiddlersway.com');
 			//$this->email->cc('patrick@fiddlersway.com');
-			$this->email->subject('New Fiddlers Way Blog Post');
+			$this->email->subject($this->input->post('title').' on '.$this->input->post('published'));
 			$this->email->message($this->input->post('content'));
 			$this->email->send();
 		}
