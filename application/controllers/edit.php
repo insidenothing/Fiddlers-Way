@@ -12,9 +12,21 @@ class Edit extends CI_Controller {
 			$this->load->library('email');
 			$this->email->from('no-reply@fiddlersway.com', 'Fiddlers Way Update');
 			$this->email->to('patrick@fiddlersway.com');
-			//$this->email->cc('patrick@fiddlersway.com');
+			$this->email->cc('doug@fiddlersway.com');
 			$this->email->subject($this->input->post('title').' on '.$this->input->post('published'));
-			$permalink = "<hr>http://fiddlersway.com/$type/index/".$this->input->post('seo');
+			if ($type == 'pages'){
+				$controller = 'page';
+			}
+			if ($type == 'blogs'){
+				$controller = 'blog';
+			}
+			if ($type == 'wire'){
+				$controller = 'wire';
+			}
+			if ($type == 'whitepapers'){
+				$controller = 'whitepaper';
+			}
+			$permalink = "<hr>http://fiddlersway.com/$controller/index/".$this->input->post('seo');
 			$this->email->message($this->input->post('content').$permalink);
 			$this->email->send();
 		}
