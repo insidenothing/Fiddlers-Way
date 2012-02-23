@@ -185,7 +185,10 @@ anylinkmenu.init("menuanchorclass")
 						title="Contact Us">Contact Us</a>
 					</li>
 					
-										
+					<li class="page_item"><a
+						href="http://www.fiddlersway.com/page/index/facebook_video_interviews"
+						title="Contact Us">Facebook Video Interviews</a>
+					</li>					
 					
 				</ul>
 				<!-- end ul#nav -->
