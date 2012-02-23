@@ -168,7 +168,7 @@ anylinkmenu.init("menuanchorclass")
 					</li>
 
 					<li class="page_item"><a
-						href="http://fiddlersway.com" class="menuanchorclass" rel="anylinkmenu4">Archived Blogs</a>
+						href="http://fiddlersway.com" class="menuanchorclass" rel="anylinkmenu4">Blogs</a>
 					</li>
 
 					<li class="page_item"><a
