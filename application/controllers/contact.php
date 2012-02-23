@@ -18,7 +18,14 @@ class Contact extends CI_Controller {
 		if ($this->input->post('spam') == "2")
 		{
 			$this->load->library('email');
-			$this->email->from('no-reply@fiddlersway.com', 'Website Message');
+			if ($this->input->cookie('name')){
+				$this->email->subject('Member Message: '.$this->input->post('subject'));
+				$name = $this->input->post('name');
+			}else{
+				$name = "Website Guest";
+				$this->email->subject('Guest Message: '.$this->input->post('subject'));
+			}
+			$this->email->from($this->input->post('email'), $name);
 			$this->email->to('doug@fiddlersway.com');
 			$this->email->cc('patrick@fiddlersway.com');
 			$this->email->subject($this->input->post('subject'));
