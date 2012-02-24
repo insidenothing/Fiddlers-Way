@@ -71,9 +71,9 @@ class Ipo_model extends CI_Model {
 			{
 				if ($row->premium_report != '')
 				{
-					$premium = '<br>Premium Report';
+					$premium = '<br>Premium&nbsp;Report';
 				}else{
-					$premium = '<br>In Progress';
+					$premium = '<br>In&nbsp;Progress';
 				}
 				
 				
@@ -98,7 +98,7 @@ class Ipo_model extends CI_Model {
 					<td>".$this->ifBlank($row->day40)."</td>
 					<td>".$this->ifBlank($row->day180)."</td>
 				
-				<td><a href='http://fiddlersway.com/ipo/index/".$row->symbol."'>Details $premium</a></td>
+				<td><a href='http://fiddlersway.com/ipo/index/".$row->symbol."'>IPO Details $premium</a></td>
 				
 				</tr>";
 			}
