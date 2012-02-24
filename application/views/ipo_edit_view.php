@@ -55,7 +55,7 @@
 
 
 
-					<?PHP echo $contents;?></textarea>
+					<?PHP echo $premium_report;?></textarea>
 
 					<script language="JavaScript">
 generate_wysiwyg('whiteboard');
