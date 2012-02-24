@@ -181,15 +181,9 @@ anylinkmenu.init("menuanchorclass")
 						title="Press Room" class="menuanchorclass" rel="anylinkmenu6">Press Room</a>
 					</li>
 					
-				
-					<li class="page_item"><a
-						href="http://www.fiddlersway.com/contact"
-						title="Contact Us">Contact Us</a>
-					</li>
-					
 					<li class="page_item"><a
 						href="http://www.fiddlersway.com/page/index/facebook_video_interviews"
-						title="Contact Us">Facebook Video Interviews</a>
+						title="Facebook Video Interviews">Facebook Video Interviews</a>
 					</li>
 										
 					
@@ -202,7 +196,13 @@ anylinkmenu.init("menuanchorclass")
 
 <div id="menu2">
 	<div class="container clearfix">
-		<center>IPO Calendar: Feb 20th & 27th wks | IPO Premium Member Options | About Us | Subscribers: Feb 20wk</center>
+		<center>
+			<a href="http://fiddlersway.com/ipo_calendar" title="IPO Calendar">IPO Calendar: Feb 20th & 27th wks</a> |
+			<a href="http://fiddlersway.com/sales" title="Premium Member Options">Premium Member Options</a> |
+			<a href="http://fiddlersway.com/page/index/bio" title="About Us">About Us</a> |
+			<a href="http://www.fiddlersway.com/contact" title="Contact Us">Contact Us</a> |
+			<a href="http://fiddlersway.com/ipo_calendar" title="IPO Calendar">Subscribers: Feb 20wk
+		</center>
 	</div>
 </div>
 
