@@ -42,7 +42,15 @@ class Ipo_model extends CI_Model {
 		return "NEW";
 	}
 	
-	
+	function row_color_premium($i){
+		$bg1 = "#CCFFCC"; // color one
+		$bg2 = "#C1FFC1"; // color two
+		if ( $i%2 ) {
+			return $bg1;
+		} else {
+			return $bg2;
+		}
+	}
 	
 	function row_color($i){
 		$bg1 = "#FFFFFF"; // color one
@@ -72,13 +80,15 @@ class Ipo_model extends CI_Model {
 				if ($row->premium_report != '')
 				{
 					$premium = '<br>Premium&nbsp;Report';
+					$bgcolor = $this->row_color_premium($i);
 				}else{
 					$premium = '<br>In&nbsp;Progress';
+					$bgcolor = $this->row_color($i);
 				}
 				
 				
 				$i++;
-				$bgcolor = $this->row_color($i);
+				
 				$rows .= "<tr bgcolor='$bgcolor'>
 				<td>".$row->published."</td>
 				<td>".$row->name."</td>
