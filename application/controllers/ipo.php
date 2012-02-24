@@ -38,8 +38,8 @@ class Ipo extends CI_Controller {
 		
 		$this->load->model('ipo_model','ipo');
 		$data['symbol'] = $symbol;
-		
-		
+		$data['results'] = 'READY...';
+		$data['contents'] = 'READY...';
 		
 	
 		$this->load->library('Menu','menu');
