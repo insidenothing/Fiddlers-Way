@@ -118,8 +118,28 @@ class Ipo extends CI_Controller {
 			$this->email->cc('doug@fiddlersway.com');
 			$this->email->subject('Premium IPO Update: '.$this->input->post('symbol').' on '.$this->input->post('published'));
 			$details = $this->ipo->get_list($this->input->post('symbol'));
-			$permalink = "<hr>http://fiddlersway.com/ipo/index/".$this->input->post('symbol');
-			$this->email->message($details.$this->input->post('premium_report').$permalink);
+			$body = '<table cellspacing="0" cellpadding="2" border="1" width="100%" style="border-colapse:colaspe;">				
+				<tr>
+					<td style="white-space: pre">Published</td>
+					<td style="white-space: pre">Name</td>
+					<td style="white-space: pre">Symbol</td>
+					<td>Manager</td>
+					<td style="white-space: pre">Catagory</td>
+					<td style="white-space: pre">Shares (mm)</td>
+					
+					<td style="white-space: pre">Price Low</td>
+					<td style="white-space: pre">Pre IPO Price</td>
+					<td style="white-space: pre">Price High</td>
+					
+					<td style="white-space: pre">Pre IPO Amount (mm)</td>
+					<td style="white-space: pre">Estimate</td>
+					
+					<td style="white-space: pre">Expected</td>
+					<td style="white-space: pre">40 Day</td>
+					<td style="white-space: pre">180 Day</td>
+					<td>Report</td>
+				</tr>'.$details.'</table>';
+			$this->email->message($body.$this->input->post('premium_report').$permalink);
 			$this->email->send();
 		}
 		
