@@ -7,6 +7,17 @@ class Ipo_model extends CI_Model {
 		// Call the Model constructor
 		parent::__construct();
 	}
+	
+	
+	
+	function new_item($symbol)
+	{
+		$query = $this->db->query("insert into ipo_calendar (symbol) values ('$symbol')");
+		return $symbol;
+	}
+	
+	
+	
 	function row_color($i){
 		$bg1 = "#FFFFFF"; // color one
 		$bg2 = "#FCFCFC"; // color two
