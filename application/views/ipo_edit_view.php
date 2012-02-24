@@ -19,7 +19,11 @@
 				
 				<tr>
 					<td>Symbol</td>
-					<td><input name="seo" value="<?php echo $symbol;?>"></td>
+					<td><input name="symbol" value="<?php echo $symbol;?>"></td>
+				</tr>
+				<tr>
+					<td>Published</td>
+					<td><input name="published" value="<?php echo $published;?>"></td>
 				</tr>
 				
 				<tr bgcolor="#FFDE53">

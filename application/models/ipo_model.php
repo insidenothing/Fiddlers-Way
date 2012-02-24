@@ -8,6 +8,21 @@ class Ipo_model extends CI_Model {
 		parent::__construct();
 	}
 	
+	function set_ipo_data($field,$symbol,$value)
+	{
+		$query = $this->db->query("update ipo_calendar set $field = '$value' where symbol = '$symbol'");
+		return "Updated $field, ";
+	}
+	
+	
+	function get_ipo_data($field,$symbol)
+	{
+		$query = $this->db->query("SELECT $field from ipo_calendar where symbol = '$symbol'");
+		$row = $query->row_array();
+		$query->free_result();
+		return $row[$field];
+	}
+	
 	
 	
 	function new_item()
