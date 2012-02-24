@@ -50,11 +50,7 @@
 <h4 class="widgettitle">Premium Report</h4>
 				<div class="widget widget_text" id="text-2">
 
-					<textarea id="whiteboard" rows="30" cols="100" name="content">
-
-
-
-
+					<textarea id="whiteboard" rows="30" cols="100" name="premium_report">
 					<?PHP echo $premium_report;?></textarea>
 
 					<script language="JavaScript">

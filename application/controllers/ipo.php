@@ -41,21 +41,21 @@ class Ipo extends CI_Controller {
 
 		/* Record Updates */
 		if ($this->input->post('published')){
-			$results .= set_ipo_data('published',$symbol,$this->input->post('published'));
+			$results .= $this->ipo->set_ipo_data('published',$symbol,$this->input->post('published'));
 		}
 
 		if ($this->input->post('symbol')){
-			$results .= set_ipo_data('symbol',$symbol,$this->input->post('symbol'));
+			$results .= $this->ipo->set_ipo_data('symbol',$symbol,$this->input->post('symbol'));
 			$data['symbol'] = $this->input->post('symbol');
 		}else{
 			$data['symbol'] = $symbol;
 		}
 
 		/* Public Data */
-		$data['published'] = get_ipo_data('published',$data['symbol']);
+		$data['published'] = $this->ipo->get_ipo_data('published',$data['symbol']);
 
 		/* Premium Data */
-		$data['premium_report'] = get_ipo_data('premium_report',$data['symbol']);
+		$data['premium_report'] = $this->ipo->get_ipo_data('premium_report',$data['symbol']);
 
 		/* common data */
 		$data['results'] = $results;
