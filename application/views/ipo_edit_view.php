@@ -46,7 +46,7 @@
 					<td colspan="2"><a href="/<?php echo $controller;?>/index/<?php echo $seo;?>"><b>Click this link to view <?php echo $seo;?></b></a></td>
 				</tr>
 			</table>				
-	*This must match the link or parent controller's code
+	
 				
 			</div>
 		</div>
@@ -58,7 +58,7 @@
 	<div class="block" style="margin-top: 5px; width:1000px !important;">
 		<div class="block-border">
 			<div class="block-content">
-
+<h4 class="widgettitle">Premium Report</h4>
 				<div class="widget widget_text" id="text-2">
 
 					<textarea id="whiteboard" rows="30" cols="100" name="content">

@@ -10,10 +10,10 @@ class Ipo_model extends CI_Model {
 	
 	
 	
-	function new_item($symbol)
+	function new_item()
 	{
-		$query = $this->db->query("insert into ipo_calendar (symbol) values ('$symbol')");
-		return $symbol;
+		$query = $this->db->query("insert into ipo_calendar (symbol) values ('NEW')");
+		return "NEW";
 	}
 	
 	
