@@ -49,7 +49,7 @@ class Ipo extends CI_Controller {
 			$this->email->from('no-reply@fiddlersway.com', 'Fiddlers Way Update');
 			$this->email->to('patrick@fiddlersway.com');
 			$this->email->cc('doug@fiddlersway.com');
-			$this->email->subject('Premium IPO Update: '$this->input->post('symbol').' on '.$this->input->post('published'));
+			$this->email->subject('Premium IPO Update: '.$this->input->post('symbol').' on '.$this->input->post('published'));
 			$permalink = "<hr>http://fiddlersway.com/ipo/index/".$this->input->post('symbol');
 			$this->email->message($this->input->post('premium_report').$permalink);
 			$this->email->send();			
