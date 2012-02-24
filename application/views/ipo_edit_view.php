@@ -19,7 +19,7 @@
 						Settings:
 						<?php echo $symbol;?>
 					</h4>
-					<table width="100%">
+					<table width="100%" border="1">
 
 						<tr>
 							<td>Symbol</td>
