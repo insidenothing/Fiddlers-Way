@@ -43,20 +43,6 @@ class Ipo extends CI_Controller {
 		if ($this->input->post('symbol')){
 			$results .= $this->ipo->set_ipo_data('symbol',$symbol,$this->input->post('symbol'));
 			$data['symbol'] = $this->input->post('symbol');
-			
-			
-			$this->load->library('email');
-			$this->email->from('no-reply@fiddlersway.com', 'Fiddlers Way Update');
-			$this->email->to('patrick@fiddlersway.com');
-			$this->email->cc('doug@fiddlersway.com');
-			$this->email->subject('Premium IPO Update: '.$this->input->post('symbol').' on '.$this->input->post('published'));
-			$details = $this->ipo->get_list($this->input->post('symbol'))
-			$permalink = "<hr>http://fiddlersway.com/ipo/index/".$this->input->post('symbol');
-			$this->email->message($details.$this->input->post('premium_report').$permalink);
-			$this->email->send();			
-			
-			
-			
 		}else{
 			$data['symbol'] = $symbol;
 		}
@@ -122,6 +108,21 @@ class Ipo extends CI_Controller {
 		if ($this->input->post('recommendation_paid')){
 			$results .= $this->ipo->set_ipo_data('recommendation_paid',$data['symbol'],$this->input->post('recommendation_paid'));
 		}
+		
+		
+		/* send email after all information has been updated */
+		if ($this->input->post('symbol')){
+			$this->load->library('email');
+			$this->email->from('no-reply@fiddlersway.com', 'Fiddlers Way Update');
+			$this->email->to('patrick@fiddlersway.com');
+			$this->email->cc('doug@fiddlersway.com');
+			$this->email->subject('Premium IPO Update: '.$this->input->post('symbol').' on '.$this->input->post('published'));
+			$details = $this->ipo->get_list($this->input->post('symbol'))
+			$permalink = "<hr>http://fiddlersway.com/ipo/index/".$this->input->post('symbol');
+			$this->email->message($details.$this->input->post('premium_report').$permalink);
+			$this->email->send();
+		}
+		
 		
 		
 
