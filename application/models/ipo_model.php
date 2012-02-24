@@ -8,6 +8,17 @@ class Ipo_model extends CI_Model {
 		parent::__construct();
 	}
 	
+	function ifBlank($str)
+	{
+		if ($str == '' | $str == "0000-00-00" | $str == '0.00')
+		{
+			return 'n/a';
+		}else{
+			return $str;
+		}
+	}
+	
+	
 	function set_ipo_data($field,$symbol,$value)
 	{
 		$query = $this->db->query("update ipo_calendar set $field = '$value' where symbol = '$symbol'");
@@ -69,15 +80,15 @@ class Ipo_model extends CI_Model {
 					<td>".$row->shares_mm."</td>
 					
 					<td>".$row->price_low."</td>
-					<td>".$row->pre_ipo_price."</td>
+					<td>".$this->ifBlank($row->pre_ipo_price)."</td>
 					<td>".$row->price_high."</td>
 					
-					<td>".$row->pre_ipo_amount_mm."</td>
+					<td>".$this->ifBlank($row->pre_ipo_amount_mm)."</td>
 					<td>".$row->estimate."</td>
 					
 					<td>".$row->expected."</td>
-					<td>".$row->day40."</td>
-					<td>".$row->day180."</td>
+					<td>".$this->ifBlank($row->day40)."</td>
+					<td>".$this->ifBlank($row->day180)."</td>
 				
 				<td><a href='http://fiddlersway.com/ipo/index/".$row->symbol."'>Link</a></td>
 				
