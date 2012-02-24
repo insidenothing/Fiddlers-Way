@@ -4,7 +4,7 @@
 	src="/assets/wysiwyg/wysiwyg.js"></script>
 
 <form method="POST"
-	action="/edit/index/<?php echo $type; ?>/<?php echo $id; ?>">
+	action="/ipo/edit/<?php echo $symbol; ?>">
 
 
 
@@ -14,7 +14,7 @@
 
 			<div class="widget widget_text" id="text-2">
 			<h4 class="widgettitle">Operator: <?php echo $operator;?></h4>
-			<h4>Settings: <?php echo $type;?> #<?php echo $id;?></h4>
+			<h4>Settings: <?php echo $symbol;?></h4>
 			<table width="100%">
 				
 				<tr>
