@@ -69,6 +69,14 @@ class Ipo_model extends CI_Model {
 			$i=0;
 			foreach ($query->result() as $row)
 			{
+				if ($row->premium_report != '')
+				{
+					$premium = '<br>Premium Report';
+				}else{
+					$premium = '<br>In Progress';
+				}
+				
+				
 				$i++;
 				$bgcolor = $this->row_color($i);
 				$rows .= "<tr bgcolor='$bgcolor'>
@@ -90,7 +98,7 @@ class Ipo_model extends CI_Model {
 					<td>".$this->ifBlank($row->day40)."</td>
 					<td>".$this->ifBlank($row->day180)."</td>
 				
-				<td><a href='http://fiddlersway.com/ipo/index/".$row->symbol."'>Link</a></td>
+				<td><a href='http://fiddlersway.com/ipo/index/".$row->symbol."'>Details $premium</a></td>
 				
 				</tr>";
 			}
