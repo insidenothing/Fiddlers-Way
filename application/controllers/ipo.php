@@ -23,7 +23,7 @@ class Ipo extends CI_Controller {
 	public function create()
 	{
 		$this->load->model('ipo_model','ipo');
-		$id = $this->ipo->new_item();
+		$symbol = $this->ipo->new_item();
 		$this->output->set_header("Location: /ipo/edit/$symbol");
 	}
 	
