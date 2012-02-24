@@ -197,11 +197,11 @@ anylinkmenu.init("menuanchorclass")
 <div id="menu2">
 	<div class="container clearfix">
 		<center>
-			<a href="http://fiddlersway.com/ipo_calendar" title="IPO Calendar">IPO Calendar: Feb 20th & 27th wks</a> |
-			<a href="http://fiddlersway.com/sales" title="Premium Member Options">Premium Member Options</a> |
-			<a href="http://fiddlersway.com/page/index/bio" title="About Us">About Us</a> |
-			<a href="http://www.fiddlersway.com/contact" title="Contact Us">Contact Us</a> |
-			<a href="http://fiddlersway.com/ipo_calendar" title="IPO Calendar">Subscribers: Feb 20wk</a>
+			<a class="page_item" href="http://fiddlersway.com/ipo_calendar" title="IPO Calendar">IPO Calendar: Feb 20th & 27th wks</a> |
+			<a class="page_item" href="http://fiddlersway.com/sales" title="Premium Member Options">Premium Member Options</a> |
+			<a class="page_item" href="http://fiddlersway.com/page/index/bio" title="About Us">About Us</a> |
+			<a class="page_item" href="http://www.fiddlersway.com/contact" title="Contact Us">Contact Us</a> |
+			<a class="page_item" href="http://fiddlersway.com/ipo_calendar" title="IPO Calendar">Subscribers: Feb 20wk</a>
 		</center>
 	</div>
 </div>

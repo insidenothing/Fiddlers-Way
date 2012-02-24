@@ -1,5 +1,5 @@
 /*------------------------------------------------*/
-/*-------------------[MY CODE]------------------*/
+/*-------------------[ACTIVE CODE]------------------*/
 /*------------------------------------------------*/
 body.custom-background {
 	background-image:
@@ -16,6 +16,22 @@ body.custom-background {
 .tr_bold{
 	color:#6897AB;
 }
+
+#menu {
+	background: url(/assets/images/menu-bg.png) repeat-x;
+	height: 72px;
+	margin-top: 12px;
+	padding-bottom: 0px;
+}
+
+#menu2 {
+	background: url(/assets/images/menu-bg_sm.png) repeat-x;
+	height: 35px;
+	margin-top: 5px;
+	padding-top: 5px;
+	padding-bottom: 25px;
+}
+
 /*------------------------------------------------*/
 /*-------------------[OLD CODE]------------------*/
 /*------------------------------------------------*/
@@ -750,12 +766,7 @@ img#about-image {
 	color: #A5A5A5;
 }
 
-#menu {
-	background: url("images/menu-bg.png") repeat-x scroll 0 0 transparent;
-	height: 72px;
-	margin-top: 12px;
-	padding-bottom: 25px;
-}
+
 
 #content {
 	background: url("images/content-bg.png") repeat-x scroll left bottom
@@ -2229,20 +2240,6 @@ img#about-image {
 	color: #a5a5a5;
 }
 
-#menu {
-	background: url(/assets/images/menu-bg.png) repeat-x;
-	height: 72px;
-	margin-top: 12px;
-	padding-bottom: 0px;
-}
-
-#menu2 {
-	background: url(/assets/images/menu-bg_sm.png) repeat-x;
-	height: 35px;
-	margin-top: 5px;
-	padding-top: 5px;
-	padding-bottom: 25px;
-}
 
 #content {
 	background: url(/assets/images/content-bg.png) repeat-x bottom left;
