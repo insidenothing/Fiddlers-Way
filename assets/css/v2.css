@@ -31,7 +31,14 @@ body.custom-background {
 	padding-top: 5px;
 	padding-bottom: 25px;
 }
-
+.subMenu a {
+	text-decoration: none;
+	color: #000000;
+}
+.subMenu a:hover {
+	text-decoration: none;
+	color: #6897AB;
+}
 /*------------------------------------------------*/
 /*-------------------[OLD CODE]------------------*/
 /*------------------------------------------------*/
