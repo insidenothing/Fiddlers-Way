@@ -77,7 +77,7 @@ class Ipo_model extends CI_Model {
 			$i=0;
 			foreach ($query->result() as $row)
 			{
-				if ($row->premium_report != '')
+				if ($row->premium_report != '' && $row->premium_report != ' ')
 				{
 					$premium = '<br>Premium&nbsp;Report';
 					$bgcolor = $this->row_color_premium($i);
