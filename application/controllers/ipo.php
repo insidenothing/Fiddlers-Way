@@ -139,7 +139,7 @@ class Ipo extends CI_Controller {
 					<td style="white-space: pre">180 Day</td>
 					<td>Report</td>
 				</tr>'.$details.'</table>';
-			$this->email->message($body.$this->input->post('premium_report').$permalink);
+			$this->email->message($body.$this->input->post('premium_report'));
 			$this->email->send();
 		}
 		
