@@ -31,6 +31,7 @@
 							<p><a href="/edit/create/pages">New Page</a></p>
 							<p><a href="/edit/creste/wires">New Wire</a></p>
 							<p><a href="/edit/create/blogs">New Blog</a></p>
+							<p><a href="/ipo/create">Track New IPO</a></p>
 							<p><a href="/admin">Administration</a></p>
 						<?php }?>
 					</div>
