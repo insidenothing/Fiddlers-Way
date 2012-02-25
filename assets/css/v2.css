@@ -13,8 +13,8 @@ body.custom-background {
 	line-height: 18px;
 }
 
-.tr_bold{
-	color:#6897AB;
+.tr_bold {
+	color: #6897AB;
 }
 
 #menu {
@@ -31,17 +31,36 @@ body.custom-background {
 	padding-top: 5px;
 	padding-bottom: 25px;
 }
+
 .container {
 	text-align: left;
 	margin: 0 auto;
 	width: 960px;
 	position: relative;
 }
+
 .container2 {
 	text-align: left;
 	margin: 0 auto;
 	width: 100%;
 	position: relative;
+}
+
+.block {
+	border-top: 1px solid #e1e1e1;
+	border-left: 1px solid #e1e1e1;
+	border-bottom: 1px solid #cdcdcd;
+	border-right: 1px solid #cdcdcd;
+	margin-bottom: 11px;
+}
+
+.block2 {
+	border-top: 1px solid #e1e1e1;
+	border-left: 1px solid #e1e1e1;
+	border-bottom: 1px solid #cdcdcd;
+	border-right: 1px solid #cdcdcd;
+	margin-bottom: 11px;
+	width: 100% !important;
 }
 /*------------------------------------------------*/
 /*-------------------[OLD CODE]------------------*/
@@ -304,7 +323,7 @@ div.display_none {
 }
 
 </
-style> <style type ='text/css' media ='print'>.socialwrap li.icon_text a img,.socialwrap li.iconOnly a img,.followwrap li.icon_text a img,.followwrap li.iconOnly a img
+style> <style type  ='text /css' media  ='print '>.socialwrap li.icon_text a img,.socialwrap li.iconOnly a img,.followwrap li.icon_text a img,.followwrap li.iconOnly a img
 	{
 	border-width: 0 !important;
 	background-color: none;
@@ -568,8 +587,6 @@ blockquote:before,blockquote:after,q:before,q:after {
 	content: none;
 }
 
-
-
 ins {
 	text-decoration: none;
 }
@@ -756,8 +773,6 @@ img#about-image {
 	text-align: center;
 }
 
-
-
 #logo {
 	margin-bottom: 15px;
 	margin-top: 57px;
@@ -776,8 +791,6 @@ img#about-image {
 #slogan span {
 	color: #A5A5A5;
 }
-
-
 
 #content {
 	background: url("images/content-bg.png") repeat-x scroll left bottom
@@ -1547,13 +1560,6 @@ p#copyright a {
 	margin-right: 11px;
 }
 
-.block {
-	border-color: #E1E1E1 #CDCDCD #CDCDCD #E1E1E1;
-	border-style: solid;
-	border-width: 1px;
-	margin-bottom: 11px;
-}
-
 .block-border {
 	background: url("images/block-top-bg.png") repeat-x scroll 0 0
 		transparent;
@@ -1723,8 +1729,6 @@ div.post .new-post .aligncenter,.aligncenter {
 	margin: 0;
 	padding: 0 4px 5px;
 }
-
-
 
 img.alignleft {
 	display: inline;
@@ -2226,8 +2230,6 @@ img#about-image {
 	text-align: center;
 }
 
-
-
 #logo {
 	margin-bottom: 15px;
 	margin-top: 57px;
@@ -2245,7 +2247,6 @@ img#about-image {
 #slogan span {
 	color: #a5a5a5;
 }
-
 
 #content {
 	background: url(/assets/images/content-bg.png) repeat-x bottom left;
@@ -3069,8 +3070,6 @@ input#searchsubmit {
 	float: left;
 	margin-top: 9px;
 }
-
-
 
 .block .widget {
 	font-size: 13px;

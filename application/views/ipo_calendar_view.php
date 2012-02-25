@@ -10,7 +10,7 @@ table.sortable thead {
 </style>
 
 
-<div class="block" style="margin-top: 5px; width:100% !important;">
+<div class="block2" style="margin-top: 5px;">
 	<div class="block-border">
 		<div class="block-content">
 			<h4 class="widgettitle">IPO CALENDAR</h4>
