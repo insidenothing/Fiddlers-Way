@@ -90,9 +90,12 @@ class Ipo_model extends CI_Model {
 				
 				if ($this->input->cookie('premium') == 'yes')
 				{
-					$premium = $row->recommendation_paid.' '.$row->rating_paid;
+					$premium = $row->recommendation_paid;
+					$premium2 = $row->rating_paid;
+					
 				}else{
 					$premium = '<a href="/sales">Subscribe</a>';
+					$premium2 = '<a href="/sales">Subscribe</a>';
 				}
 				
 				
@@ -117,7 +120,7 @@ class Ipo_model extends CI_Model {
 					<td>".$this->ifBlank($row->day40)."</td>
 					<td>".$this->ifBlank($row->day180)."</td>
 					<td>$premium</td>
-				<td><a style='color:#$color' href='http://fiddlersway.com/ipo/index/".$row->symbol."'>IPO Details $premium</a></td>
+				<td><a style='color:#$color' href='http://fiddlersway.com/ipo/index/".$row->symbol."'>IPO Details<br> $premium2</a></td>
 				
 				</tr>";
 			}
