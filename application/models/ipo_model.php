@@ -88,6 +88,13 @@ class Ipo_model extends CI_Model {
 					$color = "999999";
 				}
 				
+				if ($this->input->cookie('premium') == 'yes')
+				{
+					$premium = 'y';
+				}else{
+					$premium = 'n';
+				}
+				
 				
 				$i++;
 				
@@ -109,7 +116,7 @@ class Ipo_model extends CI_Model {
 					<td>".$row->expected."</td>
 					<td>".$this->ifBlank($row->day40)."</td>
 					<td>".$this->ifBlank($row->day180)."</td>
-				
+					<td>$premium</td>
 				<td><a style='color:#$color' href='http://fiddlersway.com/ipo/index/".$row->symbol."'>IPO Details $premium</a></td>
 				
 				</tr>";

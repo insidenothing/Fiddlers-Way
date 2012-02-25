@@ -137,6 +137,7 @@ class Ipo extends CI_Controller {
 					<td style="white-space: pre">Expected</td>
 					<td style="white-space: pre">40 Day</td>
 					<td style="white-space: pre">180 Day</td>
+					<td>Rating</td>
 					<td>Report</td>
 				</tr>'.$details.'</table>';
 			$this->email->message($body.$this->input->post('premium_report'));
