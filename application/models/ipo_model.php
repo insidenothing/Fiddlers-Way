@@ -90,9 +90,9 @@ class Ipo_model extends CI_Model {
 				
 				if ($this->input->cookie('premium') == 'yes')
 				{
-					$premium = 'y';
+					$premium = $row->recommendation_paid.'<br/>'.$row->rating_paid;
 				}else{
-					$premium = 'n';
+					$premium = '<a href="/sales">Subscribe</a>';
 				}
 				
 				
