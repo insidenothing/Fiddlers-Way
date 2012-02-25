@@ -62,6 +62,14 @@ body.custom-background {
 	margin-bottom: 11px;
 	width: 100% !important;
 }
+#main-content {
+	float: left;
+	width: 476px;
+}
+#main-content2 {
+	float: left;
+	width: 100%;
+}
 /*------------------------------------------------*/
 /*-------------------[OLD CODE]------------------*/
 /*------------------------------------------------*/
@@ -2253,10 +2261,7 @@ img#about-image {
 	padding-bottom: 40px;
 }
 
-#main-content {
-	float: left;
-	width: 476px;
-}
+
 
 .entry {
 	border-top: 1px solid #e1e1e1;
