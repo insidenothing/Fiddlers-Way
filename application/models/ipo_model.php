@@ -81,9 +81,11 @@ class Ipo_model extends CI_Model {
 				{
 					$premium = '<br>Premium&nbsp;Report';
 					$bgcolor = $this->row_color_premium($i);
+					$color = "000000";
 				}else{
 					$premium = '<br>In&nbsp;Progress';
 					$bgcolor = $this->row_color($i);
+					$color = "999999";
 				}
 				
 				
@@ -108,7 +110,7 @@ class Ipo_model extends CI_Model {
 					<td>".$this->ifBlank($row->day40)."</td>
 					<td>".$this->ifBlank($row->day180)."</td>
 				
-				<td><a href='http://fiddlersway.com/ipo/index/".$row->symbol."'>IPO Details $premium</a></td>
+				<td><a style='color:#$color' href='http://fiddlersway.com/ipo/index/".$row->symbol."'>IPO Details $premium</a></td>
 				
 				</tr>";
 			}
