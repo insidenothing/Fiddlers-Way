@@ -147,7 +147,8 @@ anylinkmenu.init("menuanchorclass")
 
 
 		<div id="menu">
-			<div class="container clearfix">
+			<div class="container2 clearfix">
+			<center>
 				<ul id="primary" class="nav">
 					<li class="page_item"><a href="http://fiddlersway.com" class="menuanchorclass" rel="anylinkmenu1">Our Story</a>
 					</li>
@@ -185,6 +186,7 @@ anylinkmenu.init("menuanchorclass")
 					</li>					
 					
 				</ul>
+				</center>
 				<!-- end ul#nav -->
 			</div>
 			<!-- end .container -->
