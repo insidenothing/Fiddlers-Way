@@ -16,6 +16,16 @@ class Page extends CI_Controller {
 			$data['operator'] = '';
 		}
 		
+		
+		if ($this->page->get_paid_status($seo) == 'yes' && $this->input->cookie('premium') != 'yes')
+		{
+			/* this will secure paid pages */
+			$this->output->set_header("Location: /sales");
+		}
+		
+		
+		
+		
 		$this->load->library('Menu','menu');
 		$this->menu->load_common('page_view',$data);
 	}
