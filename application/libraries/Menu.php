@@ -22,9 +22,13 @@ class Menu   {
 		$CI->load->model('ipo_model','ipo');
 		$data['home_ipos'] = $CI->ipo->get_home_list();
 		
+		
+		$data2['share_link'] = "http://fiddlersway.com";
+		$data2['share_title'] = "Fiddler's Way";
+		
 		$CI->load->view('common_header',$data);
 		$CI->load->view($view, $data);
-		$CI->load->view('common_footer');
+		$CI->load->view('common_footer',$data2);
 	}
 	
 	
