@@ -23,12 +23,14 @@ class Menu   {
 		$data['home_ipos'] = $CI->ipo->get_home_list();
 		
 		
-		$data2['share_link'] = $CI->config->site_url().$CI->uri->uri_string();
-		$data2['share_title'] = "Fiddlers%20Way";
+		$data['share_link'] = $CI->config->site_url().$CI->uri->uri_string();
+		$data['share_title'] = "Fiddlers%20Way";
+		$data['page_title'] = "Fiddler's Way | Timely, On-Target IPO Info by Francis Gaskins and Doug McLean";
+		
 		
 		$CI->load->view('common_header',$data);
 		$CI->load->view($view, $data);
-		$CI->load->view('common_footer',$data2);
+		$CI->load->view('common_footer',$data);
 	}
 	
 	

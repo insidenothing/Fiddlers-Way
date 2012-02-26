@@ -1,4 +1,4 @@
-<title><?php echo addslashes($title);?></title>
+
 
 <div class="block" style="margin-top: 5px;">
 	<div class="block-border">
