@@ -1,4 +1,5 @@
 <script>document.title = "<?php echo $title;?>"</script>
+
 <div class="block" style="margin-top: 5px;">
 	<div class="block-border">
 		<div class="block-content">
