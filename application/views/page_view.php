@@ -1,4 +1,4 @@
-<script>document.title = "<?php echo $title;?>"</script>
+<script>document.title = "<?php echo addslashes($title);?>"</script>
 
 <div class="block" style="margin-top: 5px;">
 	<div class="block-border">
