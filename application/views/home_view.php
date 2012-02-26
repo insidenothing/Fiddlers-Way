@@ -1,4 +1,4 @@
-<script>document.title = "Fiddler's Way | Timely, On-Target IPO Info by Francis Gaskins and Doug McLean"</script>
+<title>Fiddler's Way | Timely, On-Target IPO Info by Francis Gaskins and Doug McLean</title>
 
 <div class="block" style="margin-top: 5px;">
 	<div class="block-border">
