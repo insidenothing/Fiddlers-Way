@@ -82,7 +82,7 @@
 								class="digg"><span class="head">Digg this post</span> </a></li>
 							<li class="icon_text"><a rel='nofollow' target='_blank'
 								title='Recommend this blog : Fiddler&#039;s Way on Facebook'
-								href='http://www.facebook.com/sharer.php?u=<?php echo $share_link; ?>'
+								href='http://www.facebook.com/sharer.php?u=<?php echo $share_link; ?>&amp;t=<?php echo $share_title; ?>'
 								style="background: transparent url(/assets/images/facebook.png) no-repeat top left; padding-left: 20px; line-height: 20px;"
 								class="facebook"><span class="head">Share on Facebook</span> </a>
 							</li>
