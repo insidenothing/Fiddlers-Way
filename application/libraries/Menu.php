@@ -23,7 +23,7 @@ class Menu   {
 		$data['home_ipos'] = $CI->ipo->get_home_list();
 		
 		
-		$data2['share_link'] = "http://fiddlersway.com";
+		$data2['share_link'] = $ci->config->site_url().$ci->uri->uri_string();
 		$data2['share_title'] = "Fiddlers%20Way";
 		
 		$CI->load->view('common_header',$data);
