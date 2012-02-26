@@ -24,7 +24,7 @@ class Menu   {
 		
 		
 		$data2['share_link'] = "http://fiddlersway.com";
-		$data2['share_title'] = "Fiddler's Way";
+		$data2['share_title'] = "Fiddlers%20Way";
 		
 		$CI->load->view('common_header',$data);
 		$CI->load->view($view, $data);
