@@ -15,6 +15,13 @@ class Menu   {
 		$this->product = $product;
 	}
 	
+	function page_title($class,$method,$seo)
+	{
+		$txt = 'Class: '.$class.' Method: '.$method.' SEO: '.$seo;
+		return $txt;
+	}
+	
+	
 	function load_common($view,$data)
 	{
 		$CI =& get_instance();
@@ -26,7 +33,13 @@ class Menu   {
 		$data['share_link'] = $CI->config->site_url().$CI->uri->uri_string();
 		$data['share_title'] = "Fiddlers%20Way";
 		$data['page_title'] = "Fiddler's Way | Timely, On-Target IPO Info by Francis Gaskins and Doug McLean";
-		$data['debug'] = 'Class: '.$CI->router->class.' Method: '.$CI->router->method.' SEO: '.$CI->uri->segment(3, 0);
+		
+		$data['debug'] = $this->page_title($CI->router->class,$CI->router->method,$CI->uri->segment(3, 0));
+		
+		
+		
+		
+		
 		
 		$CI->load->view('common_header',$data);
 		$CI->load->view($view, $data);
