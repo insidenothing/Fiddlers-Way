@@ -98,7 +98,7 @@
 								href="http://twitter.com/share?url=<?php echo $share_link; ?>&amp;text=<?php echo $share_title; ?>"
 								title="Tweet this blog : Fiddler&#039;s Way on Twitter"><span
 									class="head">Tweet about it</span> </a></li>
-							<li class="icon_text"><a rel="_self"
+							<li class="icon_text"><a rel="_self" 
 								style="background: transparent url(/assets/images/rss.png) no-repeat top left; padding-left: 20px; line-height: 20px;"
 								class="rss"
 								title="Follow this blog : Fiddler&#039;s Way comments"><span
