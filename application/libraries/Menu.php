@@ -17,6 +17,9 @@ class Menu   {
 	
 	function page_title($class,$method,$seo)
 	{
+		$CI =& get_instance();
+		
+		
 		$txt = 'Class: '.$class.' Method: '.$method.' SEO: '.$seo;
 		return $txt;
 	}
