@@ -224,3 +224,4 @@
 
 </body>
 </html>
+<div><?php if (isset($debug)){ echo $debug; }?></div>

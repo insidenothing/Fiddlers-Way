@@ -26,7 +26,7 @@ class Menu   {
 		$data['share_link'] = $CI->config->site_url().$CI->uri->uri_string();
 		$data['share_title'] = "Fiddlers%20Way";
 		$data['page_title'] = "Fiddler's Way | Timely, On-Target IPO Info by Francis Gaskins and Doug McLean";
-		
+		$data['debug'] = 'Class: '.$CI->router->class.' Method: '.$CI->router->method;
 		
 		$CI->load->view('common_header',$data);
 		$CI->load->view($view, $data);
