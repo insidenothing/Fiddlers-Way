@@ -77,7 +77,7 @@
 							</a></li>
 							<li class="icon_text"><a rel='nofollow' target='_blank'
 								title='Digg this blog : Fiddler&#039;s Way'
-								href='http://digg.com/submit?url=<?php echo $share_link; ?>&amp;title=<?php echo $share_title; ?>&amp;bodytext=%26nbsp%3B%0D%0A%0D%0A%26nbsp%3B%0D%0A%3Cp+style%3D%22text-align%3A+center%3B%22%3E%3Ca+href%3D%22http%3A%2F%2Fwww.fiddlersway.com%2Fwp-content%2Fuploads%2F2012%2F02%2FFW.jpg%22%3E'
+								href='http://digg.com/submit?url=<?php echo $share_link; ?>'
 								style="background: transparent url(/assets/images/digg.png) no-repeat top left; padding-left: 20px; line-height: 20px;"
 								class="digg"><span class="head">Digg this post</span> </a></li>
 							<li class="icon_text"><a rel='nofollow' target='_blank'
