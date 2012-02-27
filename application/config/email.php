@@ -4,7 +4,7 @@ $config['mailtype'] = 'html';
 
 $config['protocol'] = 'smtp'; 
 
-$config['smtp_host'] = 'smtp.gmail.com';
+$config['smtp_host'] = 'ssl://smtp.googlemail.com';
 $config['smtp_user'] = 'patrick@fiddlersway.com';
 $config['smtp_pass'] = 'lox2stay';
 $config['smtp_port'] = '465';
