@@ -33,7 +33,7 @@ class Menu   {
 		if ($class == 'ipo')
 		{
 			$CI->load->model('ipo_model','ipo');
-			$txt = 'IPO Information for '.$CI->ipo->get_ipo_data('company',$seo);
+			$txt = 'IPO Information for '.$CI->ipo->get_ipo_data('name',$seo);
 		}
 		if ($class == 'video')
 		{
