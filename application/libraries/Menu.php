@@ -18,10 +18,29 @@ class Menu   {
 	function page_title($class,$method,$seo)
 	{
 		$CI =& get_instance();
-		
-		
-		$txt = 'Class: '.$class.' Method: '.$method.' SEO: '.$seo;
-		return $txt;
+		if ($class == 'home')
+		{
+			$txt = 'Timely, On-Target IPO Info by Francis Gaskins and Doug McLean';
+		}
+		if ($class == 'blog')
+		{
+			$txt = 'Blog Post -';
+		}
+		if ($class == 'page')
+		{
+			$txt = 'Page -';
+		}
+		if ($class == 'ipo')
+		{
+			$CI->load->model('ipo_model','ipo');
+			$txt = 'IPO Information for '.$CI->ipo->get_ipo_data('company',$seo);
+		}
+		if ($class == 'video')
+		{
+			$txt = 'Video -';
+		}
+		//$txt = 'Class: '.$class.' Method: '.$method.' SEO: '.$seo;
+		return "Fiddler's Way | ".$txt;
 	}
 	
 	

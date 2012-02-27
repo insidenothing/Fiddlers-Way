@@ -122,7 +122,7 @@ anylinkmenu.init("menuanchorclass")
 	<div id="top-overlay">
 		<div id="header">
 			<div class="container">
-				<a href="http://www.fiddlersway.com"> <img
+				<a href="http://fiddlersway.com"> <img
 					src="/assets/images/fw4.gif" alt="Francis Gaskins and Doug McLean"
 					id="logo" />
 				</a>
