@@ -136,7 +136,7 @@
 			<div class="block-content">
 				<div class="widget widget_twitter">
 					<h4 class="widgettitle">
-						Recent Blog Posts
+						Recent Posts
 					</h4>
 					<?php echo $left_blog_recent;?>
 				</div>
@@ -215,7 +215,7 @@ new TWTR.Widget({
 			<div class="block-content">
 				<div class="widget widget_twitter">
 					<h4 class="widgettitle">
-						Archived Blog Posts
+						Archived Posts
 					</h4>
 					<?php echo $left_blog_rest;?>
 				</div>

@@ -16,7 +16,7 @@ class Blog_model extends CI_Model {
 		{
 			foreach ($query->result() as $row)
 			{
-				$list = "<li><a href='/blog/index/".$row->seo."'>".$row->title."</a></li>";
+				$list .= "<li><a href='/blog/index/".$row->seo."'>".$row->title."</a></li>";
 			}
 		}
 		
