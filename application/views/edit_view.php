@@ -16,6 +16,12 @@
 			<h4 class="widgettitle">Operator: <?php echo $operator;?></h4>
 			<h4>Settings: <?php echo $type;?> #<?php echo $id;?></h4>
 			<table width="100%">
+				<?php if ($type == 'pages'){?>
+				<tr>
+				<td>Paid Status (yes/no)</td>
+					<td><input name="paid_status" value="<?php echo $paid_status;?>"></td>
+				</tr>
+				<?php }?>
 				<tr>
 					<td>Author</td>
 					<td><input name="author" value="<?php echo $author;?>"></td>

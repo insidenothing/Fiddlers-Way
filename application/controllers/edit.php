@@ -30,6 +30,9 @@ class Edit extends CI_Controller {
 			$this->email->message($this->input->post('content').$permalink);
 			$this->email->send();
 		}
+		if ($this->input->post('paid_status') && $type == 'pages'){
+			$results .= $this->edit->set_paid_status($id,$type,addslashes($this->input->post('paid_status')));
+		}
 		if ($this->input->post('author')){
 			$results .= $this->edit->set_author($id,$type,addslashes($this->input->post('author')));
 		}
@@ -57,6 +60,10 @@ class Edit extends CI_Controller {
 		$data['id'] = $id;
 		$data['type'] = $type;
 		
+		if ($type == 'pages')
+		{
+			$data['paid_status'] = $this->edit->get_paid_status($id,$type);
+		}
 		
 		$data['title'] = $this->edit->get_title($id,$type);
 		$data['author'] = $this->edit->get_author($id,$type);

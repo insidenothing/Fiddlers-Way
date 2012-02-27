@@ -8,6 +8,14 @@ class Edit_model extends CI_Model {
 		parent::__construct();
 	}
 
+	function get_paid_status($id,$table) /* added 2/27/2012 */
+	{
+		$query = $this->db->query("SELECT paid_status from $table where id = '$id'");
+		$row = $query->row();
+		$query->free_result();
+		return $row->paid_status;
+	}
+	
 	function new_item($table)
 	{
 		$query = $this->db->query("insert into $table (title) values ('New')");
