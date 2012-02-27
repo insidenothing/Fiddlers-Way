@@ -3,8 +3,7 @@
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<title>Fiddler&#039;s Way | Timely, On-Target IPO Info by Francis
-	Gaskins and Doug McLean</title>
+<title><?php echo $page_title;?></title>
 
 
 <link rel="stylesheet" type="text/css" href="/assets/css/anylinkmenu.css" />

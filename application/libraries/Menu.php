@@ -54,10 +54,8 @@ class Menu   {
 		
 		$data['share_link'] = $CI->config->site_url().$CI->uri->uri_string();
 		$data['share_title'] = "Fiddlers%20Way";
-		$data['page_title'] = "Fiddler's Way | Timely, On-Target IPO Info by Francis Gaskins and Doug McLean";
-		
-		$data['debug'] = $this->page_title($CI->router->class,$CI->router->method,$CI->uri->segment(3, 0));
-		
+		$data['page_title'] = $this->page_title($CI->router->class,$CI->router->method,$CI->uri->segment(3, 0));
+		$data['debug'] = '';
 		
 		
 		
@@ -72,7 +70,8 @@ class Menu   {
 	function load_plain($view,$data)
 	{
 		$CI =& get_instance();
-		$CI->load->view('plain_header');
+		$data['page_title'] = $this->page_title($CI->router->class,$CI->router->method,$CI->uri->segment(3, 0));
+		$CI->load->view('plain_header',$data);
 		$CI->load->view($view, $data);
 		$CI->load->view('plain_footer');
 	}
