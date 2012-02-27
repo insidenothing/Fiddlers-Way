@@ -10,8 +10,17 @@ class Blog_model extends CI_Model {
 
 	function get_blog_list($limit='1') /* added 2/27/2012 */
 	{
-	
-		return "<li>In Progress</li>";
+		$list = '';
+		$query = $this->db->query("SELECT title, seo from blogs order_by id DESC limit 0,$limit");
+		if ($query->num_rows() > 0)
+		{
+			foreach ($query->result() as $row)
+			{
+				$list = "<li><a href='/blog/index/".$row->seo."'>".$row->title."</a></li>";
+			}
+		}
+		
+		return $list;
 	}
 	
 	function get_id($seo)
