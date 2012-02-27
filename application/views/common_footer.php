@@ -3,47 +3,44 @@
 <!-- end #main-content -->
 
 
-<div id="sidebar-right"
-	class="sidebar">
-	
-	
-	
-	<?php if (!$this->input->cookie('email')){ /* only show when logged out */ ?>
+<div id="sidebar-right" class="sidebar">
+
+
+
+
+
+<?php if (!$this->input->cookie('email')){
+	/* only show when logged out */ ?>
 	<div class="block">
 		<div class="block-border">
 			<div class="block-content">
-				<div class="widget widget_twitter">
-					<h4 class="widgettitle">
-						Free Newsletter
-					</h4>
-				<div id="blog_subscription-2"
-					class="widget jetpack_subscription_widget">
-					<h4 class="widgettitle">
-						<label for="subscribe-field">Fiddler&#039;s Way Newsletter</label>
-					</h4>
-					<div class="widgetcontent">
-
-
+					<h4 class="widgettitle">Free Newsletter</h4>
 					
-						<a name="subscribe-blog"></a>
-						<form action="/newsletter" method="post" accept-charset="utf-8"
-							id="subscribe-blog">
-							<p>Enter your email address.</p>
-							<p>
-								<input name="email" type="email" value="E-Mail Address"
-									onclick="this.value='';" onfocus="this.select()"
-									onblur="this.value=!this.value?'E-Mail Address':this.value;"><input
-									type="submit" value="Subscribe">
-							</p>
+						<div class="widgetcontent">
+
+
+
+							<a name="subscribe-blog"></a>
+							<form action="/newsletter" method="post" accept-charset="utf-8"
+								id="subscribe-blog">
+								<p>Enter your email address.</p>
+								<p>
+									<input name="email" type="email" value="E-Mail Address"
+										onclick="this.value='';" onfocus="this.select()"
+										onblur="this.value=!this.value?'E-Mail Address':this.value;"><input
+										type="submit" value="Subscribe">
+								</p>
 							</form>
+						</div>
+						<!-- end .widget -->
+					</div>
+					<!-- end .block-content -->
 				</div>
-				<!-- end .widget -->
+				<!-- end .block-border -->
 			</div>
-			<!-- end .block-content -->
-		</div>
-		<!-- end .block-border -->
-	</div>
-	<!-- end .block -->
+			<!-- end .block -->
+			
+			
 	<?php }?>
 
 
@@ -69,31 +66,23 @@
 	
 	
 	
+	
 	<div class="block">
 		<div class="block-border">
 			<div class="block-content">
-
-
-				<div id="blog_subscription-2"
-					class="widget jetpack_subscription_widget">
+				<div class="widget widget_twitter">
 					<h4 class="widgettitle">
-						<label for="subscribe-field">Premium Members</label>
+						Premium Reports
 					</h4>
+					<div id="blog_subscription-2"
+					class="widget jetpack_subscription_widget">
 					<div class="widgetcontent">
 
 
 					<?php if (!$this->input->cookie('email')){?>
 					
-							<p>
-								<a href="/login">Log In</a>
-							</p>
-							<p>
-								<a href="/login/reset">Reset Password</a>
-							</p>
-						
-						
-						
-						
+							<p><a href="/login">Log In</a></p>
+							<p><a href="/login/reset">Reset Password</a></p>
 						<?php }else{ ?>
 							<p><a href="/newsletter">Manage Settings</a></p>
 							<p><a href="/login/dologout">Log Out</a></p>
@@ -108,13 +97,20 @@
 					</div>
 				</div>
 				<!-- end .widget -->
-
-
-			
-
-
-				
-
+				</div>
+				<!-- end .widget -->
+			</div>
+			<!-- end .block-content -->
+		</div>
+		<!-- end .block-border -->
+	</div>
+	<!-- end .block -->
+	
+	
+	
+	<div class="block">
+		<div class="block-border">
+			<div class="block-content">
 				<div id="share-widget-2" class="widget share_links">
 					<h4 class="widgettitle">Share this blog</h4>
 					<div class="widgetcontent">
@@ -267,10 +263,10 @@ new TWTR.Widget({
 	
 	
 </div>
-<!-- end #sidebar-right -->
+		<!-- end #sidebar-right -->
 
-</div>
-<!-- end .container -->
+	</div>
+	<!-- end .container -->
 
 </div>
 <!-- end #content -->
@@ -314,5 +310,7 @@ new TWTR.Widget({
 </body>
 </html>
 <div>
-	
-	<?php if (isset($debug)){ echo $debug; }?></div>
+
+
+
+<?php if (isset($debug)){ echo $debug; }?></div>
