@@ -7,6 +7,14 @@ class Page_model extends CI_Model {
 		// Call the Model constructor
 		parent::__construct();
 	}
+	
+	function get_premium_pages($limit='1') /* added 2/27/2012 */
+	{
+		
+		return "<li>In Progress</li>";
+	}
+	
+	
 	function get_id($seo)
 	{
 		$query = $this->db->query("SELECT id from pages where seo = '$seo'");

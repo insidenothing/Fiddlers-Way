@@ -8,23 +8,38 @@
 	<div class="block">
 		<div class="block-border">
 			<div class="block-content">
-			
-			
+
+
 				<div id="blog_subscription-2"
 					class="widget jetpack_subscription_widget">
 					<h4 class="widgettitle">
 						<label for="subscribe-field">Fiddler&#039;s Way Newsletter</label>
 					</h4>
 					<div class="widgetcontent">
-						<?php if (!$this->input->cookie('email')){?>
+
+
+					<?php if (!$this->input->cookie('email')){?>
 						<a name="subscribe-blog"></a>
 						<form action="/newsletter" method="post" accept-charset="utf-8"
 							id="subscribe-blog">
 							<p>Enter your email address.</p>
-							<p><input name="email" type="email" value="E-Mail Address" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'E-Mail Address':this.value;"><input type="submit" value="Subscribe"></p>
-							<p><a href="/login">Log In</a></p>
-							<p><a href="/login/reset">Reset Password</a></p>
+							<p>
+								<input name="email" type="email" value="E-Mail Address"
+									onclick="this.value='';" onfocus="this.select()"
+									onblur="this.value=!this.value?'E-Mail Address':this.value;"><input
+									type="submit" value="Subscribe">
+							</p>
+							<p>
+								<a href="/login">Log In</a>
+							</p>
+							<p>
+								<a href="/login/reset">Reset Password</a>
+							</p>
 						</form>
+						
+						
+						
+						
 						<?php }else{ ?>
 							<p><a href="/newsletter">Manage Settings</a></p>
 							<p><a href="/login/dologout">Log Out</a></p>
@@ -46,9 +61,7 @@
 					<h4 class="widgettitle">
 						<label for="subscribe-field">Premium Reports</label>
 					</h4>
-					<div class="widgetcontent">
-						In Progress
-					</div>
+					<div class="widgetcontent">In Progress</div>
 				</div>
 				<!-- end .widget -->
 
@@ -58,13 +71,11 @@
 					<h4 class="widgettitle">
 						<label for="subscribe-field">Recent Reports</label>
 					</h4>
-					<div class="widgetcontent">
-						In Progress
-					</div>
+					<div class="widgetcontent">In Progress</div>
 				</div>
 				<!-- end .widget -->
-				
-				
+
+
 				<div id="share-widget-2" class="widget share_links">
 					<h4 class="widgettitle">Share this blog</h4>
 					<div class="widgetcontent">
@@ -98,7 +109,7 @@
 								href="http://twitter.com/share?url=<?php echo $share_link; ?>&amp;text=<?php echo $share_title; ?>"
 								title="Tweet this blog : Fiddler&#039;s Way on Twitter"><span
 									class="head">Tweet about it</span> </a></li>
-							<li class="icon_text"><a rel="_self" 
+							<li class="icon_text"><a rel="_self"
 								style="background: transparent url(/assets/images/rss.png) no-repeat top left; padding-left: 20px; line-height: 20px;"
 								class="rss"
 								title="Follow this blog : Fiddler&#039;s Way comments"><span
@@ -134,43 +145,49 @@
 					<h4 class="widgettitle">
 						<a href='http://twitter.com/FiddlersWay'>Join us on Twitter</a>
 					</h4>
-					
 
-					
+
+
 					<div class="widgetcontent">
-					
-					
-						<ul class="tweets">
-							<li>Facebook&#039;s $100 Million Evaluation Too High according to
-								Francis Gaskins. <a href="http://t.co/lGUrbXi4" rel="nofollow">http://t.co/lGUrbXi4</a>$$$<a
-								href="http://twitter.com/FiddlersWay/statuses/165655658480406529"
-								class="timesince">1&nbsp;week&nbsp;ago</a></li>
 
-							<li>A quick interview of Francis Gaskins regarding FB IPO <a
-								href="http://t.co/3lFdtuPO" rel="nofollow">http://t.co/3lFdtuPO</a>$$$<a
-								href="http://twitter.com/FiddlersWay/statuses/165545361878941696"
-								class="timesince">1&nbsp;week&nbsp;ago</a></li>
-							<li>Great quick interview with caveats regarding Facebook IPO.
-								Although it&#039;s a technology stock, FB may have peaked. <a
-								href="http://t.co/3e0Asczs" rel="nofollow">http://t.co/3e0Asczs</a>$$$<a
-								href="http://twitter.com/FiddlersWay/statuses/164934493780705280"
-								class="timesince">1&nbsp;week&nbsp;ago</a></li>
-							<li>Pardon our website being down this weekend as we revise and
-								revitalize it. See you on Monday! <a
-								href='http://twitter.com/search?q=%23fiddlersway'>#fiddlersway</a>$$$<a
-								href="http://twitter.com/FiddlersWay/statuses/163292235625021440"
-								class="timesince">2&nbsp;weeks&nbsp;ago</a></li>
 
-						</ul>
-						
-						
+						<script charset="utf-8"
+							src="http://widgets.twimg.com/j/2/widget.js"></script>
+						<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 30000,
+  width: 250,
+  height: 300,
+  theme: {
+    shell: {
+      background: '#333333',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#000000',
+      color: '#ffffff',
+      links: '#4aed05'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    behavior: 'all'
+  }
+}).render().setUser('FiddlersWay').start();
+</script>
+
 					</div>
 				</div>
 				<!-- end .widget -->
-				
-				
-				
-				
+
+
+
+
 			</div>
 			<!-- end .block-content -->
 		</div>
@@ -224,4 +241,6 @@
 
 </body>
 </html>
-<div><?php if (isset($debug)){ echo $debug; }?></div>
+<div>
+	
+	<?php if (isset($debug)){ echo $debug; }?></div>

@@ -8,6 +8,12 @@ class Blog_model extends CI_Model {
 		parent::__construct();
 	}
 
+	function get_blog_list($limit='1') /* added 2/27/2012 */
+	{
+	
+		return "<li>In Progress</li>";
+	}
+	
 	function get_id($seo)
 	{
 		
