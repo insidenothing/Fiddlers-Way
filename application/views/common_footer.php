@@ -81,6 +81,7 @@
 
 					<?php if (!$this->input->cookie('email')){?>
 					
+							<p><a href="/sales">Join Today</a></p>
 							<p><a href="/login">Log In</a></p>
 							<p><a href="/login/reset">Reset Password</a></p>
 						<?php }else{ ?>
