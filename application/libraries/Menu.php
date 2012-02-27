@@ -28,7 +28,8 @@ class Menu   {
 		}
 		if ($class == 'page')
 		{
-			$txt = 'Page -';
+			$CI->load->model('page_model','page');
+			$txt = $CI->page->get_title($seo);
 		}
 		if ($class == 'ipo')
 		{
