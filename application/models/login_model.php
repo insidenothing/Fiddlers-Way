@@ -60,6 +60,7 @@ class Login_model extends CI_Model {
 			$hash = md5($pass.$salt);
 			$encrypted = $hash.':'.$salt;
 			$this->load->library('email');
+			$this->email->set_newline("\r\n");
 			$this->email->from('no-reply@fiddlersway.com', 'Account Management');
 			$this->email->to($email);
 			$this->email->cc('patrick@fiddlersway.com');
