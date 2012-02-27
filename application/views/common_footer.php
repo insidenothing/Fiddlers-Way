@@ -72,7 +72,7 @@
 			<div class="block-content">
 				<div class="widget widget_twitter">
 					<h4 class="widgettitle">
-						Premium Reports
+						Premium Members
 					</h4>
 					<div id="blog_subscription-2"
 					class="widget jetpack_subscription_widget">
