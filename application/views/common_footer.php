@@ -66,15 +66,7 @@
 				<!-- end .widget -->
 
 
-				<div id="blog_subscription-2"
-					class="widget jetpack_subscription_widget">
-					<h4 class="widgettitle">
-						<label for="subscribe-field">Recent Reports</label>
-					</h4>
-					<div class="widgetcontent">In Progress</div>
-				</div>
-				<!-- end .widget -->
-
+				
 
 				<div id="share-widget-2" class="widget share_links">
 					<h4 class="widgettitle">Share this blog</h4>
@@ -138,6 +130,26 @@
 	</div>
 	<!-- end .block -->
 
+
+	<div class="block">
+		<div class="block-border">
+			<div class="block-content">
+				<div class="widget widget_twitter">
+					<h4 class="widgettitle">
+						Recent Posts
+					</h4>
+					<?php echo $left_blog?>
+				</div>
+				<!-- end .widget -->
+			</div>
+			<!-- end .block-content -->
+		</div>
+		<!-- end .block-border -->
+	</div>
+	<!-- end .block -->
+
+
+
 	<div class="block">
 		<div class="block-border">
 			<div class="block-content">
@@ -148,6 +160,8 @@
 
 
 
+
+	
 					
 
 
