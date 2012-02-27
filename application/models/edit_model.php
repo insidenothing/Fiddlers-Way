@@ -67,6 +67,11 @@ class Edit_model extends CI_Model {
 		$query->free_result();
 		return $row->seo;
 	}
+	function set_paid_status($id,$table,$content)
+	{
+		$query = $this->db->query("UPDATE $table set paid_status = '$content' where id = '$id'");
+		return 'Paid Status Updated, ';
+	}
 	function set_contents($id,$table,$content)
 	{
 		$query = $this->db->query("UPDATE $table set content = '$content' where id = '$id'");
