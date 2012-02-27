@@ -65,7 +65,7 @@ class Menu   {
 		$data['debug'] = '';
 		
 		
-		$data['left_premium'] = $CI->page->get_premium_pages(5);
+		$data['left_premium'] = $CI->page->get_premium_pages('0','5');
 		$data['left_blog_recent'] = $CI->blog->get_blog_list('0','5');
 		$data['left_blog_rest'] = $CI->blog->get_blog_list('5','20');
 		

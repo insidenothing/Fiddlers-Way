@@ -8,10 +8,19 @@ class Page_model extends CI_Model {
 		parent::__construct();
 	}
 	
-	function get_premium_pages($limit='1') /* added 2/27/2012 */
+	function get_premium_pages($start,$for) /* added 2/27/2012 */
 	{
+		$list = '';
+		$query = $this->db->query("SELECT * from pages where paid_status = 'yes' order by id DESC limit $start,$for");
+		if ($query->num_rows() > 0)
+		{
+			foreach ($query->result() as $row)
+			{
+				$list .= "<li><a href='/page/index/".$row->seo."'>".$row->title."</a></li>";
+			}
+		}
 		
-		return "<li>In Progress</li>";
+		return $list;
 	}
 	
 	
