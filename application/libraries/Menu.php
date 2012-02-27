@@ -17,6 +17,7 @@ class Menu   {
 	
 	function page_title($class,$method,$seo)
 	{
+		$txt = '';
 		$CI =& get_instance();
 		if ($class == 'home')
 		{
@@ -24,7 +25,8 @@ class Menu   {
 		}
 		if ($class == 'blog')
 		{
-			$txt = 'Blog Post -';
+			$CI->load->model('blog_model','blog');
+			$txt = $CI->blog->get_title($seo);
 		}
 		if ($class == 'page')
 		{
@@ -38,9 +40,13 @@ class Menu   {
 		}
 		if ($class == 'video')
 		{
-			$txt = 'Video -';
+			$CI->load->model('video_model','video');
+			$txt = $CI->video->get_title($seo);
 		}
-		//$txt = 'Class: '.$class.' Method: '.$method.' SEO: '.$seo;
+		if ($txt == '') /* just in case we release a new class before coding here */
+		{
+			$txt = 'Timely, On-Target IPO Info by Francis Gaskins and Doug McLean';
+		}
 		return "Fiddler's Way | ".$txt;
 	}
 	
