@@ -154,17 +154,6 @@
 		<div class="block-border">
 			<div class="block-content">
 				<div class="widget widget_twitter">
-					<h4 class="widgettitle">
-						<a href='http://twitter.com/FiddlersWay'>Join us on Twitter</a>
-					</h4>
-
-
-
-
-	
-					
-
-
 						<script charset="utf-8"
 							src="http://widgets.twimg.com/j/2/widget.js"></script>
 						<script>
