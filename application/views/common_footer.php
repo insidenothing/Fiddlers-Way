@@ -148,7 +148,7 @@
 
 
 
-					<div class="widgetcontent">
+					
 
 
 						<script charset="utf-8"
@@ -181,7 +181,6 @@ new TWTR.Widget({
 }).render().setUser('FiddlersWay').start();
 </script>
 
-					</div>
 				</div>
 				<!-- end .widget -->
 
