@@ -8,7 +8,48 @@
 	
 	
 	
-	
+	<?php if (!$this->input->cookie('email')){ /* only show when logged out */ ?>
+	<div class="block">
+		<div class="block-border">
+			<div class="block-content">
+				<div class="widget widget_twitter">
+					<h4 class="widgettitle">
+						Free Newsletter
+					</h4>
+				<div id="blog_subscription-2"
+					class="widget jetpack_subscription_widget">
+					<h4 class="widgettitle">
+						<label for="subscribe-field">Fiddler&#039;s Way Newsletter</label>
+					</h4>
+					<div class="widgetcontent">
+
+
+					
+						<a name="subscribe-blog"></a>
+						<form action="/newsletter" method="post" accept-charset="utf-8"
+							id="subscribe-blog">
+							<p>Enter your email address.</p>
+							<p>
+								<input name="email" type="email" value="E-Mail Address"
+									onclick="this.value='';" onfocus="this.select()"
+									onblur="this.value=!this.value?'E-Mail Address':this.value;"><input
+									type="submit" value="Subscribe">
+							</p>
+							</form>
+				</div>
+				<!-- end .widget -->
+			</div>
+			<!-- end .block-content -->
+		</div>
+		<!-- end .block-border -->
+	</div>
+	<!-- end .block -->
+	<?php }?>
+
+
+
+
+
 	<div class="block">
 		<div class="block-border">
 			<div class="block-content">
@@ -36,29 +77,19 @@
 				<div id="blog_subscription-2"
 					class="widget jetpack_subscription_widget">
 					<h4 class="widgettitle">
-						<label for="subscribe-field">Fiddler&#039;s Way Newsletter</label>
+						<label for="subscribe-field">Premium Members</label>
 					</h4>
 					<div class="widgetcontent">
 
 
 					<?php if (!$this->input->cookie('email')){?>
-						<a name="subscribe-blog"></a>
-						<form action="/newsletter" method="post" accept-charset="utf-8"
-							id="subscribe-blog">
-							<p>Enter your email address.</p>
-							<p>
-								<input name="email" type="email" value="E-Mail Address"
-									onclick="this.value='';" onfocus="this.select()"
-									onblur="this.value=!this.value?'E-Mail Address':this.value;"><input
-									type="submit" value="Subscribe">
-							</p>
+					
 							<p>
 								<a href="/login">Log In</a>
 							</p>
 							<p>
 								<a href="/login/reset">Reset Password</a>
 							</p>
-						</form>
 						
 						
 						
