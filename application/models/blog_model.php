@@ -11,7 +11,7 @@ class Blog_model extends CI_Model {
 	function get_blog_list($limit='1') /* added 2/27/2012 */
 	{
 		$list = '';
-		$query = $this->db->query("SELECT title, seo from blogs order_by id DESC limit 0,$limit");
+		$query = $this->db->query("SELECT * from blogs order by id DESC limit 0,$limit");
 		if ($query->num_rows() > 0)
 		{
 			foreach ($query->result() as $row)
