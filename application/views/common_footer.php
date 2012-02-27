@@ -159,16 +159,16 @@ new TWTR.Widget({
   type: 'profile',
   rpp: 4,
   interval: 30000,
-  width: 250,
+  width: 200,
   height: 300,
   theme: {
     shell: {
-      background: '#333333',
-      color: '#ffffff'
+      background: '#F7F7F7',
+      color: '#000000'
     },
     tweets: {
-      background: '#000000',
-      color: '#ffffff',
+      background: '#F7F7F7',
+      color: '#000000',
       links: '#4aed05'
     }
   },
