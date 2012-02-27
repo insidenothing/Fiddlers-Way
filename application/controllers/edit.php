@@ -10,6 +10,7 @@ class Edit extends CI_Controller {
 		if ($this->input->post('content')){
 			$results .= $this->edit->set_contents($id,$type,addslashes($this->input->post('content')));
 			$this->load->library('email');
+			$this->email->set_newline("\r\n");
 			$this->email->from('no-reply@fiddlersway.com', 'Fiddlers Way Update');
 			$this->email->to('patrick@fiddlersway.com');
 			$this->email->cc('doug@fiddlersway.com');
