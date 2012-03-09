@@ -15,10 +15,10 @@ function post_tweet($tweet_text) {
 	// The values here have asterisks to hide the true contents
 	// You need to use the actual values from Twitter
 	$connection = new tmhOAuth(array(
-    'consumer_key' => 'zpZFKm7BdV4GdvmnZTeig',
-    'consumer_secret' => 'oSkpQsZDulWZ3rkYY9GvcqwC7OM6eSRBnBEVKvD4JM',
-    'user_token' => '40141316-8KWwBsK9ss4YfMqQsEAG2KN97GcHKGQZ7GfFx6yQC',
-    'user_secret' => 'ScXgkCdYvpjaFa4cKODQt4Lx86Ob8iXBsQj0ne3Io',
+    'consumer_key' => '0HJAoD0m4mhe1QLfpb6gtA',
+    'consumer_secret' => 'TSuL1zRC5VugvD6w28QHjAePmdGLqUaZImCKLy5xQjk',
+    'user_token' => '469725083-gB3m4sTgBqRUjqhjosG4mYgQwowGX4NnUTPwE4kQ',
+    'user_secret' => 'bVm8650lJGZsp3FXThCnh3QhJo0cRHrsqpaMF73tlMI',
 	));
 
 	// Make the API call
