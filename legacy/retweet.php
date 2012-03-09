@@ -29,10 +29,10 @@ function post_tweet($tweet_text) {
 	return $connection->response['code'];
 }
 
-if (isset($_GET['message']))
+if (isset($_POST['message']))
 {
-	print "Posting...[".$_GET['message']."]\n";
-	$result = post_tweet($_GET['message']);
+	print "Posting...[".$_POST['message']."]\n";
+	$result = post_tweet($_POST['message']);
 	print "Response code: " . $result . "\n";
 }else{
 	print "No message to send...";
