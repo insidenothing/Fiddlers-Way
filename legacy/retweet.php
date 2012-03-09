@@ -1,14 +1,9 @@
 <?php
-/**
-* post_tweet.php
-* Example of posting a tweet with OAuth
-* Latest copy of this code: 
-* http://140dev.com/twitter-api-programming-tutorials/hello-twitter-oauth-php/
-* @author Adam Green <140dev@gmail.com>
-* @license GNU Public License
-*/
 
-$tweet_text = 'Hello Twitter, again';
+if (isset($_GET[message])){
+	
+
+$tweet_text = $_GET['message'];
 print "Posting...\n";
 $result = post_tweet($tweet_text);
 print "Response code: " . $result . "\n";
@@ -40,5 +35,8 @@ function post_tweet($tweet_text) {
     array('status' => $tweet_text));
   
   return $connection->response['code'];
+}
+}else{
+	"No message to send...";
 }
 ?>
