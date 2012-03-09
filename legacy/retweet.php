@@ -8,7 +8,7 @@
 * @license GNU Public License
 */
 
-$tweet_text = 'Beta 2';
+$tweet_text = 'Hello Twitter, again';
 print "Posting...\n";
 $result = post_tweet($tweet_text);
 print "Response code: " . $result . "\n";
@@ -17,8 +17,8 @@ function post_tweet($tweet_text) {
 
   // Use Matt Harris' OAuth library to make the connection
   // This lives at: https://github.com/themattharris/tmhOAuth
-  require 'tmhOAuth.php';
-  //require 'tmhUtilities.php';
+  require_once('tmhOAuth.php');
+  
       
   // Set the authorization values
   // In keeping with the OAuth tradition of maximum confusion, 
@@ -33,5 +33,12 @@ function post_tweet($tweet_text) {
     'user_token' => '40141316-8KWwBsK9ss4YfMqQsEAG2KN97GcHKGQZ7GfFx6yQC',
     'user_secret' => 'ScXgkCdYvpjaFa4cKODQt4Lx86Ob8iXBsQj0ne3Io',
   )); 
-
-  >
+  
+  // Make the API call
+  $connection->request('POST', 
+    $connection->url('1/statuses/update'), 
+    array('status' => $tweet_text));
+  
+  return $connection->response['code'];
+}
+?>
