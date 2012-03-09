@@ -4,6 +4,7 @@ class Retweet extends CI_Controller {
 
 	public function index()
 	{
+		/*
 		$tweet = "Hello CodeIgniter";
 		
 		$curl = curl_init();
@@ -15,5 +16,6 @@ class Retweet extends CI_Controller {
 		curl_close ($curl);
 		$data['response'] = $buffer;
 		$this->load->view('retweet_view',$data);
+		*/
 	}
 }
