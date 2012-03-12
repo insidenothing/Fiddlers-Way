@@ -69,7 +69,7 @@ class Menu   {
 		$data['left_blog_recent'] = $CI->blog->get_blog_list('0','5');
 		$data['left_blog_rest'] = $CI->blog->get_blog_list('5','20');
 		
-		$data['right_news'] $this->news();
+		$data['right_news'] = $this->news();
 		
 		
 		$CI->load->view('common_header',$data);
