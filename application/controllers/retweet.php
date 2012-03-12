@@ -35,10 +35,11 @@ class Retweet extends CI_Controller {
 		}else{
 			die('cannot connect to twitter feed');
 		}
-		
+		$this->load->model('retweet_model','twitter');
 		if(is_array($twitterPosts)){
 			$buffer .= '<ul>';
 			foreach($twitterPosts as $post){
+				$this->twitter->check_tweet($post['description'],$post['pubdate']);
 				$buffer .= '<li><p>'.$post['description'].'</p><p class="date">Posted On: '.date('l jS \of F Y h:i:s A',$post['pubdate']).'</p></li>';
 			}
 			$buffer .= '</ul>';
