@@ -119,7 +119,7 @@ class Menu   {
 		if(is_array($twitterPosts)){
 			$buffer .= '<ul>';
 			foreach($twitterPosts as $post){
-				$buffer .= $post['description'].'
+				$buffer .= str_replace('80','',$post['description']).'
 				<p class="date">Posted On: '.date('l jS \of F Y h:i:s A',$post['pubdate']).'</p>';
 			}
 			$buffer .= '</ul>';
