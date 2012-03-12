@@ -45,6 +45,23 @@
 
 
 
+	<div class="block">
+		<div class="block-border">
+			<div class="block-content">
+				<div class="widget widget_twitter">
+					<h4 class="widgettitle">
+						In the News
+					</h4>
+					<?php echo $right_news;?>
+				</div>
+				<!-- end .widget -->
+			</div>
+			<!-- end .block-content -->
+		</div>
+		<!-- end .block-border -->
+	</div>
+	<!-- end .block -->
+
 
 
 	<div class="block">

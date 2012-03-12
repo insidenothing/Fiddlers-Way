@@ -69,6 +69,7 @@ class Menu   {
 		$data['left_blog_recent'] = $CI->blog->get_blog_list('0','5');
 		$data['left_blog_rest'] = $CI->blog->get_blog_list('5','20');
 		
+		$data['right_news'] $this->news();
 		
 		
 		$CI->load->view('common_header',$data);
@@ -85,5 +86,47 @@ class Menu   {
 		$CI->load->view($view, $data);
 		$CI->load->view('plain_footer');
 	}
+	
+	public function news()
+	{
+	
+		$buffer='';
+		$twitterRssFeedUrl =  "http://news.google.com/news?pz=1&cf=all&ned=us&hl=en&q=francis+gaskins&output=rss";
+		$twitterUsername = "ipodesktop";
+		$amountToShow = 5;
+		$twitterPosts = false;
+		$xml = @simplexml_load_file($twitterRssFeedUrl);
+		if(is_object($xml)){
+			foreach($xml->channel->item as $twit){
+				if(is_array($twitterPosts) && count($twitterPosts)==$amountToShow){
+					break;
+				}
+				$d['title'] = stripslashes(htmlentities($twit->title,ENT_QUOTES,'UTF-8'));
+				$description = stripslashes(htmlentities($twit->description,ENT_QUOTES,'UTF-8'));
+				if(strtolower(substr($description,0,strlen($twitterUsername))) == strtolower($twitterUsername)){
+					$description = substr($description,strlen($twitterUsername)+1);
+				}
+				$d['description'] = $description;
+				$d['pubdate'] = strtotime($twit->pubDate);
+				$d['guid'] = stripslashes(htmlentities($twit->guid,ENT_QUOTES,'UTF-8'));
+				$d['link'] = stripslashes(htmlentities($twit->link,ENT_QUOTES,'UTF-8'));
+				$twitterPosts[]=$d;
+			}
+		}else{
+			die('cannot connect to twitter feed');
+		}
+		
+		if(is_array($twitterPosts)){
+			$buffer .= '<ul>';
+			foreach($twitterPosts as $post){
+				$buffer .= '<li><p>'.$post['description'].'</p><p class="date">Posted On: '.date('l jS \of F Y h:i:s A',$post['pubdate']).'</p></li>';
+			}
+			$buffer .= '</ul>';
+		}else{
+			$buffer .= '<p>No Twitter posts have been made</p>';
+		}
+		return  $buffer;
+	}
+	
 	
 }

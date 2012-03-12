@@ -158,10 +158,7 @@ anylinkmenu.init("menuanchorclass")
 						title="IPO Calendar">IPO Calendar</a>
 					</li>
 
-					<li class="page_item"><a
-						href="http://fiddlersway.com" class="menuanchorclass" rel="anylinkmenu2">News</a></li>
-
-
+					
 					<li class="page_item"><a
 						href="http://fiddlersway.com" class="menuanchorclass" rel="anylinkmenu3">Videos</a>
 					</li>
