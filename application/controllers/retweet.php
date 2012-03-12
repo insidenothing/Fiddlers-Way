@@ -42,10 +42,13 @@ class Retweet extends CI_Controller {
 		}
 		
 		$data['response'] = $buffer;
+		$this->load->view('retweet_view',$data);
+	}
+	
+	public function sendTweets()
+	{
 		
-		/*
 		$tweet = "Hello CodeIgniter";
-		
 		$curl = curl_init();
 		curl_setopt ($curl, CURLOPT_URL, 'http://fiddlersway.com/legacy/retweet.php');
 		curl_setopt ($curl, CURLOPT_TIMEOUT, '5');
@@ -55,7 +58,6 @@ class Retweet extends CI_Controller {
 		curl_close ($curl);
 		$data['response'] = $buffer;
 		$this->load->view('retweet_view',$data);
-		*/
-		$this->load->view('retweet_view',$data);
 	}
+	
 }
