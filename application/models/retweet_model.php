@@ -46,7 +46,7 @@ class Retweet_model extends CI_Model {
 				$this->email->to('patrick@fiddlersway.com');
 				$this->email->cc('doug@fiddlersway.com');
 				$this->email->subject("Auto Retweet ".$row->note);
-				$this->email->message(html_entity_decode($row->tweet));
+				$this->email->message($feedback);
 				$this->email->send();
 				$query = $this->db->query("update twitter set status = 'sent', retweeted_time = NOW(), feedback = '$feedback' where id = '".$row->id."' ");
 			}
