@@ -1559,9 +1559,14 @@ p#copyright a {
 	font-weight: bold;
 }
 
+#sidebar-left,#sidebar-right {
+	float: left;
+	width: 250px;
+}
 
-
-
+#sidebar-left,#main-content {
+	margin-right: 11px;
+}
 
 .block-border {
 	background: url("images/block-top-bg.png") repeat-x scroll 0 0
@@ -1614,7 +1619,10 @@ input#searchsubmit {
 	text-transform: uppercase;
 }
 
-
+.block .widget {
+	font-size: 13px;
+	margin-bottom: 23px;
+}
 
 .block a,span.title a {
 	color: #3D3D3D;
@@ -3019,7 +3027,13 @@ p#copyright a {
 	margin-right: 11px;
 }
 
-
+.block {
+	border-top: 1px solid #e1e1e1;
+	border-left: 1px solid #e1e1e1;
+	border-bottom: 1px solid #cdcdcd;
+	border-right: 1px solid #cdcdcd;
+	margin-bottom: 11px;
+}
 
 .block-border {
 	border: 1px solid #fff;
