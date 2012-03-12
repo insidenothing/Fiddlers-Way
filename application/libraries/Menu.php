@@ -113,7 +113,7 @@ class Menu   {
 				$twitterPosts[]=$d;
 			}
 		}else{
-			die('cannot connect to twitter feed');
+			//die('cannot connect to twitter feed');
 		}
 		
 		if(is_array($twitterPosts)){
