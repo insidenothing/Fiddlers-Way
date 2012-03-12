@@ -90,26 +90,22 @@ class Menu   {
 	public function news()
 	{
 	
-		ini_set("user_agent","Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)");
-		ini_set("max_execution_time", 0);
-		ini_set("memory_limit", "10000M");
-		
 		$buffer='';
-		$twitterRssFeedUrl =  "http://news.google.com/news?pz=1&cf=all&ned=us&hl=en&q=francis+gaskins&output=rss";
-		$twitterUsername = "ipodesktop";
-		$amountToShow = 5;
+		$feed =  "http://news.google.com/news?q=francis+gaskins&output=rss";
+
+		
+		$amountToShow = 7;
 		$twitterPosts = false;
-		$xml = @simplexml_load_file($twitterRssFeedUrl);
+		$xml = @simplexml_load_file($feed);
 		if(is_object($xml)){
 			foreach($xml->channel->item as $twit){
 				if(is_array($twitterPosts) && count($twitterPosts)==$amountToShow){
 					break;
 				}
 				$d['title'] = stripslashes(htmlentities($twit->title,ENT_QUOTES,'UTF-8'));
+
 				$description = stripslashes(htmlentities($twit->description,ENT_QUOTES,'UTF-8'));
-				if(strtolower(substr($description,0,strlen($twitterUsername))) == strtolower($twitterUsername)){
-					$description = substr($description,strlen($twitterUsername)+1);
-				}
+				
 				$d['description'] = $description;
 				$d['pubdate'] = strtotime($twit->pubDate);
 				$d['guid'] = stripslashes(htmlentities($twit->guid,ENT_QUOTES,'UTF-8'));
