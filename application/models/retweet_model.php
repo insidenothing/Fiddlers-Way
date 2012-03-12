@@ -35,7 +35,7 @@ class Retweet_model extends CI_Model {
 				curl_setopt ($curl, CURLOPT_URL, 'http://fiddlersway.com/legacy/retweet.php');
 				curl_setopt ($curl, CURLOPT_TIMEOUT, '5');
 				curl_setopt ($curl, CURLOPT_RETURNTRANSFER, '1');
-				curl_setopt ($curl, CURLOPT_POSTFIELDS, "message=".$row->tweet);
+				curl_setopt ($curl, CURLOPT_POSTFIELDS, "message=".html_entity_decode($row->tweet));
 				$buffer = curl_exec ($curl);
 				curl_close ($curl);
 				$return .= $buffer;				
