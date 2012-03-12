@@ -124,7 +124,7 @@ class Menu   {
 			}
 			$buffer .= '</ul>';
 		}else{
-			$buffer .= '<p>No Twitter posts have been made</p>';
+			$buffer .= '<p>Loading News...</p>';
 		}
 		return  $buffer;
 	}
