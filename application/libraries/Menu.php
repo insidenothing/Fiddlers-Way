@@ -90,6 +90,10 @@ class Menu   {
 	public function news()
 	{
 	
+		ini_set("user_agent","Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)");
+		ini_set("max_execution_time", 0);
+		ini_set("memory_limit", "10000M");
+		
 		$buffer='';
 		$twitterRssFeedUrl =  "http://news.google.com/news?pz=1&cf=all&ned=us&hl=en&q=francis+gaskins&output=rss";
 		$twitterUsername = "ipodesktop";
