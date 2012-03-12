@@ -42,7 +42,7 @@ class Retweet_model extends CI_Model {
 				$return .= $buffer;	
 				$this->load->library('email');
 				$this->email->set_newline("\r\n");
-				$this->email->from('no-reply@fiddlersway.com', 'Fiddlers Way Update');
+				$this->email->from('no-reply@fiddlersway.com', 'Fiddlers Way Tweet');
 				$this->email->to('patrick@fiddlersway.com');
 				$this->email->cc('doug@fiddlersway.com');
 				$this->email->subject("Auto Retweet ".$row->note);
