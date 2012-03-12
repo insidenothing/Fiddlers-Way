@@ -26,7 +26,7 @@ class Retweet_model extends CI_Model {
 	function send_tweets()
 	{
 		$return = '';
-		$query = $this->db->query("SELECT * from twitter where status = 'new' order by note ASC ");
+		$query = $this->db->query("SELECT * from twitter where status = 'new' order by note ASC limit 0,1");
 		if ($query->num_rows() == 0)
 		{
 			foreach ($query->result() as $row)
