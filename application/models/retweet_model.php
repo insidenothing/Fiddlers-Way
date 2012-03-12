@@ -38,6 +38,7 @@ class Retweet_model extends CI_Model {
 				curl_setopt ($curl, CURLOPT_POSTFIELDS, "message=".html_entity_decode($row->tweet));
 				$buffer = curl_exec ($curl);
 				curl_close ($curl);
+				$feedback = $buffer;
 				$return .= $buffer;	
 				$this->load->library('email');
 				$this->email->set_newline("\r\n");
@@ -47,7 +48,7 @@ class Retweet_model extends CI_Model {
 				$this->email->subject("Auto Retweet ".$row->note);
 				$this->email->message(html_entity_decode($row->tweet));
 				$this->email->send();
-				$query = $this->db->query("update twitter set status = 'sent' where id = '".$row->id."' ");
+				$query = $this->db->query("update twitter set status = 'sent', feedback = '$feedback' where id = '".$row->id."' ");
 			}
 			return " Tweets Sent: $return";
 		}else{
