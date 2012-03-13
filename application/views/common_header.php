@@ -112,7 +112,7 @@ anylinkmenu.init("menuanchorclass")
 	.gfg-entry {
   background-color : white;
   width : 100%;
-  height : 10em !important;
+  height : 10em;
   position : relative;
   overflow : hidden;
   text-align : left;
