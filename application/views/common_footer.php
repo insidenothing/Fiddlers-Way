@@ -266,25 +266,6 @@ new TWTR.Widget({
 	
 	
 	
-	<div class="block">
-		<div class="block-border">
-			<div class="block-content">
-				<div class="widget widget_twitter">
-					<h4 class="widgettitle">
-						Archived Posts
-					</h4>
-					<?php echo $left_blog_rest;?>
-				</div>
-				<!-- end .widget -->
-			</div>
-			<!-- end .block-content -->
-		</div>
-		<!-- end .block-border -->
-	</div>
-	<!-- end .block -->
-	
-	
-	
 	
 </div>
 		<!-- end #sidebar-right -->
