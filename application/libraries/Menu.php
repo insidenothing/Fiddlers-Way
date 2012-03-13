@@ -90,19 +90,24 @@ class Menu   {
 	public function news()
 	{
 
+		$buffer = '';
 		$curl = curl_init();
 		curl_setopt ($curl, CURLOPT_URL, 'http://news.google.com/news?hl=en&gl=us&q=Francis+Gaskins&um=1&ie=UTF-8&output=rss');
 		curl_setopt ($curl, CURLOPT_TIMEOUT, '5');
 		curl_setopt ($curl, CURLOPT_RETURNTRANSFER, '1');
-		
-		$content = curl_exec ($curl);
+		$data = curl_exec ($curl);
 		curl_close ($curl);
-
-		
+		$xml = new SimpleXmlElement($data, LIBXML_NOCDATA);
+		echo "<strong>".$xml->channel->title."</strong>";
+		$cnt = count($xml->channel->item);
+		for($i=0; $i<$cnt; $i++)
+		{
+			$url 	= $xml->channel->item[$i]->link;
+			$title 	= $xml->channel->item[$i]->title;
+			$desc = $xml->channel->item[$i]->description;
+			buffer .= '<a href="'.$url.'">'.$title.'</a>'.$desc.'';
+		}
 		return  $buffer;
-
-
-
 	}
 
 
