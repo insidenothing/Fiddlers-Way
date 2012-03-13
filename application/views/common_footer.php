@@ -52,7 +52,7 @@
 					
 
 
- <div id="content">
+ <div id="content-news">
     <span style="color:#676767;font-size:11px;margin:10px;padding:4px;">Loading...</span>
   </div>
 

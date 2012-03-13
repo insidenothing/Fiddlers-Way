@@ -131,8 +131,8 @@ anylinkmenu.init("menuanchorclass")
         title : "In The News"
       };
     
-      new GFdynamicFeedControl(feeds, 'content', options);
-      document.getElementById('content').style.width = "250px";
+      new GFdynamicFeedControl(feeds, 'content-news', options);
+      document.getElementById('content-news').style.width = "250px";
     }
     
     google.setOnLoadCallback(OnLoad);
