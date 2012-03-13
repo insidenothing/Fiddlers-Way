@@ -118,6 +118,15 @@ anylinkmenu.init("menuanchorclass")
   text-align : left;
   margin-top : 3px;
 }
+.gfg-title {
+  font-size: 0px;
+  font-weight : bold;
+  color : #3366cc;
+  background-color: #E5ECF9;
+  line-height : 0em;
+  overflow : hidden;
+  white-space : nowrap;
+}
 	</style>
     <script type="text/javascript">
     /*
