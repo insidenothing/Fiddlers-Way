@@ -91,6 +91,7 @@ class Menu   {
 	{
 
 		$buffer = '';
+		/*
 		$c = curl_init('http://news.google.com/news?q=lemurs&output=rss');
 		curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($c, CURLOPT_FAILONERROR, true);
@@ -111,7 +112,7 @@ class Menu   {
 			$buffer .= '<a href="'.$url.'">'.$title.'</a>'.$desc.'';
 		}
 		return  $buffer;
-		
+		*/
 	}
 
 
