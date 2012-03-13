@@ -98,19 +98,7 @@ class Menu   {
 		$content = curl_exec ($curl);
 		curl_close ($curl);
 
-		if($x = new SimpleXmlElement($content))
-		{
-
-			$buffer .= "<ul>";
-			if($x->channel->item)
-			{
-				foreach($x->channel->item as $entry) {
-					$buffer .= "<li><a href='$entry->link' title='$entry->title'>" . $entry->title . "</a></li>";
-				}
- 			}
-			$buffer .= "</ul>";
-
-		}
+		
 		return  $buffer;
 
 
