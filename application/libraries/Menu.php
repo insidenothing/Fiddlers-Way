@@ -95,6 +95,8 @@ class Menu   {
 		curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($c, CURLOPT_FAILONERROR, true);
 		curl_setopt($c, CURLOPT_HEADER, true);
+		curl_setopt($c, CURLOPT_POST, 1);
+		
 		$data = curl_exec ($c);
 		curl_close ($c);
 		$xml = new SimpleXmlElement($data, LIBXML_NOCDATA);
