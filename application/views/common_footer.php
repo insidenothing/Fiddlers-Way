@@ -52,7 +52,7 @@
 					
 
 
- <div id="content-news">
+ <div id="content-news" style="margin-left: -25px;">
     <span style="color:#676767;font-size:11px;margin:10px;padding:4px;">Loading...</span>
   </div>
 
