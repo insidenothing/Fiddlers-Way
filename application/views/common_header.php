@@ -132,7 +132,7 @@ anylinkmenu.init("menuanchorclass")
       };
     
       new GFdynamicFeedControl(feeds, 'content-news', options);
-      document.getElementById('content-news').style.width = "250px";
+      document.getElementById('content-news').style.width = "230px";
     }
     
     google.setOnLoadCallback(OnLoad);
