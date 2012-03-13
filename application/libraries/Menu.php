@@ -91,7 +91,7 @@ class Menu   {
 	{
 
 		$buffer = '';
-		$c = curl_init('http://news.google.com/news?hl=en&gl=us&q=Francis+Gaskins&um=1&ie=UTF-8&output=rss');
+		$c = curl_init('http://www.google.com/alerts/feeds/11832344583767583685/17859790038354650960');
 		curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($c, CURLOPT_FAILONERROR, true);
 		curl_setopt($c, CURLOPT_HEADER, true);
