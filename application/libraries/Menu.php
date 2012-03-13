@@ -90,6 +90,10 @@ class Menu   {
 	public function news()
 	{
 	
+		$this->output->set_header("Cache-Control: no-store, no-cache, must-revalidate");
+		
+		
+		
 		$buffer='';
 		$feed =  "http://news.google.com/news?q=francis+gaskins&output=rss";
 
