@@ -103,15 +103,17 @@ class Menu   {
 		$feed_url =  "http://www.google.com/alerts/feeds/11832344583767583685/17859790038354650960";
 
 		$content = file_get_contents($feed_url);
-		
+
 		if($x = new SimpleXmlElement($content))
 		{
 
 			$buffer .= "<ul>";
-
-			foreach($x->channel->item as $entry) {
-				$buffer .= "<li><a href='$entry->link' title='$entry->title'>" . $entry->title . "</a></li>";
-			}
+			if($x->channel->item)
+			{
+				foreach($x->channel->item as $entry) {
+					$buffer .= "<li><a href='$entry->link' title='$entry->title'>" . $entry->title . "</a></li>";
+				}
+// 			}
 			$buffer .= "</ul>";
 
 		}
