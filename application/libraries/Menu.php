@@ -113,7 +113,7 @@ class Menu   {
 				foreach($x->channel->item as $entry) {
 					$buffer .= "<li><a href='$entry->link' title='$entry->title'>" . $entry->title . "</a></li>";
 				}
-// 			}
+ 			}
 			$buffer .= "</ul>";
 
 		}
