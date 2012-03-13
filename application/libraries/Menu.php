@@ -100,7 +100,7 @@ class Menu   {
 		
 		
 		$buffer='';
-		$feed_url =  "http://news.google.com/news?hl=en&gl=us&q=Francis+Gaskins&um=1&ie=UTF-8&output=rss";
+		$feed_url =  "http://www.google.com/alerts/feeds/11832344583767583685/17859790038354650960";
 		
 		$content = file_get_contents($feed_url);
 		$x = new SimpleXmlElement($content);
