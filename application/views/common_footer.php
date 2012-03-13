@@ -49,7 +49,7 @@
 		<div class="block-border">
 			<div class="block-content">
 				<div class="widget widget_twitter">
-					
+					Gaskins and McLean
 <h4 class="widgettitle">In The News</h4>
 
  <div id="content-news" style="margin-left: -23px;">
