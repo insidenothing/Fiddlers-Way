@@ -50,9 +50,9 @@
 			<div class="block-content">
 				<div class="widget widget_twitter">
 					
+<h4 class="widgettitle">In The News</h4>
 
-
- <div id="content-news" style="margin-left: -25px;">
+ <div id="content-news" style="margin-left: -23px;">
     <span style="color:#676767;font-size:11px;margin:10px;padding:4px;">Loading...</span>
   </div>
 

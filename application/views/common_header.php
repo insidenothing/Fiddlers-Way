@@ -128,11 +128,13 @@ anylinkmenu.init("menuanchorclass")
       var options = {
         stacked : true,
         horizontal : false,
-        title : "In The News"
+        numResults : 16,    
+        displayTime : 5000,
+        fadeOutTime : 500
       };
     
       new GFdynamicFeedControl(feeds, 'content-news', options);
-      document.getElementById('content-news').style.width = "230px";
+      document.getElementById('content-news').style.width = "228px";
     }
     
     google.setOnLoadCallback(OnLoad);
