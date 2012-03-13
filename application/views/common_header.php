@@ -105,9 +105,20 @@ anylinkmenu.init("menuanchorclass")
     <script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js"
             type="text/javascript"></script>
     <style type="text/css">
-      @import url("/assets/css/gfdynamicfeedcontrol.css");
+      @import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
     </style>
 
+	<style>
+	.gfg-entry {
+  background-color : white;
+  width : 100%;
+  height : 10em !important;
+  position : relative;
+  overflow : hidden;
+  text-align : left;
+  margin-top : 3px;
+}
+	</style>
     <script type="text/javascript">
     /*
     *  How to use the Dynamic Feed Control, which has pretty UI already made for you!
@@ -120,6 +131,7 @@ anylinkmenu.init("menuanchorclass")
     function OnLoad() {
       var feeds = [
         {
+          title: 'Live Feed',
           url: 'http://news.google.com/news?hl=en&gl=us&q=Francis+Gaskins&um=1&ie=UTF-8&output=rss'
         }
       ];
@@ -127,13 +139,13 @@ anylinkmenu.init("menuanchorclass")
       var options = {
         stacked : true,
         horizontal : false,
-        numResults : 16,    
+        numResults : 20,    
         displayTime : 5000,
         fadeOutTime : 500
       };
     
       new GFdynamicFeedControl(feeds, 'content-news', options);
-      document.getElementById('content-news').style.width = "229px";
+      document.getElementById('content-news').style.width = "228px";
     }
     
     google.setOnLoadCallback(OnLoad);
