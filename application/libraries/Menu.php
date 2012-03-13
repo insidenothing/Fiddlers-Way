@@ -90,7 +90,8 @@ class Menu   {
 	public function news()
 	{
 	
-		$this->output->set_header("Cache-Control: no-store, no-cache, must-revalidate");
+		$CI =& get_instance();
+		$CI->output->set_header("Cache-Control: no-store, no-cache, must-revalidate");
 		
 		
 		
