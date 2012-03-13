@@ -93,6 +93,9 @@ class Menu   {
 		$CI =& get_instance();
 		$CI->output->set_header("Cache-Control: no-store, no-cache, must-revalidate");
 		
+		ini_set("user_agent","Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)");
+		ini_set("max_execution_time", 0);
+		ini_set("memory_limit", "10000M");
 		
 		
 		$buffer='';
