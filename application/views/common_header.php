@@ -105,7 +105,7 @@ anylinkmenu.init("menuanchorclass")
     <script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js"
             type="text/javascript"></script>
     <style type="text/css">
-      @import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
+      @import url("/assets/css/gfdynamicfeedcontrol.css");
     </style>
 
     <script type="text/javascript">
@@ -120,7 +120,6 @@ anylinkmenu.init("menuanchorclass")
     function OnLoad() {
       var feeds = [
         {
-          title: 'People',
           url: 'http://news.google.com/news?hl=en&gl=us&q=Francis+Gaskins&um=1&ie=UTF-8&output=rss'
         }
       ];
@@ -134,7 +133,7 @@ anylinkmenu.init("menuanchorclass")
       };
     
       new GFdynamicFeedControl(feeds, 'content-news', options);
-      document.getElementById('content-news').style.width = "228px";
+      document.getElementById('content-news').style.width = "229px";
     }
     
     google.setOnLoadCallback(OnLoad);
