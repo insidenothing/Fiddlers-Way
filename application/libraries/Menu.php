@@ -69,7 +69,7 @@ class Menu   {
 		$data['left_blog_recent'] = $CI->blog->get_blog_list('0','5');
 		$data['left_blog_rest'] = $CI->blog->get_blog_list('5','20');
 
-		$data['right_news'] = html_entity_decode($this->news());
+	
 
 
 		$CI->load->view('common_header',$data);
@@ -87,33 +87,6 @@ class Menu   {
 		$CI->load->view('plain_footer');
 	}
 
-	public function news()
-	{
-
-		$buffer = '';
-		/*
-		$c = curl_init('http://news.google.com/news?q=lemurs&output=rss');
-		curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
-		curl_setopt($c, CURLOPT_FAILONERROR, true);
-		curl_setopt($c, CURLOPT_HEADER, true);
-		curl_setopt($c, CURLOPT_POST, 1);
-		
-		$data = curl_exec ($c);
-		curl_close ($c);
-		
-		$xml = new SimpleXmlElement($data);
-		$buffer .= "<strong>".$xml->channel->title."</strong>";
-		$cnt = count($xml->channel->item);
-		for($i=0; $i<$cnt; $i++)
-		{
-			$url 	= $xml->channel->item[$i]->link;
-			$title 	= $xml->channel->item[$i]->title;
-			$desc = $xml->channel->item[$i]->description;
-			$buffer .= '<a href="'.$url.'">'.$title.'</a>'.$desc.'';
-		}
-		return  $buffer;
-		*/
-	}
-
+	
 
 }

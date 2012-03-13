@@ -49,10 +49,16 @@
 		<div class="block-border">
 			<div class="block-content">
 				<div class="widget widget_twitter">
-					<h4 class="widgettitle">
-						In the News
-					</h4>
-					<?php echo $right_news;?>
+					
+
+
+ <div id="content">
+    <span style="color:#676767;font-size:11px;margin:10px;padding:4px;">Loading...</span>
+  </div>
+
+
+
+
 				</div>
 				<!-- end .widget -->
 			</div>

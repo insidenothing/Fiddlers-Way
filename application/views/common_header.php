@@ -99,7 +99,44 @@ anylinkmenu.init("menuanchorclass")
 <link rel="stylesheet" href="/assets/css/jquery.twitter.css"
 	type="text/css" media="all">
 
+ <script src="http://www.google.com/jsapi" type="text/javascript"></script>
 
+    <!-- Dynamic Feed Control and Stylesheet -->
+    <script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js"
+            type="text/javascript"></script>
+    <style type="text/css">
+      @import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
+    </style>
+
+    <script type="text/javascript">
+    /*
+    *  How to use the Dynamic Feed Control, which has pretty UI already made for you!
+    *  Don't forget to check out the options:
+    *  http://www.google.com/uds/solutions/dynamicfeed/reference.html
+    */
+    
+    google.load('feeds', '1');
+    
+    function OnLoad() {
+      var feeds = [
+        {
+          title: 'People',
+          url: 'http://news.google.com/news?hl=en&gl=us&q=Francis+Gaskins&um=1&ie=UTF-8&output=rss'
+        }
+      ];
+    
+      var options = {
+        stacked : true,
+        horizontal : false,
+        title : "In The News"
+      };
+    
+      new GFdynamicFeedControl(feeds, 'content', options);
+      document.getElementById('content').style.width = "250px";
+    }
+    
+    google.setOnLoadCallback(OnLoad);
+    </script>
 
 <script type="text/javascript">
 
