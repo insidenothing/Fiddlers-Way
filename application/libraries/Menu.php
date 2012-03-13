@@ -99,8 +99,8 @@ class Menu   {
 		
 		$data = curl_exec ($c);
 		curl_close ($c);
-		if ($data){
-		$xml = new SimpleXmlElement($data, LIBXML_NOCDATA, TRUE);
+		
+		$xml = new SimpleXmlElement($data, LIBXML_NOCDATA);
 		$buffer .= "<strong>".$xml->channel->title."</strong>";
 		$cnt = count($xml->channel->item);
 		for($i=0; $i<$cnt; $i++)
@@ -111,7 +111,7 @@ class Menu   {
 			$buffer .= '<a href="'.$url.'">'.$title.'</a>'.$desc.'';
 		}
 		return  $buffer;
-		}
+		
 	}
 
 
