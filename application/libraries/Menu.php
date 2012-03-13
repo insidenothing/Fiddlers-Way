@@ -90,19 +90,13 @@ class Menu   {
 	public function news()
 	{
 
-		$CI =& get_instance();
-		$CI->output->set_header("Cache-Control: no-store, no-cache, must-revalidate");
-
-		ini_set("user_agent","Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)");
-		ini_set("max_execution_time", 0);
-		ini_set("memory_limit", "10000M");
-
-
-
-		$buffer='';
-		$feed_url =  "http://news.google.com/news?hl=en&gl=us&q=Francis+Gaskins&um=1&ie=UTF-8&output=rss";
-
-		$content = file_get_contents($feed_url);
+		$curl = curl_init();
+		curl_setopt ($curl, CURLOPT_URL, 'http://news.google.com/news?hl=en&gl=us&q=Francis+Gaskins&um=1&ie=UTF-8&output=rss');
+		curl_setopt ($curl, CURLOPT_TIMEOUT, '5');
+		curl_setopt ($curl, CURLOPT_RETURNTRANSFER, '1');
+		
+		$content = curl_exec ($curl);
+		curl_close ($curl);
 
 		if($x = new SimpleXmlElement($content))
 		{
