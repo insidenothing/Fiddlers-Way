@@ -5,7 +5,7 @@ class Menu   {
 	var $CI;
 	var $id;
 	var $product;
-	
+
 	public function set_id($id)
 	{
 		$this->id = $id;
@@ -14,7 +14,7 @@ class Menu   {
 	{
 		$this->product = $product;
 	}
-	
+
 	function page_title($class,$method,$seo)
 	{
 		$txt = '';
@@ -49,35 +49,35 @@ class Menu   {
 		}
 		return "Fiddler's Way | ".$txt;
 	}
-	
-	
+
+
 	function load_common($view,$data)
 	{
 		$CI =& get_instance();
 		$CI->load->model('ipo_model','ipo');
 		$CI->load->model('page_model','page');
 		$CI->load->model('blog_model','blog');
-		
+
 		$data['home_ipos'] = $CI->ipo->get_home_list();
 		$data['share_link'] = $CI->config->site_url().$CI->uri->uri_string();
 		$data['share_title'] = "Fiddlers%20Way";
 		$data['page_title'] = $this->page_title($CI->router->class,$CI->router->method,$CI->uri->segment(3, 0));
 		$data['debug'] = '';
-		
-		
+
+
 		$data['left_premium'] = $CI->page->get_premium_pages('0','5');
 		$data['left_blog_recent'] = $CI->blog->get_blog_list('0','5');
 		$data['left_blog_rest'] = $CI->blog->get_blog_list('5','20');
-		
+
 		$data['right_news'] = html_entity_decode($this->news());
-		
-		
+
+
 		$CI->load->view('common_header',$data);
 		$CI->load->view($view, $data);
 		$CI->load->view('common_footer',$data);
 	}
-	
-	
+
+
 	function load_plain($view,$data)
 	{
 		$CI =& get_instance();
@@ -86,37 +86,40 @@ class Menu   {
 		$CI->load->view($view, $data);
 		$CI->load->view('plain_footer');
 	}
-	
+
 	public function news()
 	{
-	
+
 		$CI =& get_instance();
 		$CI->output->set_header("Cache-Control: no-store, no-cache, must-revalidate");
-		
+
 		ini_set("user_agent","Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)");
 		ini_set("max_execution_time", 0);
 		ini_set("memory_limit", "10000M");
-		
-		
-		
+
+
+
 		$buffer='';
 		$feed_url =  "http://www.google.com/alerts/feeds/11832344583767583685/17859790038354650960";
-		
+
 		$content = file_get_contents($feed_url);
-		$x = new SimpleXmlElement($content);
 		
-		$buffer .= "<ul>";
-		
-		foreach($x->channel->item as $entry) {
-			$buffer .= "<li><a href='$entry->link' title='$entry->title'>" . $entry->title . "</a></li>";
+		if($x = new SimpleXmlElement($content))
+		{
+
+			$buffer .= "<ul>";
+
+			foreach($x->channel->item as $entry) {
+				$buffer .= "<li><a href='$entry->link' title='$entry->title'>" . $entry->title . "</a></li>";
+			}
+			$buffer .= "</ul>";
+
 		}
-		$buffer .= "</ul>";
-		
 		return  $buffer;
-		
-		
-		
+
+
+
 	}
-	
-	
+
+
 }
