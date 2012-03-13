@@ -99,7 +99,7 @@ class Menu   {
 		
 		
 		$buffer='';
-		$feed =  "http://news.google.com/news?pz=1&ned=us&hl=en&q=francis+gaskins";
+		$feed =  "http://news.google.com/news?hl=en&gl=us&q=Francis+Gaskins&um=1&ie=UTF-8&output=rss";
 
 		
 		$amountToShow = 7;
