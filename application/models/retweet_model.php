@@ -47,12 +47,12 @@ class Retweet_model extends CI_Model {
 				$this->email->cc('doug@fiddlersway.com');
 				$this->email->cc('patrick@fiddlersway.com');
 				/* Here we need to build our CC Loop */
-				
+				$membersLink="<br><br><br><br>To unsubscribe contact patrick@fiddlersway.com or update settings at http://fiddlersway.com/login";
 				
 				
 				
 				$this->email->subject('IPO News Release');
-				$this->email->message($feedback);
+				$this->email->message($feedback.$membersLink);
 				$this->email->send();
 				$query = $this->db->query("update twitter set status = 'sent', retweeted_time = '".time()."', feedback = '$feedback' where id = '".$row->id."' ");
 			}
