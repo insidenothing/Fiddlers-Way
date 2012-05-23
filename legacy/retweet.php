@@ -31,9 +31,9 @@ function post_tweet($tweet_text) {
 
 if (isset($_POST['message']))
 {
-	print "Posting...[".$_POST['message']."]\n";
+	print $_POST['message'];
 	$result = post_tweet(str_replace('$','#',$_POST['message']));
-	print "Response code: " . $result . "\n";
+	//print "Response code: " . $result . "\n";
 }else{
 	print "No message to send...";
 }
