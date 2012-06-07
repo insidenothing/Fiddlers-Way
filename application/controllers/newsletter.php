@@ -74,6 +74,19 @@ class Newsletter extends CI_Controller {
 		$data['results'] = $results;
 		
 		$data['name'] = $this->newsletter->get_data($id,'name');
+		$data['address'] = $this->newsletter->get_data($id,'address');
+		$data['phone'] = $this->newsletter->get_data($id,'phone');
+		$data['obj_SPECULATION'] = $this->newsletter->get_data($id,'obj_SPECULATION');
+		$data['obj_GROWTH'] = $this->newsletter->get_data($id,'obj_GROWTH');
+		$data['obj_CAPITAL_PRESERVATION'] = $this->newsletter->get_data($id,'obj_CAPITAL_PRESERVATION');
+		$data['obj_INCOME'] = $this->newsletter->get_data($id,'obj_INCOME');
+		$data['exp_stock_mf'] = $this->newsletter->get_data($id,'exp_stock_mf');
+		$data['exp_bonds'] = $this->newsletter->get_data($id,'exp_bonds');
+		$data['exp_commodities_forex'] = $this->newsletter->get_data($id,'exp_commodities_forex');
+		$data['exp_private_placement'] = $this->newsletter->get_data($id,'exp_private_placement');
+		$data['risk_tolarance'] = $this->newsletter->get_data($id,'risk_tolarance');
+		
+		
 		
 		
 		

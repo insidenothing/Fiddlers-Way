@@ -24,11 +24,11 @@
 					</tr>
 					<tr>
 						<td>ADDRESS</td>
-						<td><input name="address" value=""></td>
+						<td><input name="address" value="<?php echo $address;?>"></td>
 					</tr>
 					<tr>
 						<td>PHONE NUMBER(S)</td>
-						<td><input name="phone" value=""></td>
+						<td><input name="phone" value="<?php echo $phone;?>"></td>
 					</tr>
 					<tr>
 						<td>NEWSLETTER STATUS</td>
@@ -40,19 +40,19 @@
 					</tr>
 					<tr>
 						<td>SPECULATION</td>
-						<td><textarea name="obj_SPECULATION"></textarea></td>
+						<td><textarea name="obj_SPECULATION"><?php echo $obj_SPECULATION; ?></textarea></td>
 					</tr>
 					<tr>
 						<td>GROWTH</td>
-						<td><textarea name="obj_GROWTH"></textarea></td>
+						<td><textarea name="obj_GROWTH"><?php echo $obj_GROWTH; ?></textarea></td>
 					</tr>
 					<tr>
 						<td>CAPITAL PRESERVATION</td>
-						<td><textarea name="obj_CAPITAL PRESERVATION"></textarea></td>
+						<td><textarea name="obj_CAPITAL_PRESERVATION"><?php echo $obj_CAPITAL_PRESERVATION; ?></textarea></td>
 					</tr>
 					<tr>
 						<td>INCOME</td>
-						<td><textarea name="obj_INCOME"></textarea></td>
+						<td><textarea name="obj_INCOME"><?php echo $obj_INCOME; ?></textarea></td>
 					</tr>
 					<tr>
 						<td>INVESTMENT EXPERIENCE</td>
@@ -60,19 +60,19 @@
 					</tr>
 					<tr>
 						<td>STOCK / MUTUAL FUNDS</td>
-						<td><input type="checkbox" name="exp_stock_mf"></td>
+						<td><input value="checked" type="checkbox" name="exp_stock_mf" <?php echo $exp_stock_mf; ?>></td>
 					</tr>
 					<tr>
 						<td>BONDS</td>
-						<td><input type="checkbox" name="exp_bonds"></td>
+						<td><input value="checked" type="checkbox" name="exp_bonds" <?php echo $exp_bonds; ?>></td>
 					</tr>
 					<tr>
 						<td>COMMODITIES / FOREX</td>
-						<td><input type="checkbox" name="exp_commodities_forex"></td>
+						<td><input value="checked" type="checkbox" name="exp_commodities_forex" <?php echo $exp_commodities_forex; ?>></td>
 					</tr>
 					<tr>
 						<td>PRIVATE PLACEMENTS</td>
-						<td><input type="checkbox" name="exp_private_placement"></td>
+						<td><input value="checked" type="checkbox" name="exp_private_placement" <?php echo $exp_private_placement; ?>></td>
 					</tr>
 					<tr>
 						<td>RISK TOLERANCE</td>
@@ -80,15 +80,15 @@
 					</tr>
 					<tr>
 						<td>AGGRESSIVE</td>
-						<td><input type="radio" name="risk_tolarance" value="Aggressive"></td>
+						<td><input type="radio" name="risk_tolarance" value="Aggressive"  <?php if ($risk_tolarance == 'Aggressive') {echo 'selected'; } ?>></td>
 					</tr>
 					<tr>
 						<td>MODERATE</td>
-						<td><input type="radio" name="risk_tolarance" value="Moderate"></td>
+						<td><input type="radio" name="risk_tolarance" value="Moderate"  <?php if ($risk_tolarance == 'Moderate') {echo 'selected'; } ?>></td>
 					</tr>
 					<tr>
 						<td>CONSERVATIVE</td>
-						<td><input type="radio" name="risk_tolarance" value="Conservative"></td>
+						<td><input type="radio" name="risk_tolarance" value="Conservative"  <?php if ($risk_tolarance == 'Conservative') {echo 'selected'; } ?>></td>
 					</tr>
 				</table>
 				<center><img src="/assets/images/slogan-bg.png" width="400" height="25" /><br><input type="submit" value="Save"></center>
