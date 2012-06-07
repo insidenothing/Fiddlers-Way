@@ -32,7 +32,13 @@
 					</tr>
 					<tr>
 						<td>NEWSLETTER STATUS</td>
-						<td><?php echo $newsletter_status;?></td>
+						<td>
+							<select name="newsletter_status">
+								<option><?php echo $newsletter_status;?></option>
+								<option>opt-in</option>
+								<option>opt-out</option>
+							</select>
+						</td>
 					</tr>
 					<tr>
 						<td>INVESTMENT OBJECTIVE(S)</td>
