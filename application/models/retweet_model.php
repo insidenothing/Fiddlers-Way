@@ -44,7 +44,6 @@ class Retweet_model extends CI_Model {
 				$this->email->set_newline("\r\n");
 				$this->email->from('members@fiddlersway.com', 'Fiddlers Way News');
 				$this->email->to('members@fiddlersway.com');
-				$this->email->cc('doug@fiddlersway.com');
 				/* Here we need to build our CC Loop */
 				$membersLink="<br><br><br><br>To unsubscribe reply to this message with the word UNSUBSCRIBE in the body.";
 				
@@ -57,7 +56,7 @@ class Retweet_model extends CI_Model {
 						$this->email->bcc($rowX->email);
 						$debug .= $rowX->email." \n";						
 					}
-					mail('patrick@fiddlersway.com,doug@fiddlersway.com','FW Member Blast Information: Twitter Feed',$feedback.' \n \n sent to \n \n '.$debug);
+					mail('members@fiddlersway.com','FW Member Blast Information: Twitter Feed',$feedback.' \n \n sent to \n \n '.$debug);
 				}
 				$this->email->subject('IPO News Release');
 				$this->email->message($feedback.$membersLink);
