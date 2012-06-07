@@ -6,7 +6,7 @@
 				<table width="100%">
 					<tr>
 						<td width="50%">E-MAIL</td>
-						<td width="50%"><input name="email" value="<?php echo $email;?>"></td>
+						<td width="50%"><input name="email_form" value="<?php echo $email_form;?>"></td>
 					</tr>
 					<tr>
 						<td width="50%"></td>
@@ -18,7 +18,7 @@
 				<table width="100%">
 					<tr>
 						<td width="50%">NAME</td>
-						<td width="50%"><input name="name" value=""></td>
+						<td width="50%"><input name="name" value="<?php echo $name;?>"></td>
 					</tr>
 					<tr>
 						<td>ADDRESS</td>

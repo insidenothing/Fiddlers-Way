@@ -6,6 +6,8 @@ class Newsletter extends CI_Controller {
 	{
 		
 		$this->load->model('Newsletter_model','newsletter');
+		$id = $this->input->cookie('id');
+		
 		
 		/** Newsletter Status */
 		if ($this->input->cookie('email')){
@@ -26,8 +28,8 @@ class Newsletter extends CI_Controller {
 		}
 		
 		
-		if ($this->input->post('email')){
-			$results .= $this->newsletter->set_data($id,'email',$this->input->post('email'));
+		if ($this->input->post('email_form')){
+			$results .= $this->newsletter->set_data($id,'email',$this->input->post('email_form'));
 		}
 		if ($this->input->post('name')){
 			$results .= $this->newsletter->set_data($id,'name',$this->input->post('name'));
@@ -65,6 +67,10 @@ class Newsletter extends CI_Controller {
 		if ($this->input->post('risk_tolarance')){
 			$results .= $this->newsletter->set_data($id,'risk_tolarance',$this->input->post('risk_tolarance'));
 		}
+		
+		
+		
+		$data['name'] = get_data($id,'name');
 		
 		
 		

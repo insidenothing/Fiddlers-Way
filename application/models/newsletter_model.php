@@ -16,7 +16,16 @@ class Newsletter_model extends CI_Model {
 		$query = $this->db->query("UPDATE users set $field = '$content' where id = '$id'");
 		return $field.' Updated, ';
 	}
-	
+	function get_data($id,$field)
+	{
+		$query = $this->db->query("select $field from users where id = '$id'");
+		if ($query->num_rows() > 0)
+		{
+			$row=$query->row_array();
+			return stripslashes($row[$field]);
+		}
+		
+	}
 	function check_user($email)
 	{
 		$query = $this->db->query("SELECT * FROM users WHERE email = '$email'");
