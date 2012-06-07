@@ -12,9 +12,14 @@ class Newsletter_model extends CI_Model {
 	function set_data($id,$field,$content)
 	{
 		$content = addslashes($content);
-		$query = $this->db->query("UPDATE users set $field = '$content' where id = '$id'");
-		return $field.' set to '.$content.'
-';
+		$query = $this->db->query("select $field from users where id = '$id'");
+		$row=$query->row_array();
+		$old = $row[$field];
+		if ($content != $old){
+			$query = $this->db->query("UPDATE users set $field = '$content' where id = '$id'");
+			return $field.' updated from '.$old.' to '.$content.'
+';		
+		}
 	}
 	function get_data($id,$field)
 	{
