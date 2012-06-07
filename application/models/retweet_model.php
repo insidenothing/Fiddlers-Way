@@ -42,7 +42,7 @@ class Retweet_model extends CI_Model {
 				$return .= $buffer;	
 				$this->load->library('email');
 				$this->email->set_newline("\r\n");
-				$this->email->from('patrick@fiddlersway.com', 'Fiddlers Way News');
+				$this->email->from('members@fiddlersway.com', 'Fiddlers Way News');
 				$this->email->to('members@fiddlersway.com');
 				$this->email->cc('doug@fiddlersway.com');
 				/* Here we need to build our CC Loop */

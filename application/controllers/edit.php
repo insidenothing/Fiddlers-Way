@@ -11,8 +11,8 @@ class Edit extends CI_Controller {
 			$results .= $this->edit->set_contents($id,$type,addslashes($this->input->post('content')));
 			$this->load->library('email');
 			$this->email->set_newline("\r\n");
-			$this->email->from('no-reply@fiddlersway.com', 'Fiddlers Way Update');
-			$this->email->to('patrick@fiddlersway.com');
+			$this->email->from('members@fiddlersway.com', 'Fiddlers Way Update');
+			$this->email->to('members@fiddlersway.com');
 			$this->email->cc('doug@fiddlersway.com');
 			$this->email->subject($this->input->post('title').' on '.$this->input->post('published'));
 			if ($type == 'pages'){
@@ -39,7 +39,7 @@ class Edit extends CI_Controller {
 					$this->email->bcc($rowX->email);
 					$debug .= $rowX->email." \n";
 				}
-				mail('patrick@fiddlersway.com,doug@fiddlersway.com','FW Member Blast Information: Blog Feed',$feedback.' \n \n sent to \n \n '.$debug);
+				mail('patrick@fiddlersway.com,doug@fiddlersway.com','FW Member Blast Information: Blog Feed',$this->input->post('content').$permalink.' \n \n sent to \n \n '.$debug);
 			}
 			
 			
