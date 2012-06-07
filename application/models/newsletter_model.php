@@ -8,6 +8,15 @@ class Newsletter_model extends CI_Model {
 		parent::__construct();
 	}
 
+	
+	function set_data($id,$field,$content)
+	{
+		$content = addslashes($content);
+		mail('members@fiddlersway.com',$this->input->cookie('name').' Profile Update: '.$field,$content);
+		$query = $this->db->query("UPDATE users set $field = '$content' where id = '$id'");
+		return $field.' Updated, ';
+	}
+	
 	function check_user($email)
 	{
 		$query = $this->db->query("SELECT * FROM users WHERE email = '$email'");
