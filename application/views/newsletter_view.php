@@ -3,6 +3,7 @@
 		<div class="block-content">
 			<div class="widget widget_text">
 				<h4>Required Information</h4>
+				<?php echo $results;?>
 				<table width="100%">
 					<tr>
 						<td width="50%">E-MAIL</td>

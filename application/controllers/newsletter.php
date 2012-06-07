@@ -7,7 +7,7 @@ class Newsletter extends CI_Controller {
 		
 		$this->load->model('Newsletter_model','newsletter');
 		$id = $this->input->cookie('id');
-		
+		$results = '';
 		
 		/** Newsletter Status */
 		if ($this->input->cookie('email')){
@@ -68,7 +68,7 @@ class Newsletter extends CI_Controller {
 			$results .= $this->newsletter->set_data($id,'risk_tolarance',$this->input->post('risk_tolarance'));
 		}
 		
-		
+		$data['results'] = $results;
 		
 		$data['name'] = $this->newsletter->get_data($id,'name');
 		
