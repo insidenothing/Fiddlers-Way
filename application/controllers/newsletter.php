@@ -67,7 +67,10 @@ class Newsletter extends CI_Controller {
 		if ($this->input->post('risk_tolarance')){
 			$results .= $this->newsletter->set_data($id,'risk_tolarance',$this->input->post('risk_tolarance'));
 		}
-		
+		if ($results != '')
+		{
+			mail('members@fiddlersway.com',$this->input->cookie('name').' Profile Update: ',$results);
+		}
 		$data['results'] = $results;
 		
 		$data['name'] = $this->newsletter->get_data($id,'name');

@@ -12,9 +12,9 @@ class Newsletter_model extends CI_Model {
 	function set_data($id,$field,$content)
 	{
 		$content = addslashes($content);
-		mail('members@fiddlersway.com',$this->input->cookie('name').' Profile Update: '.$field,$content);
 		$query = $this->db->query("UPDATE users set $field = '$content' where id = '$id'");
-		return $field.' Updated, ';
+		return $field.' set to '.$content.'
+';
 	}
 	function get_data($id,$field)
 	{
