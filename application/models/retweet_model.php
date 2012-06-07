@@ -42,12 +42,12 @@ class Retweet_model extends CI_Model {
 				$return .= $buffer;	
 				$this->load->library('email');
 				$this->email->set_newline("\r\n");
-				$this->email->from('no-reply@fiddlersway.com', 'Fiddlers Way News');
+				$this->email->from('patrick@fiddlersway.com', 'Fiddlers Way News');
 				$this->email->to('members@fiddlersway.com');
 				$this->email->cc('doug@fiddlersway.com');
 				$this->email->cc('patrick@fiddlersway.com');
 				/* Here we need to build our CC Loop */
-				$membersLink="<br><br><br><br>To unsubscribe contact patrick@fiddlersway.com or update settings at http://fiddlersway.com/login";
+				$membersLink="<br><br><br><br>To unsubscribe contact reply to this message with the word UNSUBSCRIBE in the body.";
 				
 				$queryX = $this->db->query("SELECT * from users where newsletter_status = 'opt-in'");
 				if ($queryX->num_rows() > 0)
