@@ -26,7 +26,9 @@ class Newsletter extends CI_Controller {
 			$data['email_form'] = '';
 			$data['confirm'] = '';
 		}
-		
+		if ($this->input->post('newsletter_status')){
+			$results .= $this->newsletter->set_data($id,'newsletter_status',$this->input->post('newsletter_status'));
+		}
 		
 		if ($this->input->post('email_form')){
 			$results .= $this->newsletter->set_data($id,'email',$this->input->post('email_form'));
