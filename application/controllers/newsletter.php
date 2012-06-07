@@ -9,23 +9,7 @@ class Newsletter extends CI_Controller {
 		$id = $this->input->cookie('id');
 		$results = '';
 		
-		/** Newsletter Status */
-		if ($this->input->cookie('email')){
-			/* Logged In User */
-			$data['newsletter_status'] = $this->newsletter->check_user($this->input->cookie('email'));
-			$data['email_form'] = $this->input->cookie('email');	
-			$data['confirm'] = '';
-		}elseif($this->input->post('email'))
-		{
-			$data['newsletter_status'] = $this->newsletter->check_user($this->input->post('email'));
-			$data['confirm'] = $this->newsletter->send_confirmation($this->input->post('email'));
-			$data['email_form'] = $this->input->post('email');
-		} else 
-		{
-			$data['newsletter_status'] = '';
-			$data['email_form'] = '';
-			$data['confirm'] = '';
-		}
+
 		if ($this->input->post('newsletter_status')){
 			$results .= $this->newsletter->set_data($id,'newsletter_status',$this->input->post('newsletter_status'));
 		}
@@ -74,6 +58,25 @@ class Newsletter extends CI_Controller {
 			mail('members@fiddlersway.com',$this->input->cookie('name').' Profile Update: ',$results);
 		}
 		$data['results'] = $results;
+		
+		/** Newsletter Status */
+		if ($this->input->cookie('email')){
+			/* Logged In User */
+			$data['newsletter_status'] = $this->newsletter->check_user($this->input->cookie('email'));
+			$data['email_form'] = $this->input->cookie('email');
+			$data['confirm'] = '';
+		}elseif($this->input->post('email'))
+		{
+			$data['newsletter_status'] = $this->newsletter->check_user($this->input->post('email'));
+			$data['confirm'] = $this->newsletter->send_confirmation($this->input->post('email'));
+			$data['email_form'] = $this->input->post('email');
+		} else
+		{
+			$data['newsletter_status'] = '';
+			$data['email_form'] = '';
+			$data['confirm'] = '';
+		}
+		
 		
 		$data['name'] = $this->newsletter->get_data($id,'name');
 		$data['address'] = $this->newsletter->get_data($id,'address');
