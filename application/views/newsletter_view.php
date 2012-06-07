@@ -80,15 +80,15 @@
 					</tr>
 					<tr>
 						<td>AGGRESSIVE</td>
-						<td><input type="radio" name="risk_tolarance" value="Aggressive"  <?php if ($risk_tolarance == 'Aggressive') {echo 'selected'; } ?>></td>
+						<td><input type="radio" name="risk_tolarance" value="Aggressive"  <?php if ($risk_tolarance == 'Aggressive') {echo 'checked'; } ?>></td>
 					</tr>
 					<tr>
 						<td>MODERATE</td>
-						<td><input type="radio" name="risk_tolarance" value="Moderate"  <?php if ($risk_tolarance == 'Moderate') {echo 'selected'; } ?>></td>
+						<td><input type="radio" name="risk_tolarance" value="Moderate"  <?php if ($risk_tolarance == 'Moderate') {echo 'checked'; } ?>></td>
 					</tr>
 					<tr>
 						<td>CONSERVATIVE</td>
-						<td><input type="radio" name="risk_tolarance" value="Conservative"  <?php if ($risk_tolarance == 'Conservative') {echo 'selected'; } ?>></td>
+						<td><input type="radio" name="risk_tolarance" value="Conservative"  <?php if ($risk_tolarance == 'Conservative') {echo 'checked'; } ?>></td>
 					</tr>
 				</table>
 				<center><img src="/assets/images/slogan-bg.png" width="400" height="25" /><br><input type="submit" value="Save"></center>

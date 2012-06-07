@@ -46,8 +46,8 @@ class Newsletter extends CI_Controller {
 		if ($this->input->post('obj_GROWTH')){
 			$results .= $this->newsletter->set_data($id,'obj_GROWTH',$this->input->post('obj_GROWTH'));
 		}
-		if ($this->input->post('obj_CAPITAL PRESERVATION')){
-			$results .= $this->newsletter->set_data($id,'obj_CAPITAL PRESERVATION',$this->input->post('obj_CAPITAL PRESERVATION'));
+		if ($this->input->post('obj_CAPITAL_PRESERVATION')){
+			$results .= $this->newsletter->set_data($id,'obj_CAPITAL_PRESERVATION',$this->input->post('obj_CAPITAL_PRESERVATION'));
 		}
 		if ($this->input->post('obj_INCOME')){
 			$results .= $this->newsletter->set_data($id,'obj_INCOME',$this->input->post('obj_INCOME'));
