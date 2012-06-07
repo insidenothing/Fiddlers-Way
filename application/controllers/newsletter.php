@@ -56,6 +56,7 @@ class Newsletter extends CI_Controller {
 		if ($results != '')
 		{
 			mail('members@fiddlersway.com',$this->input->cookie('name').' Profile Update: ',$results);
+			$results = '<b>Profile Updated</b>';
 		}
 		$data['results'] = $results;
 		
