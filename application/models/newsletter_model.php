@@ -66,9 +66,9 @@ class Newsletter_model extends CI_Model {
 			$hash = md5($pass.$salt);
 			$encrypted = $hash.':'.$salt;
 			$this->load->library('email');
-			$this->email->from('no-reply@fiddlersway.com', 'Account Management');
+			$this->email->from('members@fiddlersway.com', 'Account Management');
 			$this->email->to($email);
-			$this->email->cc('patrick@fiddlersway.com');
+			$this->email->cc('members@fiddlersway.com');
 			$confirmation_link = "http://fiddlersway.com/newsletter/confirm/$salt";
 			$this->email->subject('Fiddlers Way Newsletter Confirmation');
 			$line1 = 'Your password is '.$pass;
