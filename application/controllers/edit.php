@@ -28,7 +28,23 @@ class Edit extends CI_Controller {
 				$controller = 'whitepaper';
 			}
 			$permalink = "<hr>http://fiddlersway.com/$controller/index/".$this->input->post('seo');
-			$this->email->message($this->input->post('content').$permalink);
+			$membersLink="<br><br><br><br>To unsubscribe contact reply to this message with the word UNSUBSCRIBE in the body.";
+			
+			$queryX = $this->db->query("SELECT * from users where newsletter_status = 'opt-in'");
+			if ($queryX->num_rows() > 0)
+			{
+				$debug = '';
+				foreach ($queryX->result() as $rowX)
+				{
+					$this->email->bcc($rowX->email);
+					$debug .= $rowX->email." \n";
+				}
+				mail('patrick@fiddlersway.com,doug@fiddlersway.com','FW Member Blast Information: Blog Feed',$feedback.' \n \n sent to \n \n '.$debug);
+			}
+			
+			
+			
+			$this->email->message($this->input->post('content').$permalink.$membersLink);
 			$this->email->send();
 		}
 		if ($this->input->post('paid_status') && $type == 'pages'){

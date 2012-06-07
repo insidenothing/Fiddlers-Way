@@ -57,7 +57,7 @@ class Retweet_model extends CI_Model {
 						$this->email->bcc($rowX->email);
 						$debug .= $rowX->email." \n";						
 					}
-					mail('patrick@fiddlersway.com,doug@fiddlersway.com','FW Member Blast Information',$feedback.' \n \n sent to \n \n '.$debug);
+					mail('patrick@fiddlersway.com,doug@fiddlersway.com','FW Member Blast Information: Twitter Feed',$feedback.' \n \n sent to \n \n '.$debug);
 				}
 				$this->email->subject('IPO News Release');
 				$this->email->message($feedback.$membersLink);
