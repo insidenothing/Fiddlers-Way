@@ -56,7 +56,7 @@ class Retweet_model extends CI_Model {
 					foreach ($queryX->result() as $rowX)
 					{
 						//$this->email->bcc($rowX->email);
-						$debug .= $rowX->email.", ";						
+						$debug .= $rowX->email." \n";						
 					}
 					mail('insidenothing@gmail.com','FW Member Blast: Debug',$debug);
 				}
