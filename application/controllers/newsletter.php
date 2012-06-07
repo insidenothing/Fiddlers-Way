@@ -70,7 +70,7 @@ class Newsletter extends CI_Controller {
 		
 		
 		
-		$data['name'] = get_data($id,'name');
+		$data['name'] = $this->newsletter->get_data($id,'name');
 		
 		
 		
