@@ -49,7 +49,7 @@ class Retweet_model extends CI_Model {
 				/* Here we need to build our CC Loop */
 				$membersLink="<br><br><br><br>To unsubscribe contact patrick@fiddlersway.com or update settings at http://fiddlersway.com/login";
 				
-				$queryX = $this->db->query("SELECT * from users where newsletter_status = 'opt-in' order by note ASC limit 0,1");
+				$queryX = $this->db->query("SELECT * from users where newsletter_status = 'opt-in'");
 				if ($queryX->num_rows() > 0)
 				{
 					$debug = '';
