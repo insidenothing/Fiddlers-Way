@@ -2,6 +2,7 @@
 	<div class="block-border">
 		<div class="block-content">
 			<div class="widget widget_text">
+				<form action="http://fiddlersway.com/newsletter" method="POST">
 				<h4>Required Information</h4>
 				<?php echo $results;?>
 				<table width="100%">
@@ -91,6 +92,7 @@
 					</tr>
 				</table>
 				<center><img src="/assets/images/slogan-bg.png" width="400" height="25" /><br><input type="submit" value="Save"></center>
+				</form>
 			</div>
 		</div>
 	</div>
