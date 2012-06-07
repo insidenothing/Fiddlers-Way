@@ -13,17 +13,17 @@ class Newsletter extends CI_Controller {
 		if ($this->input->cookie('email')){
 			/* Logged In User */
 			$data['newsletter_status'] = $this->newsletter->check_user($this->input->cookie('email'));
-			$data['email'] = $this->input->cookie('email');	
+			$data['email_form'] = $this->input->cookie('email');	
 			$data['confirm'] = '';
 		}elseif($this->input->post('email'))
 		{
 			$data['newsletter_status'] = $this->newsletter->check_user($this->input->post('email'));
 			$data['confirm'] = $this->newsletter->send_confirmation($this->input->post('email'));
-			$data['email'] = $this->input->post('email');
+			$data['email_form'] = $this->input->post('email');
 		} else 
 		{
 			$data['newsletter_status'] = '';
-			$data['email'] = '';
+			$data['email_form'] = '';
 			$data['confirm'] = '';
 		}
 		
