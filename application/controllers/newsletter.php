@@ -26,31 +26,31 @@ class Newsletter extends CI_Controller {
 		if ($this->input->post('phone')){
 			$results .= $this->newsletter->set_data($id,'phone',$this->input->post('phone'));
 		}
-		if ($this->input->post('obj_SPECULATION')){
+		if ($this->input->post()){
 			$results .= $this->newsletter->set_data($id,'obj_SPECULATION',$this->input->post('obj_SPECULATION'));
 		}
-		if ($this->input->post('obj_GROWTH')){
+		if ($this->input->post()){
 			$results .= $this->newsletter->set_data($id,'obj_GROWTH',$this->input->post('obj_GROWTH'));
 		}
-		if ($this->input->post('obj_CAPITAL_PRESERVATION')){
+		if ($this->input->post()){
 			$results .= $this->newsletter->set_data($id,'obj_CAPITAL_PRESERVATION',$this->input->post('obj_CAPITAL_PRESERVATION'));
 		}
-		if ($this->input->post('obj_INCOME')){
+		if ($this->input->post()){
 			$results .= $this->newsletter->set_data($id,'obj_INCOME',$this->input->post('obj_INCOME'));
 		}
-		if ($this->input->post('exp_stock_mf')){
+		if ($this->input->post()){
 			$results .= $this->newsletter->set_data($id,'exp_stock_mf',$this->input->post('exp_stock_mf'));
 		}
-		if ($this->input->post('exp_bonds')){
+		if ($this->input->post()){
 			$results .= $this->newsletter->set_data($id,'exp_bonds',$this->input->post('exp_bonds'));
 		}
-		if ($this->input->post('exp_commodities_forex')){
+		if ($this->input->post()){
 			$results .= $this->newsletter->set_data($id,'exp_commodities_forex',$this->input->post('exp_commodities_forex'));
 		}
-		if ($this->input->post('exp_private_placement')){
+		if ($this->input->post()){
 			$results .= $this->newsletter->set_data($id,'exp_private_placement',$this->input->post('exp_private_placement'));
 		}
-		if ($this->input->post('risk_tolarance')){
+		if ($this->input->post()){
 			$results .= $this->newsletter->set_data($id,'risk_tolarance',$this->input->post('risk_tolarance'));
 		}
 		if ($results != '')
