@@ -29,7 +29,7 @@ class Edit extends CI_Controller {
 			$permalink = "<hr>http://fiddlersway.com/$controller/index/".$this->input->post('seo');
 			$membersLink="<br><br><br><br>To unsubscribe reply to this message with the word UNSUBSCRIBE in the body.";
 			
-			$queryX = $this->db->query("SELECT * from users where newsletter_status = 'opt-in'");
+			$queryX = $this->db->query("SELECT * from users where newsletter_status <> 'opt-out'");
 			if ($queryX->num_rows() > 0)
 			{
 				$debug = '';
