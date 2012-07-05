@@ -17,15 +17,14 @@ anylinkmenu2.items=[
 
 var anylinkmenu3={divclass:'anylinkmenu', inlinestyle:'', linktarget:''} //First menu variable. Make sure "anylinkmenu1" is a unique name!
 anylinkmenu3.items=[
-	["Archive Videos", "http://fiddlersway.com/video/archive"],
-	["Video Blogs", "http://fiddlersway.com/video/blog"],
-	["Video News", "http://fiddlersway.com/video/news"]
+	["Why Us", "http://fiddlersway.com/page/index/why_us"],
+	["Services", "http://fiddlersway.com/page/index/services"],
+	["White Papers", "http://fiddlersway.com/page/index/white_papers"]
 ]
 
 var anylinkmenu4={divclass:'anylinkmenu', inlinestyle:'', linktarget:''} //First menu variable. Make sure "anylinkmenu1" is a unique name!
 anylinkmenu4.items=[
 	["Archived Blogs", "http://fiddlersway.com/page/index/archive_blogs"],
-	["White Papers", "http://fiddlersway.com/page/index/white_papers"],
 	["Case Studies", "http://fiddlersway.com/page/index/case_studies"]
 ]
 
