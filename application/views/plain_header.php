@@ -89,7 +89,7 @@ anylinkmenu.init("menuanchorclass")
 	media='screen' />
 
 <script type='text/javascript'
-	src='/assets/js/jquery/jquery.js?ver=1.7.1'></script>
+	src='/assets/js/jquery.js?ver=1.7.1'></script>
 
 <script type='text/javascript'
 	src='/assest/js/et_shortcodes_frontend.js?ver=2.0'></script>
