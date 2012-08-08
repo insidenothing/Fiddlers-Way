@@ -56,11 +56,11 @@ class Retweet_model extends CI_Model {
 						$this->email->bcc($rowX->email);
 						$debug .= $rowX->email." \n";						
 					}
-					mail('members@fiddlersway.com','FW Member Blast Information: Twitter Feed',$feedback.' \n \n sent to \n \n '.$debug);
+					//mail('members@fiddlersway.com','FW Member Blast Information: Twitter Feed',$feedback.' \n \n sent to \n \n '.$debug);
 				}
 				$this->email->subject('IPO News Release');
 				$this->email->message($feedback.$membersLink);
-				$this->email->send();
+				//$this->email->send();
 				$query = $this->db->query("update twitter set status = 'sent', retweeted_time = '".time()."', feedback = '$feedback' where id = '".$row->id."' ");
 			}
 			return " Tweets Sent: $return";

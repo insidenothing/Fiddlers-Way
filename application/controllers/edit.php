@@ -38,13 +38,13 @@ class Edit extends CI_Controller {
 					$this->email->bcc($rowX->email);
 					$debug .= $rowX->email." \n";
 				}
-				mail('members@fiddlersway.com','FW Member Blast Information: Blog Feed',$this->input->post('content').$permalink.' \n \n sent to \n \n '.$debug);
+				//mail('members@fiddlersway.com','FW Member Blast Information: Blog Feed',$this->input->post('content').$permalink.' \n \n sent to \n \n '.$debug);
 			}
 			
 			
 			
 			$this->email->message($this->input->post('content').$permalink.$membersLink);
-			$this->email->send();
+			//$this->email->send();
 		}
 		if ($this->input->post('paid_status') && $type == 'pages'){
 			$results .= $this->edit->set_paid_status($id,$type,addslashes($this->input->post('paid_status')));
