@@ -222,9 +222,7 @@ anylinkmenu.init("menuanchorclass")
 						href="http://fiddlersway.com" class="menuanchorclass" rel="anylinkmenu3">Corporate Services</a>
 					</li>
 
-					<li class="page_item"><a
-						href="http://fiddlersway.com" class="menuanchorclass" rel="anylinkmenu4">Blogs</a>
-					</li>
+					
 
 					<li class="page_item"><a
 						href="http://fiddlersway.com" class="menuanchorclass" rel="anylinkmenu5">Track Record</a>
