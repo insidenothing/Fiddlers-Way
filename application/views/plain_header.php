@@ -170,11 +170,6 @@ anylinkmenu.init("menuanchorclass")
 					
 				
 					<li class="page_item"><a
-						href="http://www.fiddlersway.com/"
-						title="Press Room" class="menuanchorclass" rel="anylinkmenu6">Press Room</a>
-					</li>
-					
-					<li class="page_item"><a
 						href="http://www.fiddlersway.com/page/index/facebook_video_interviews"
 						title="Contact Us">Facebook Video Interviews</a>
 					</li>					
