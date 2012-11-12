@@ -3,7 +3,7 @@
 		<div class="block-content">
 			<div class="widget widget_text" id="text-2">
 				<center>
-<script src="http://player.ooyala.com/player.js?embedCode=JqbzBqNjoy3TitQQnlMEMZRT-X2CNtTg&playerBrandingId=8a7a9c84ac2f4e8398ebe50c07eb2f9d&width=640&deepLinkEmbedCode=JqbzBqNjoy3TitQQnlMEMZRT-X2CNtTg&height=360&thruParam_bloomberg-ui[popOutButtonVisible]=FALSE"></script> 
+<script src="http://player.ooyala.com/player.js?embedCode=JqbzBqNjoy3TitQQnlMEMZRT-X2CNtTg&playerBrandingId=8a7a9c84ac2f4e8398ebe50c07eb2f9d&width=640&deepLinkEmbedCode=JqbzBqNjoy3TitQQnlMEMZRT-X2CNtTg&height=360&height=400&thruParam_bloomberg-ui[popOutButtonVisible]=FALSE"></script> 
 <img src="/assets/images/slogan-bg.png" width="400" height="25" />
 					<br> Francis Gaskins on CNBC: What's Hot in the IPO Pipeline?
 				</center>
