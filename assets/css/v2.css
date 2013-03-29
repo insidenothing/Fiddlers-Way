@@ -3,7 +3,7 @@
 /*------------------------------------------------*/
 body.custom-background {
 	background-image:
-		url('http://insidenothing.com/wp-content/uploads/2012/02/start_wood_rpt.jpg');
+		url('/assets/images/start_wood_rpt2.jpg');
 	background-repeat: repeat;
 	background-position: center;
 	background-attachment: fixed;
