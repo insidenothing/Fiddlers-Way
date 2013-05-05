@@ -186,7 +186,7 @@ anylinkmenu.init("menuanchorclass")
 <div id="menu2">
 	<div class="container clearfix">
 		<center>
-			<a style="color:#000000" href="http://fiddlersway.com/sales" title="Premium Member Options">Premium Member Options</a> |
+			<a style="color:#000000" href="mailto:members@fiddlersway.com" title="Premium Member Options">Premium Member Options</a> |
 			<a style="color:#000000" href="http://fiddlersway.com/page/index/bio" title="About Us">About Us</a> |
 			<a style="color:#000000" href="http://www.fiddlersway.com/contact" title="Contact Us">Contact Us</a> |
 		</center>
